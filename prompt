@@ -1,0 +1,16 @@
+i wish to build an extension, that doesnt promote tutorial-hell.It works the following way.
+
+1. Pause the currently playing youtube video
+2. Obtain transcript of the video, with timestamps
+3. Provide transcript to an ai model using api,
+4. Generate questions based on the transcript from start to up until the duration the video was paused by the extension.
+5. Display the questions at the extension side.
+
+I currently have an express js server boilerplate set up.How to proceed next?
+
+
+
+
+
+
+#After every change, reload page, and reload extension from brave://extensions/
