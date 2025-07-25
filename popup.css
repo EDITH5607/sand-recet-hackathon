@@ -11,6 +11,14 @@ body {
     background: linear-gradient(to top, #4ecdc4, #556270);
 }
 
+#period {
+    background-color: #343434;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 #pauseBtn {
     background-color: #f44336; /* Red */
     color: white;
