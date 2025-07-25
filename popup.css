@@ -1,0 +1,35 @@
+.hero h3 {
+    color: white;
+}
+
+html {
+    border-radius: 40px;
+}
+
+body {
+    border-radius: 40px;
+    background: linear-gradient(to top, #4ecdc4, #556270);
+}
+
+#pauseBtn {
+    background-color: #f44336; /* Red */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#toggleBtn {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#youtube {
+    color: #FF0000; /* YouTube Red */
+    font-weight: bold;
+}

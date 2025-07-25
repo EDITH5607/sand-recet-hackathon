@@ -1,53 +1,59 @@
-function getYouTubeVideoId() {
-	const url = window.location.href;
+    // content.js - This script runs directly on the YouTube video page.
 
-	// Case: regular YouTube URL
-	const standard = new URLSearchParams(window.location.search).get("v");
-	if (standard) return standard;
+    /**
+     * Extracts the YouTube video ID from the current window's URL.
+     * This function needs to be in the content script because it accesses window.location.href.
+     * @returns {string|null} The 11-character YouTube video ID, or null if not found.
+     */
+    function getYouTubeVideoId() {
+        const url = window.location.href;
 
-	// Case: short link
-	const matchShort = url.match(/youtu\.be\/([^?&]+)/);
-	if (matchShort) return matchShort[1];
+        // Case: regular YouTube URL (e.g., https://www.youtube.com/watch?v=dQw4w9WgXcQ)
+        const urlParams = new URLSearchParams(window.location.search);
+        const standardId = urlParams.get("v");
+        if (standardId) return standardId;
 
-	// Case: embed URL
-	const matchEmbed = url.match(/youtube\.com\/embed\/([^?&]+)/);
-	if (matchEmbed) return matchEmbed[1];
+        // Case: short link (e.g., https://youtu.be/dQw4w9WgXcQ)
+        const matchShort = url.match(/youtu\.be\/([^?&]+)/);
+        if (matchShort && matchShort[1]) return matchShort[1];
 
-	return null; // Not a YouTube video
-}
+        // Case: embed URL (e.g., https://www.youtube.com/embed/dQw4w9WgXcQ)
+        const matchEmbed = url.match(/youtube\.com\/embed\/([^?&]+)/);
+        if (matchEmbed && matchEmbed[1]) return matchEmbed[1];
 
-async function handlePauseAndSendToServer() {
-	const video = document.querySelector("video");
-	if (!video) return;
+        return null; // Not a YouTube video URL we can parse
+    }
 
-	video.pause();
-	const pausedTime = video.currentTime.toFixed(2);
+    // Find the main video element on the YouTube page.
+    // We use a MutationObserver to ensure we catch the video element
+    // even if it's loaded dynamically after the initial DOM content.
+    const observeVideoElement = () => {
+        const video = document.querySelector("video");
+        if (video) {
+            // If video element is found, attach the pause listener
+            video.addEventListener("pause", () => {
+                const videoId = getYouTubeVideoId();
+                if (videoId) {
+                    console.log("Extension: YouTube Video Paused. Video ID:", videoId);
+                } else {
+                    console.log("Extension: YouTube Video Paused, but could not determine Video ID.");
+                }
+            });
+            console.log("Extension: YouTube video pause listener attached.");
 
-	console.log("📺 Video ID:", videoId);
-	console.log("⏸️ Paused at:", pausedTime);
+            // Disconnect observer once video is found and listener is attached
+            observer.disconnect();
+        }
+    };
 
-	fetch(`http://localhost:3000/api/transcript/${videoId}/${pausedTime}`)
-		.then((res) => res.json())
-		.then((data) => console.log("📤 Server response:", data))
-		.catch((err) => console.error("❌ Error contacting server:", err));
+    // Create a MutationObserver to watch for changes in the DOM,
+    // specifically for when the video element becomes available.
+    const observer = new MutationObserver(observeVideoElement);
 
-	const videoId = getYouTubeVideoId();
-	if (!videoId) {
-		console.error("❌ Could not extract YouTube video ID");
-		return;
-	}
+    // Start observing the document body for child list changes (nodes being added/removed)
+    // and subtree changes (changes within descendants).
+    observer.observe(document.body, { childList: true, subtree: true });
 
-	try {
-		await fetch(
-			`http://localhost:3000/api/transcript/${videoId}/${pausedTime}`
-		);
-	} catch (error) {
-		console.error("❌ Failed to contact server:", error);
-	}
-}
-
-chrome.runtime.onMessage.addListener((msg) => {
-	if (msg.action === "pause-and-fetch") {
-		handlePauseAndSendToServer();
-	}
-});
+    // Also, try to find the video immediately in case it's already in the DOM.
+    observeVideoElement();
+    
