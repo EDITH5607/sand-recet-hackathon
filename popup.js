@@ -45,3 +45,21 @@ document.getElementById("toggleBtn").addEventListener("click", () => {
 		});
 	});
 });
+
+// ...existing code...
+
+// Submit time button
+document.getElementById("submitBtn").addEventListener("click", () => {
+    const periodInput = document.getElementById("period");
+    const periodValue = periodInput.value;
+
+    if (!periodValue || isNaN(periodValue) || periodValue < 1) {
+        alert("Please enter a valid time period (in minutes).");
+        return;
+    }
+
+    // Store the period in chrome.storage or use it as needed
+    chrome.storage.local.set({ period: Number(periodValue) }, () => {
+        alert(`Time period set to ${periodValue} minute(s)!`);
+    });
+});
