@@ -1,5 +1,6 @@
-import fetch from "node-fetch";
-import { parseStringPromise } from "xml2js";
+const fetch = require("node-fetch");
+const { parseStringPromise } = require("xml2js");
+
 /**
  * Get captions for a given YouTube video and language (default: English).
  * @param {string} videoId - YouTube video ID
@@ -9,14 +10,12 @@ import { parseStringPromise } from "xml2js";
 
 async function getYoutubeTranscript(videoId, language = "en") {
 	const videoUrl = `https://www.youtube.com/watch?v=${videoId}`;
-
-	// Step 1
 	const html = await fetch(videoUrl).then((res) => res.text());
+
 	const apiKeyMatch = html.match(/"INNERTUBE_API_KEY":"([^"]+)"/);
 	if (!apiKeyMatch) throw new Error("INNERTUBE_API_KEY not found.");
 	const apiKey = apiKeyMatch[1];
 
-	// Step 2
 	const playerData = await fetch(
 		`https://www.youtube.com/youtubei/v1/player?key=${apiKey}`,
 		{
@@ -34,16 +33,13 @@ async function getYoutubeTranscript(videoId, language = "en") {
 		}
 	).then((res) => res.json());
 
-	// Step 3
 	const tracks =
 		playerData?.captions?.playerCaptionsTracklistRenderer?.captionTracks;
 	if (!tracks) throw new Error("No captions found.");
 	const track = tracks.find((t) => t.languageCode === language);
 	if (!track) throw new Error(`No captions for language: ${language}`);
-
 	const baseUrl = track.baseUrl.replace(/&fmt=\w+$/, "");
 
-	// Step 4
 	const xml = await fetch(baseUrl).then((res) => res.text());
 	const parsed = await parseStringPromise(xml);
 
@@ -54,7 +50,9 @@ async function getYoutubeTranscript(videoId, language = "en") {
 	}));
 }
 
-getYoutubeTranscript("SccSCuHhOw0", "en")
+const videoId = process.argv[2] || "SccSCuHhOw0";
+
+getYoutubeTranscript(videoId, "en")
 	.then((transcript) => {
 		console.log("Transcript:");
 		transcript.forEach(({ caption, startTime, endTime }) => {
