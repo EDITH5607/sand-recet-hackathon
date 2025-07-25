@@ -1,5 +1,8 @@
 .hero h3 {
     color: white;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
 }
 
 html {
@@ -8,28 +11,87 @@ html {
 
 body {
     border-radius: 40px;
-    background: linear-gradient(to top, #4ecdc4, #556270);
+    background: linear-gradient(to top, #434343, #434343, #000000);
 }
 
-#pauseBtn {
-    background-color: #f44336; /* Red */
-    color: white;
+#period {
+    background-color: #343434;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    color: white;
+}
+
+#submitBtn {
+    cursor: pointer;
 }
 
 #toggleBtn {
-    background-color: #4CAF50; /* Green */
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
     cursor: pointer;
 }
 
 #youtube {
     color: #FF0000; /* YouTube Red */
     font-weight: bold;
+}
+
+
+/* CSS */
+.button-56 {
+  align-items: center;
+  background-color: #fee6e3;
+  border: 2px solid #111;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #111;
+  cursor: pointer;
+  display: flex;
+  font-family: Inter,sans-serif;
+  font-size: 16px;
+  height: 48px;
+  justify-content: center;
+  line-height: 24px;
+  max-width: 100%;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-56:after {
+  background-color: #111;
+  border-radius: 8px;
+  content: "";
+  display: block;
+  height: 48px;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  top: -2px;
+  transform: translate(8px, 8px);
+  transition: transform .2s ease-out;
+  z-index: -1;
+}
+
+.button-56:hover:after {
+  transform: translate(0, 0);
+}
+
+.button-56:active {
+  background-color: #ffdeda;
+  outline: 0;
+}
+
+.button-56:hover {
+  outline: 0;
+}
+
+@media (min-width: 768px) {
+  .button-56 {
+    padding: 0 40px;
+  }
 }
