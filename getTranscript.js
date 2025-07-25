@@ -1,5 +1,11 @@
 import fetch from "node-fetch";
 import { parseStringPromise } from "xml2js";
+/**
+ * Get captions for a given YouTube video and language (default: English).
+ * @param {string} videoId - YouTube video ID
+ * @param {string} language - Language code, e.g., "en", "hi"
+ * @returns {Promise<Array<{ caption: string, startTime: number, endTime: number }>>}
+ */
 
 async function getYoutubeTranscript(videoId, language = "en") {
 	const videoUrl = `https://www.youtube.com/watch?v=${videoId}`;
