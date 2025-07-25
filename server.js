@@ -11,7 +11,7 @@ app.get("/api/transcript/:videoId/:pausedTime", async (req, res) => {
 
 	try {
 		const transcript = await YoutubeTranscript.fetchTranscript(videoId);
-		console.log("📜 Raw Transcript:");
+		console.log(" Raw Transcript:");
 		console.table(
 			transcript.map(({ start, duration, text }) => ({
 				start,
@@ -24,7 +24,7 @@ app.get("/api/transcript/:videoId/:pausedTime", async (req, res) => {
 			(entry) => entry.start <= parseFloat(pausedTime)
 		);
 
-		console.log(`📺 Transcript for video ${videoId} up to ${pausedTime}s:`);
+		console.log(`Transcript for video ${videoId} up to ${pausedTime}s:`);
 		console.table(
 			filtered.map(({ start, duration, text }) => ({ start, duration, text }))
 		);
@@ -33,7 +33,7 @@ app.get("/api/transcript/:videoId/:pausedTime", async (req, res) => {
 			transcript: filtered,
 		});
 	} catch (err) {
-		console.error("❌ Error fetching transcript:", err);
+		console.error(" Error fetching transcript:", err);
 		res
 			.status(500)
 			.json({ error: "Transcript fetch failed", details: err.toString() });
@@ -41,5 +41,5 @@ app.get("/api/transcript/:videoId/:pausedTime", async (req, res) => {
 });
 
 app.listen(3000, () =>
-	console.log("✅ Server running at http://localhost:3000")
+	console.log("Server running at http://localhost:3000")
 );
