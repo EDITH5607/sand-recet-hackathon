@@ -5,7 +5,8 @@
 	"description": "Pauses YouTube video and can be toggled on/off.",
 	"permissions": ["scripting", "activeTab", "storage"],
 	"action": {
-		"default_popup": "popup.html"
+		"default_popup": "popup.html",
+		"default_icon": "icon.png"
 	},
 	"content_scripts": [
 		{
