@@ -1,6 +1,5 @@
-const fetch = require("node-fetch");
-const { parseStringPromise } = require("xml2js");
-
+import fetch from "node-fetch";
+import { parseStringPromise } from "xml2js";
 /**
  * Get captions for a given YouTube video and language (default: English).
  * @param {string} videoId - YouTube video ID
