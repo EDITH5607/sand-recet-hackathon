@@ -8,8 +8,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 /////////
-async function logPauseEvent({ videoId,  interval, pauseTime }) {
-	
+async function logPauseEvent({ videoId, interval, pauseTime }) {
 	const formattedpauseTime = (Math.round(pauseTime * 100) / 100).toFixed(2);
 	const logEntry = {
 		videoId,
@@ -26,7 +25,7 @@ async function logPauseEvent({ videoId,  interval, pauseTime }) {
 		console.log("Pause event logged:", logEntry);
 
 		console.log("Sending the transcript to Supabase...");
-    	await sendTranscriptToSupabase(pauseTime);
+		await sendTranscriptToSupabase(pauseTime);
 		console.log("Transcript sent to Supabase");
 
 		return logEntry;
@@ -37,14 +36,14 @@ async function logPauseEvent({ videoId,  interval, pauseTime }) {
 
 // Add new endpoint for pause events
 app.post("/api/pause-event", async (req, res) => {
-	const { videoId,  interval, pauseTime } = req.body;
+	const { videoId, interval, pauseTime } = req.body;
 
-	if (!videoId ||  !interval || !pauseTime === undefined) {
+	if (!videoId || !interval || !pauseTime === undefined) {
 		return res.status(400).json({ error: "Missing required fields" });
 	}
 
 	try {
-		const logEntry = await logPauseEvent({ videoId,  interval, pauseTime });
+		const logEntry = await logPauseEvent({ videoId, interval, pauseTime });
 		//res.json({ message: "Pause event recorded" });
 		res.json(logEntry);
 	} catch (error) {
@@ -80,34 +79,44 @@ app.post("/api/transcript", async (req, res) => {
 	}
 });
 
-// Add to server.js
+// // Add to server.js
+// app.get("/api/questions", async (req, res) => {
+// 	try {
+// 		const data = await fs.readFile("result.json", "utf-8");
+// 		res.json(JSON.parse(data));
+// 	} catch (err) {
+// 		res.status(500).json({ error: "Could not read questions file." });
+// 	}
+// });
+
+// // Express.js
+// app.get("/api/questions", (req, res) => {
+// 	const videoId = req.query.videoId;
+// 	const filePath = path.join(__dirname, "results", `${videoId}.json`);
+
+// 	if (!videoId) return res.status(400).json({ error: "Missing videoId" });
+
+// 	fs.readFile(filePath, "utf8", (err, data) => {
+// 		if (err) return res.status(404).json({ error: "Result not found" });
+// 		try {
+// 			const result = JSON.parse(data);
+// 			res.json({ questions: result.questions || [] });
+// 		} catch (parseErr) {
+// 			res.status(500).json({ error: "Malformed result.json" });
+// 		}
+// 	});
+// });
+
 app.get("/api/questions", async (req, res) => {
 	try {
 		const data = await fs.readFile("result.json", "utf-8");
-		res.json(JSON.parse(data));
+		const questions = JSON.parse(data);
+		res.json(questions);
 	} catch (err) {
-		res.status(500).json({ error: "Could not read questions file." });
+		console.error("Error reading result.json:", err);
+		res.status(500).json({ error: "Failed to load questions" });
 	}
 });
-
-// Express.js
-app.get("/api/questions", (req, res) => {
-	const videoId = req.query.videoId;
-	const filePath = path.join(__dirname, "results", `${videoId}.json`);
-
-	if (!videoId) return res.status(400).json({ error: "Missing videoId" });
-
-	fs.readFile(filePath, "utf8", (err, data) => {
-		if (err) return res.status(404).json({ error: "Result not found" });
-		try {
-			const result = JSON.parse(data);
-			res.json({ questions: result.questions || [] });
-		} catch (parseErr) {
-			res.status(500).json({ error: "Malformed result.json" });
-		}
-	});
-});
-
 app.listen(3000, () => {
 	console.log("Server is listening on port 3000");
 });

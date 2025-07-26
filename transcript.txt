@@ -1,124 +1,90 @@
-[0.08 - 4.16] Yesterday, Chinese company Alibaba
-[2.32 - 6.56] dropped a brand new openweight long
-[4.16 - 9.20] horizon mixture of experts agent coding
-[6.56 - 11.12] model named Quen 3 coder. And amazingly,
-[9.20 - 12.96] it&#39;s the first openweight model that
-[11.12 - 15.36] matches the programming performance of
-[12.96 - 17.52] Claude 4, the undisputed leader of AI
-[15.36 - 19.84] vibe coding tools at the present time.
-[17.52 - 21.68] Not only is the Quen 3 coder model open,
-[19.84 - 23.84] but they also just released a brand new
-[21.68 - 25.84] CLI tool forked from the recently open
-[23.84 - 27.52] source Gemini CLI that can take
-[25.84 - 29.76] advantage of all the models agentic
-[27.52 - 31.68] properties like the ability to run,
-[29.76 - 33.68] execute, and test your code from the
-[31.68 - 35.60] command line. That&#39;s terrifying news for
-[33.68 - 37.60] any programmer still left with a job,
-[35.60 - 39.44] but mathematicians are also on life
-[37.60 - 41.84] support right now because both Google
-[39.44 - 44.08] and OpenAI just achieved gold medals in
-[41.84 - 45.68] the International Mathematical Olympiad.
-[44.08 - 47.60] In today&#39;s video, we&#39;ll take a look at
-[45.68 - 49.76] the latest AI breakthroughs and find out
-[47.60 - 52.96] if Quen 3 coder can actually compete
-[49.76 - 54.80] with Claude 4. It is July 23rd, 2025,
-[52.96 - 56.80] and you&#39;re watching the code report.
-[54.80 - 59.28] Just last week, the open model scene got
-[56.80 - 61.52] a big upgrade with the Chinese Kimmy K2,
-[59.28 - 63.92] but now Quen 3 coder pushes things even
-[61.52 - 66.88] further. The model was trained on 7.5
-[63.92 - 68.16] trillion tokens with a 70% code ratio.
-[66.88 - 69.68] In other words, it&#39;s seen a billion
-[68.16 - 71.68] times more code than the average
-[69.68 - 73.44] developer with 50 years of experience.
-[71.68 - 75.44] They even use their previous model to
-[73.44 - 77.20] clean up noisy training data, the highly
-[75.44 - 79.04] meta process where AI basically
-[77.20 - 80.72] determines which data to use to train
-[79.04 - 82.48] itself. When it comes to the training
-[80.72 - 84.56] process, they use something called long
-[82.48 - 86.96] horizon reinforcement learning across
-[84.56 - 88.56] 20,000 parallel environments. The model
-[86.96 - 90.48] actually tries to solve real world
-[88.56 - 92.40] problems in real environments where it&#39;s
-[90.48 - 94.00] executing and testing code. You can
-[92.40 - 96.16] think of Quen&#39;s training infrastructure
-[94.00 - 97.68] like a coding boot camp with 20,000
-[96.16 - 99.52] graduates all working on the same
-[97.68 - 101.68] problem simultaneously, except they
-[99.52 - 103.44] never get tired, never argue, and never
-[101.68 - 104.96] ask, &quot;Is this a breaking change?&quot; And
-[103.44 - 106.56] the end result speaks for itself in
-[104.96 - 108.56] these benchmarks. Based on this
-[106.56 - 111.76] benchmark, Quen is outperforming Kimmy
-[108.56 - 113.84] and GPT4.1 and almost on par with Claude
-[111.76 - 115.76] 4, but doing so with a much smaller
-[113.84 - 117.12] model size, which is important because
-[115.76 - 119.36] the bigger the model, the more
-[117.12 - 121.20] electricity and GPUs you need to run it.
-[119.36 - 124.32] What&#39;s also really impressive about Quen
-[121.20 - 126.32] 3 coder is that it has a 256,000 token
-[124.32 - 128.32] context window that can stretch up to 1
-[126.32 - 129.92] million tokens. For reference, that&#39;s
-[128.32 - 131.76] enough to hold the entire codebase of
-[129.92 - 133.68] most startups and all of their technical
-[131.76 - 134.96] debt. Quen 3 coder is an openweight
-[133.68 - 136.88] model, but if you think you&#39;re going to
-[134.96 - 139.04] run it locally on your laptop, it&#39;s time
-[136.88 - 141.12] for a reality check. To harness the full
-[139.04 - 142.56] girth of the 480 billion parameter
-[141.12 - 144.24] version, you would need tens of
-[142.56 - 146.32] thousands, if not hundreds of thousands
-[144.24 - 147.76] of dollars worth of GPUs along with a
-[146.32 - 149.68] large wallet to pay the electricity
-[147.76 - 151.36] bill. Realistically, to try it, you&#39;d
-[149.68 - 152.96] want to get an API key from a cloud
-[151.36 - 155.28] provider, then hook it up to the new
-[152.96 - 157.36] Quen CLI tool, which again is a fork of
-[155.28 - 159.28] the Gemini CLI. Overall, this does
-[157.36 - 161.20] appear to be a big leap forward for open
-[159.28 - 162.64] coding models. But I doubt that it will
-[161.20 - 164.40] make much of a dent in Claude&#39;s
-[162.64 - 166.16] dominance in the coding world. To be
-[164.40 - 167.60] Claude, a company needs to release a
-[166.16 - 170.00] model that&#39;s not only open and
-[167.60 - 172.08] inexpensive, but that surpasses Claude&#39;s
-[170.00 - 174.08] capabilities by a significant margin.
-[172.08 - 175.92] Like OpenAI was recently supposed to
-[174.08 - 177.52] release its own Open model, but that&#39;s
-[175.92 - 179.36] been delayed with the rumor for the
-[177.52 - 181.20] delay being that these Chinese models
-[179.36 - 183.12] would absolutely crush it. That&#39;s just
-[181.20 - 184.96] one of many L&#39;s taken by OpenAI
-[183.12 - 187.12] recently, like Zuck gutting all of their
-[184.96 - 188.80] talent. But OpenAI did get a big win a
-[187.12 - 190.72] few days ago when they achieved a gold
-[188.80 - 192.32] medal in the International Mathematical
-[190.72 - 194.08] Olympiad. What&#39;s funny though is that
-[192.32 - 195.76] they made a dick move by announcing this
-[194.08 - 197.84] before the closing ceremonies of the
-[195.76 - 199.68] event in order to overshadow Google and
-[197.84 - 201.44] the press, who also achieved gold medal
-[199.68 - 203.04] level performance. However, that ended
-[201.44 - 204.72] up backfiring because it just made
-[203.04 - 206.56] OpenAI look desperate. But if you want
-[204.72 - 208.24] to write really good code with AI, you
-[206.56 - 210.40] need to check out Code Rabbit, the
-[208.24 - 212.32] sponsor of today&#39;s video. Their free VS
-[210.40 - 213.92] Code extension gives you advanced code
-[212.32 - 216.16] reviews right in your editor. And their
-[213.92 - 218.24] new fix all with AI feature passes all
-[216.16 - 220.48] of Code Rabbit&#39;s review context directly
-[218.24 - 222.32] to the AI code agent of your choice is
-[220.48 - 223.92] so it can make all the changes for you.
-[222.32 - 225.92] This saves you from needing to click on
-[223.92 - 227.92] each review comment yourself, giving you
-[225.92 - 229.92] more time to write even more broken code
-[227.92 - 232.00] like a true artisan. Code Rabbit is free
-[229.92 - 234.16] to use in the IDE and works seamlessly
-[232.00 - 235.92] with VS Code and forks like Cursor and
-[234.16 - 237.52] Windsurf. Download it for free with the
-[235.92 - 239.52] link below to try it out. This has been
-[237.52 - 243.56] the code Report. Thanks for watching and
-[239.52 - 243.56] I will see you in the next one.
+[1.36 - 3.04] [♪♪♪]
+[18.64 - 21.88] ♪ We&#39;re no strangers to love ♪
+[22.64 - 26.96] ♪ You know the rules
+and so do I ♪
+[27.04 - 31.04] ♪ A full commitment&#39;s
+what I&#39;m thinking of ♪
+[31.12 - 35.08] ♪ You wouldn&#39;t get this
+from any other guy ♪
+[35.16 - 39.52] ♪ I just wanna tell you
+how I&#39;m feeling ♪
+[40.52 - 42.92] ♪ Gotta make you understand ♪
+[43.00 - 45.12] ♪ Never gonna give you up ♪
+[45.20 - 47.08] ♪ Never gonna let you down ♪
+[47.32 - 51.12] ♪ Never gonna run around
+and desert you ♪
+[51.48 - 53.48] ♪ Never gonna make you cry ♪
+[53.60 - 55.52] ♪ Never gonna say goodbye ♪
+[55.72 - 59.36] ♪ Never gonna tell a lie
+and hurt you ♪
+[60.80 - 64.80] ♪ We&#39;ve known each other
+for so long ♪
+[64.88 - 69.04] ♪ Your heart&#39;s been aching
+but you&#39;re too shy to say it ♪
+[69.12 - 72.96] ♪ Inside we both know
+what&#39;s been going ♪
+[73.36 - 77.20] ♪ We know the game
+and we&#39;re gonna play it ♪
+[77.40 - 82.04] ♪ And if you ask me
+how I&#39;m feeling ♪
+[82.40 - 85.24] ♪ Don&#39;t tell me
+you&#39;re too blind to see ♪
+[85.32 - 87.28] ♪ Never gonna give you up ♪
+[87.36 - 89.32] ♪ Never gonna let you down ♪
+[89.44 - 93.72] ♪ Never gonna run around
+and desert you ♪
+[93.80 - 95.60] ♪ Never gonna make you cry ♪
+[95.76 - 98.00] ♪ Never gonna say goodbye ♪
+[98.08 - 102.04] ♪ Never gonna tell a lie
+and hurt you ♪
+[102.20 - 104.12] ♪ Never gonna give you up ♪
+[104.28 - 106.36] ♪ Never gonna let you down ♪
+[106.48 - 110.08] ♪ Never gonna run around
+and desert you ♪
+[110.76 - 112.72] ♪ Never gonna make you cry ♪
+[112.80 - 114.68] ♪ Never gonna say goodbye ♪
+[114.96 - 118.76] ♪ Never gonna tell a lie
+and hurt you ♪
+[119.84 - 122.96] ♪ (Ooh, give you up) ♪
+[123.72 - 127.36] ♪ (Ooh, give you up) ♪
+[128.48 - 130.12] ♪ Never gonna give,
+never gonna give ♪
+[130.24 - 131.56] ♪ (Give you up) ♪
+[132.48 - 134.24] ♪ Never gonna give,
+never gonna give ♪
+[134.36 - 135.92] ♪ (Give you up) ♪
+[136.76 - 141.08] ♪ We&#39;ve known each other
+for so long ♪
+[141.20 - 145.20] ♪ Your heart&#39;s been aching
+but you&#39;re too shy to say it ♪
+[145.28 - 149.12] ♪ Inside we both know
+what&#39;s been going ♪
+[149.52 - 153.20] ♪ We know the game
+and we&#39;re gonna play it ♪
+[153.36 - 158.04] ♪ I just wanna tell you
+how I&#39;m feeling ♪
+[158.64 - 161.32] ♪ Gotta make you understand ♪
+[161.40 - 163.36] ♪ Never gonna give you up ♪
+[163.44 - 165.64] ♪ Never gonna let you down ♪
+[165.72 - 169.72] ♪ Never gonna run around
+and desert you ♪
+[169.80 - 171.64] ♪ Never gonna make you cry ♪
+[171.80 - 173.96] ♪ Never gonna say goodbye ♪
+[174.04 - 177.60] ♪ Never gonna tell a lie
+and hurt you ♪
+[178.20 - 180.24] ♪ Never gonna give you up ♪
+[180.32 - 182.44] ♪ Never gonna let you down ♪
+[182.52 - 186.64] ♪ Never gonna run around
+and desert you ♪
+[186.72 - 188.72] ♪ Never gonna make you cry ♪
+[188.84 - 190.72] ♪ Never gonna say goodbye ♪
+[190.84 - 195.20] ♪ Never gonna tell a lie
+and hurt you ♪
+[195.28 - 197.12] ♪ Never gonna give you up ♪
+[197.20 - 199.24] ♪ Never gonna let you down ♪
+[199.40 - 203.12] ♪ Never gonna run around
+and desert you ♪
+[203.36 - 205.60] ♪ Never gonna make you cry ♪
+[205.68 - 207.84] ♪ Never gonna say goodbye ♪
+[207.92 - 211.32] ♪ Never gonna tell a lie
+and hurt you ♪

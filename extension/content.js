@@ -33,54 +33,58 @@ function sendVideoIdToServer(videoId) {
 }
 
 // Send pause event to server
-function sendPauseEventToServer(videoId,  intervalMinutes, playbackPosition) {
-  console.log("Sending pause event to server:", { videoId, intervalMinutes, playbackPosition });
+function sendPauseEventToServer(videoId, intervalMinutes, playbackPosition) {
+	console.log("Sending pause event to server:", {
+		videoId,
+		intervalMinutes,
+		playbackPosition,
+	});
 
-  fetch("http://localhost:3000/api/pause-event", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ 
-      videoId,  
-      interval: intervalMinutes,
-      pauseTime: playbackPosition 
-    }),
-  })
-  .then(res => {
-    if (!res.ok) throw new Error(`Server error: ${res.status}`);
-    return res.json();
-  })
-  .then(data => {
-    console.log(" Pause event recorded:", data);
-  })
-  .catch(err => {
-    console.error(" Error sending pause event:", err);
-  });
+	fetch("http://localhost:3000/api/pause-event", {
+		method: "POST",
+		headers: { "Content-Type": "application/json" },
+		body: JSON.stringify({
+			videoId,
+			interval: intervalMinutes,
+			pauseTime: playbackPosition,
+		}),
+	})
+		.then((res) => {
+			if (!res.ok) throw new Error(`Server error: ${res.status}`);
+			return res.json();
+		})
+		.then((data) => {
+			console.log(" Pause event recorded:", data);
+		})
+		.catch((err) => {
+			console.error(" Error sending pause event:", err);
+		});
 }
 
 // Handle auto-pause functionality
 function startPauseTimer(intervalMs) {
-  clearTimeout(pauseTimer);
-  pauseTimer = setTimeout(() => {
-    if (currentVideo && !currentVideo.paused) {
-      //const pauseTime = new Date().toISOString();
-      const intervalMinutes = intervalMs / 60000;
-      const playbackPosition = currentVideo.currentTime;
-      
-      currentVideo.pause();
-      console.log(`Auto-paused at position: ${playbackPosition.toFixed(1)}s`);
-      
-      // Show pause notification
-      showPauseNotification(intervalMinutes);
-      
-      // Get current video ID
-      const videoId = getCurrentVideoId();
-      
-      // Send pause event to server
-      if (videoId) {
-        sendPauseEventToServer(videoId, intervalMinutes, playbackPosition);
-      }
-    }
-  }, intervalMs);
+	clearTimeout(pauseTimer);
+	pauseTimer = setTimeout(() => {
+		if (currentVideo && !currentVideo.paused) {
+			//const pauseTime = new Date().toISOString();
+			const intervalMinutes = intervalMs / 60000;
+			const playbackPosition = currentVideo.currentTime;
+
+			currentVideo.pause();
+			console.log(`Auto-paused at position: ${playbackPosition.toFixed(1)}s`);
+
+			// Show pause notification
+			showPauseNotification(intervalMinutes);
+
+			// Get current video ID
+			const videoId = getCurrentVideoId();
+
+			// Send pause event to server
+			if (videoId) {
+				sendPauseEventToServer(videoId, intervalMinutes, playbackPosition);
+			}
+		}
+	}, intervalMs);
 }
 
 // Show notification when paused
@@ -301,4 +305,68 @@ function showFloatingPanel() {
 	document.getElementById("yt-qa-close").onclick = () => {
 		panel.remove();
 	};
+
+	// 🔽 Fetch questions from your Express backend
+	fetch("http://localhost:3000/api/questions")
+		.then((res) => res.json())
+		.then((data) => {
+			const container = document.getElementById("yt-qa-questions");
+			container.innerHTML = "";
+
+			if (!data.questions || data.questions.length === 0) {
+				container.innerHTML = "<p>No questions found.</p>";
+				return;
+			}
+
+			data.questions.forEach((q) => {
+				const qDiv = document.createElement("div");
+				qDiv.style =
+					"margin-bottom: 24px; border-bottom: 1px solid #444; padding-bottom: 12px;";
+
+				const optionsHtml = q.options
+					.map(
+						(opt, i) => `
+						<label style="display:block;margin:4px 0;cursor:pointer;">
+							<input type="radio" name="q${q.id}" value="${opt}" data-answer="${q.answer}" style="margin-right:8px;">
+							${opt}
+						</label>`
+					)
+					.join("");
+
+				qDiv.innerHTML = `
+					<div style="font-weight:bold; margin-bottom: 6px;">Q${q.id}: ${q.question}</div>
+					<div>${optionsHtml}</div>
+					<div style="margin-top: 6px; font-size: 14px; color: #ccc;"><em>Difficulty: ${q.difficulty}</em></div>
+					<div id="explanation-${q.id}" style="margin-top:8px; display:none; background:#1a2c38; padding:10px; border-radius:6px; font-size:14px;"></div>
+				`;
+
+				// Add listener to highlight correct answer
+				setTimeout(() => {
+					const radios = qDiv.querySelectorAll(`input[name="q${q.id}"]`);
+					radios.forEach((radio) => {
+						radio.addEventListener("change", () => {
+							const explanationBox = document.getElementById(
+								`explanation-${q.id}`
+							);
+							if (radio.value === radio.dataset.answer) {
+								explanationBox.style.display = "block";
+								explanationBox.style.color = "#6afc94";
+								explanationBox.innerHTML = `✅ Correct!<br>${q.explanation}`;
+							} else {
+								explanationBox.style.display = "block";
+								explanationBox.style.color = "#ff8e8e";
+								explanationBox.innerHTML = `❌ Incorrect. <br>💡 ${q.explanation}`;
+							}
+						});
+					});
+				}, 0);
+
+				container.appendChild(qDiv);
+			});
+		})
+		.catch((err) => {
+			console.error("Error loading questions:", err);
+			document.getElementById("yt-qa-questions").innerHTML =
+				"<p style='color:red;'>❌ Failed to load questions.</p>";
+		});
 }

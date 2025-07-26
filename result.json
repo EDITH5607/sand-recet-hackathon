@@ -2,107 +2,55 @@
   "questions": [
     {
       "id": 1,
-<<<<<<< HEAD
-      "question": "What is the primary problem the speaker created the Chrome extension to solve?",
+      "question": "According to the transcript, what are two things the speaker repeatedly promises they will not do?",
       "difficulty": "easy",
       "options": [
-        "A) To automatically generate comments on Reddit posts.",
-        "B) To create a new, faster user interface for Reddit.",
-        "C) To save time by efficiently finding personally interesting posts and comments within Reddit communities.",
-        "D) To block advertisements and sponsored posts on social media platforms."
+        "Give up and be shy",
+        "Play games and be a stranger",
+        "Desert and hurt the other person",
+        "Say goodbye and tell a lie"
       ],
-      "answer": "C) To save time by efficiently finding personally interesting posts and comments within Reddit communities.",
-      "explanation": "The speaker explicitly states their schedule is very tight and they lack the time to sift through all the posts to find ones that genuinely interest them (19.56-38.44). The extension is designed to solve this specific problem."
+      "answer": "Desert and hurt the other person",
+      "explanation": "The phrases 'and desert you' and 'and hurt you' are repeated multiple times throughout the transcript, forming a core promise from the speaker to the listener."
     },
     {
       "id": 2,
-      "question": "How does the extension's search functionality differ from Reddit's native search?",
+      "question": "What is the primary reason the speaker believes the other person has not vocalized their feelings?",
       "difficulty": "medium",
       "options": [
-        "A) It only searches within the last 24 hours of posts.",
-        "B) It uses AI to understand the semantic meaning of a prompt, rather than just matching keywords.",
-        "C) It is limited to searching only post titles and ignores the content of the posts.",
-        "D) It relies on a pre-approved list of topics and does not allow for custom queries."
+        "They are too blind to see the truth.",
+        "They are a stranger to love.",
+        "They are too shy to say what they feel.",
+        "They don't know the rules of the game."
       ],
-      "answer": "B) It uses AI to understand the semantic meaning of a prompt, rather than just matching keywords.",
-      "explanation": "The transcript explains that Reddit's default search works with keywords, while the extension's search works with prompts, similar to an LLM. It requires a form of 'brainstorming' to find conceptually related posts, not just keyword matches (168.04 - 221.16)."
+      "answer": "They are too shy to say what they feel.",
+      "explanation": "The transcript explicitly states the lines 'but you're too shy to say it' in connection with knowing the other person's heart has been 'aching for so long'."
     },
     {
       "id": 3,
-      "question": "According to the transcript, what is a key technical challenge when injecting a custom UI into a webpage via a content script, and what is the recommended solution?",
-      "difficulty": "hard",
+      "question": "Based on lines like 'You know the rules and so do I' and 'what's been going on', what can be inferred about the relationship between the two individuals?",
+      "difficulty": "medium",
       "options": [
-        "A) Challenge: Slow loading times. Solution: Using VanillaJS instead of a framework.",
-        "B) Challenge: CSS style conflicts with the host page. Solution: Rendering the UI inside a Shadow DOM to isolate it.",
-        "C) Challenge: Inability to store user data. Solution: Using cookies instead of Chrome extension storage.",
-        "D) Challenge: Sending messages to the background script. Solution: Avoiding messaging by putting all logic in the content script."
+        "They have a new and uncertain relationship.",
+        "There is a mutual, unspoken understanding between them.",
+        "The relationship is based on a strict set of rules one has imposed.",
+        "They are in a competitive and challenging relationship."
       ],
-      "answer": "B) Challenge: CSS style conflicts with the host page. Solution: Rendering the UI inside a Shadow DOM to isolate it.",
-      "explanation": "The speaker details that directly rendering a UI in the main DOM can cause CSS conflicts between the extension and the webpage. The solution presented as a best practice is to create and render the UI within a Shadow DOM to keep it isolated (5486.44 - 5540.56)."
+      "answer": "There is a mutual, unspoken understanding between them.",
+      "explanation": "These phrases suggest that both parties are aware of the situation and their feelings for each other, even if it hasn't been explicitly stated, pointing to a shared, silent comprehension."
     },
     {
       "id": 4,
-      "question": "Which framework is used to build the Chrome extension, and what is one of its main advantages mentioned by the speaker?",
-      "difficulty": "medium",
-      "options": [
-        "A) Plasmo, because it is the only framework that supports AI integration.",
-        "B) React Native, because it allows for cross-platform mobile development.",
-        "C) Vanilla JS, because it avoids the need for a build process.",
-        "D) WXT, because it enables the use of modern frontend frameworks like React and provides features like hot reloading."
-      ],
-      "answer": "D) WXT, because it enables the use of modern frontend frameworks like React and provides features like hot reloading.",
-      "explanation": "The speaker introduces the framework as WXT (714.52) and highlights its ability to use frameworks like React. They also praise its hot reload support, which avoids the manual refresh process required with Vanilla JS development (957.36 - 974.36)."
-=======
-      "question": "What is the name of the new openweight coding model released by the Chinese company Alibaba?",
-      "difficulty": "easy",
-      "options": [
-        "Gemini CLI",
-        "Claude 4",
-        "Quen 3 coder",
-        "Kimmy K2"
-      ],
-      "answer": "Quen 3 coder",
-      "explanation": "The transcript explicitly states that the Chinese company Alibaba dropped a new model named 'Quen 3 coder' [0.08-11.12]."
-    },
-    {
-      "id": 2,
-      "question": "The programming performance of Quen 3 coder is presented as being comparable to which model, described as the 'undisputed leader'?",
-      "difficulty": "medium",
-      "options": [
-        "Gemini",
-        "OpenAI's latest model",
-        "Chinese Kimmy K2",
-        "Claude 4"
-      ],
-      "answer": "Claude 4",
-      "explanation": "The transcript says Quen 3 coder is the first openweight model that 'matches the programming performance of Claude 4, the undisputed leader of AI vibe coding tools' [11.12-17.52]."
-    },
-    {
-      "id": 3,
-      "question": "What specific 'agentic property' of the new CLI tool is highlighted in the transcript?",
+      "question": "What is the central theme conveyed by the combination of the speaker's promises and their observations about the other person?",
       "difficulty": "hard",
       "options": [
-        "Its ability to achieve gold medals in math competitions.",
-        "Its openweight architecture as a mixture of experts model.",
-        "The ability to run, execute, and test code from the command line.",
-        "Its capacity to fork from any existing open-source tool."
+        "A feeling of frustration over unrequited love.",
+        "A declaration of unwavering commitment and reassurance.",
+        "A nostalgic memory of a past relationship.",
+        "A warning against being too trusting in a new romance."
       ],
-      "answer": "The ability to run, execute, and test code from the command line.",
-      "explanation": "The transcript mentions the new CLI tool takes advantage of the model's agentic properties, specifically citing 'the ability to run, execute, and test your code from the command line' [27.52-33.68]."
-    },
-    {
-      "id": 4,
-      "question": "Besides developments in coding AI, the transcript mentions which two companies have recently achieved success in the International Mathematical Olympiad?",
-      "difficulty": "medium",
-      "options": [
-        "Alibaba and Google",
-        "Alibaba and OpenAI",
-        "Google and OpenAI",
-        "The creators of Claude 4 and Kimmy K2"
-      ],
-      "answer": "Google and OpenAI",
-      "explanation": "The speaker states that mathematicians are 'on life support' because 'both Google and OpenAI just achieved gold medals in the International Mathematical Olympiad' [37.60-44.08]."
->>>>>>> 3239b77e7f9f9f5132f426222ea47b7fdd861edd
+      "answer": "A declaration of unwavering commitment and reassurance.",
+      "explanation": "The speaker contrasts the other person's shyness and perceived blindness with definitive promises not to 'desert' or 'hurt' them, creating an overall message intended to reassure them of the speaker's steadfast commitment."
     }
   ]
 }
