@@ -80,6 +80,24 @@ app.get("/api/questions", async (req, res) => {
 	}
 });
 
+// Express.js
+app.get("/api/questions", (req, res) => {
+	const videoId = req.query.videoId;
+	const filePath = path.join(__dirname, "results", `${videoId}.json`);
+
+	if (!videoId) return res.status(400).json({ error: "Missing videoId" });
+
+	fs.readFile(filePath, "utf8", (err, data) => {
+		if (err) return res.status(404).json({ error: "Result not found" });
+		try {
+			const result = JSON.parse(data);
+			res.json({ questions: result.questions || [] });
+		} catch (parseErr) {
+			res.status(500).json({ error: "Malformed result.json" });
+		}
+	});
+});
+
 app.listen(3000, () => {
 	console.log("Server is listening on port 3000");
 });
