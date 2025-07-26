@@ -1,203 +1,935 @@
-[0.16 - 5.36] unified payments interface or UPI has 
-revolutionized real-time payments in India  
-[5.36 - 11.80] it&#39;s fast secure and available 247 allowing you to 
-instantly send money just using your mobile number  
-[11.80 - 18.20] or UPA ID no more complex Bank details or delays 
-UPI transfers money directly between bank accounts  
-[18.20 - 24.84] in real time and best of all UPI is free for users 
-unlike PayPal which charges fees for transaction  
-[24.84 - 30.44] especially International ones in today&#39;s video 
-we break down how UPI Works in digital payments  
-[30.44 - 34.76] compare it with Global Systems like 
-PayPal alip venbo and zel and wrap up  
-[34.76 - 37.96] by exploring where India&#39;s UPI 
-fits into the Global Payments
-[37.96 - 46.16] ecosystem traditionally if you wanted to send 
-money to someone&#39;s bank account you would need  
-[46.16 - 52.84] to know their bank account number the Bank name 
-the branch name and the ifsc code which is like a  
-[52.84 - 59.36] postal code for banks in India UPI simplifies all 
-of this it&#39;s like sending a letter but instead of  
-[59.36 - 65.48] a full address you just need a short code called 
-a UPI ID or even just their mobile number and  
-[65.48 - 70.40] the system takes care of the rest in seconds 
-the money reaches the right account what sets  
-[70.40 - 74.88] UPI apart from other system is that it doesn&#39;t 
-hold your funds in a middle lay like a digital  
-[74.88 - 81.12] wallet before they are transferred UPI enables 
-realtime bank to bank transfers directly from  
-[81.12 - 87.04] one account to another it&#39;s not just secure it&#39;s 
-efficient and cost free for users now before we  
-[87.04 - 91.52] get into the comparisons let me remind you that 
-I have previous L made a video explaining how  
-[91.52 - 96.72] payment gateways and payment process work so do 
-check that out for a more detailed breakdown of  
-[96.72 - 102.20] how different payment Technologies operate behind 
-the scenes but at a high level think of a payment  
-[102.20 - 107.80] Gateway like a checkout counter at a store it 
-authorizes and processes your payment whether  
-[107.80 - 112.88] you are using a card or bank account the payment 
-processor on the other hand handles the behind  
-[112.88 - 117.96] the-scenes work actually transferring the money 
-between your account and the Merchant&#39;s account  
-[117.96 - 123.52] PayPal and stripe are examples of both UPI 
-is neither strictly a payment processor nor  
-[123.52 - 128.36] a payment Gateway it functions more as 
-a payment infrastructure or system that  
-[128.36 - 133.28] facilitates real-time bank-to-bank transfers it&#39;s 
-an interbank payment system built by the national  
-[133.28 - 140.08] payments Corporation of India or npci UPI acts as 
-a network allowing realtime transfers between bank  
-[140.08 - 145.12] accounts using a mobile phone it doesn&#39;t really 
-process payments in the traditional sense like a  
-[145.12 - 150.68] credit card processor such as Visa or Mastercard 
-rather it facilitates Direct in instantaneous bank  
-[150.68 - 155.88] to bank transfers this diagram explains the flow 
-of UPI transaction let&#39;s say you are using Google  
-[155.88 - 162.52] pay when you initiate a transfer Google pay talks 
-to your bank let&#39;s say IC Bank in India through  
-[162.52 - 168.96] something called the npci which is the backbone 
-of UPI npci then checks if everything is okay  
-[168.96 - 173.80] like whether you have enough balance and ensures 
-the money moves directly from your account to the  
-[173.80 - 180.56] recipient&#39;s bank account say HDFC Bank in India 
-and that to within seconds let let&#39;s further break  
-[180.56 - 187.88] it down step by step say the payer or the customer 
-opens their PSP app now a PSP or payment service  
-[187.88 - 194.24] provider helps connect customers with their Bank 
-to complete transactions for instance in India  
-[194.24 - 199.68] Google pay acts as a PSP so when you initiate a 
-payment it interacts with your bank to process  
-[199.68 - 205.48] it securely in fact Google&#39;s UPI app is linked 
-with various Bank similarly phone pay in India  
-[205.48 - 211.72] was linked with yes Bank as PSP initially now IC 
-Bank in India once authenticated the payers PSP  
-[211.72 - 218.04] sends a payment request to the UPI Network npci 
-this request includes the payers and pays UPI  
-[218.04 - 224.12] IDs and the payment details the UPI Network first 
-resolves the pay address mapping it to their bank  
-[224.12 - 231.08] account via their PSP the pays PSP verifies the 
-pays details and responds back the UPI Network  
-[231.08 - 237.20] then sends a debit request to the payers Bank also 
-known as the remitter or issuer Bank asking for  
-[237.20 - 241.92] authorization to dedu the specified amount from 
-the pay account the issuer bank processes the  
-[241.92 - 247.28] debit request checking if the paer has sufficient 
-funds and if the transaction is valid it sends a  
-[247.28 - 253.04] confirmation response back to the UPI Network and 
-after receiving the confirmation the UPI Network  
-[253.04 - 258.20] sends a credit request to the beneficiaries Bank 
-also called the pays Bank informing it to credit  
-[258.20 - 262.92] the amount into the pays account the beneficiary 
-Bank processes the credit request and confirms  
-[262.92 - 267.56] the successful transfer to the UPI Network the 
-network then release the successful transaction  
-[267.56 - 275.12] status back to both the payers PSP and the pay 
-PSP completing the transaction in simpler terms  
-[275.12 - 280.80] UPI is the infrastructure that Banks and apps like 
-Google pay or phone pay use to directly move money  
-[280.80 - 286.56] between accounts UPI is not a digital wallet 
-either money is transferred directly between  
-[286.56 - 291.56] bank accounts whereas in digital wallets funds 
-are stored in an intermediate balance before  
-[291.56 - 296.44] being used for one more important thing in this 
-UPA diagram is that the customer also creates a  
-[296.44 - 302.16] virtual payment address or vpa through the PSP app 
-which links directly to their bank account once  
-[302.16 - 308.04] confirmed the vpa allows secure payments without 
-sharing sensitive Bank details for QR code based  
-[308.04 - 314.24] payments the customer scans the QR code which 
-contains the pay vpa or details it authorizes  
-[314.24 - 320.00] the payment with their NP in or mobile pin and 
-the request is sent to the UPI network via the  
-[320.00 - 326.20] PSP following the regular transaction flow now UPI 
-operates through an API based architecture every  
-[326.20 - 333.16] time you use apps like Google pay phone pay or 
-PTM in India these apps are calling NPC apis these  
-[333.16 - 338.88] apis do everything from verifying user identities 
-through UPI pins to making sure the money lands  
-[338.88 - 344.00] in the correct account once that is done the 
-transaction is confirmed by both the senders and  
-[344.00 - 349.32] receivers Banks all in a blink of an eye behind 
-the scenes Banks act as payment service providers  
-[349.32 - 355.28] or PSPs so for instance when you use Google pay 
-IC Bank might be processing the transaction as  
-[355.28 - 361.00] its PSP while phone pay might partner with yes 
-Bank this banks handle your request and interact  
-[361.00 - 367.32] with NPC&#39;s platform to complete the transfers to 
-understand how UPI fits into the bigger picture  
-[367.32 - 372.36] let&#39;s compare it to other widely used Payment 
-Systems around the world each of the systems has  
-[372.36 - 377.88] a slightly different structure but they all aim 
-to provide seamless money transfers and here is  
-[377.88 - 384.32] how they Stack Up PayPal is a household name in 
-the Global Payments landscape serving as digital  
-[384.32 - 389.88] wallet a payment Gateway and a payment processor 
-as a digital wallet PayPal allows you users to  
-[389.88 - 395.40] store funds and use them for future purchases 
-or transfers as a payment Gateway it connects  
-[395.40 - 400.80] Merchants to financial institutions facilitating 
-online payments and as a payment processor it  
-[400.80 - 406.44] handles actual transaction by routing payments 
-through card networks or bank accounts unlike UPI  
-[406.44 - 411.00] PayPal typically holds funds in an intermediate 
-balance your PayPal wallet before transferring it  
-[411.00 - 417.20] to your bank account the step introduces an 
-extra lar that UPI bypasses entirely as UPI  
-[417.20 - 422.80] facilitates instant bank to bank transfer with 
-no intermediary balance for example when using  
-[422.80 - 427.56] PayPal you will usually link a bank account debit 
-card or credit card to Paypal when you receive a  
-[427.56 - 432.44] payment the money is first held in your PayPal 
-balance from there you can transfer it to your  
-[432.44 - 438.68] bank account or use it directly for purchases in 
-contrast UPI transfers funds immediately from One  
-[438.68 - 444.36] bank account to another without holding money in a 
-wallet alip is China&#39;s leading payment system and  
-[444.36 - 450.64] is widely used for everything from shopping online 
-to paying with QR codes in stores but unlike UPI  
-[450.64 - 456.04] it holds funds in a wallet before spending or 
-transferring adding an extra layer of friction  
-[456.04 - 461.44] that UPI skips venmo is a social P2P payment 
-platform that&#39;s popular in the US you&#39;ll link  
-[461.44 - 465.84] your bank account debit card or credit card 
-to send and receive payments between friends  
-[465.84 - 471.52] or businesses and there is even a social fee to 
-share transaction details with contacts however  
-[471.52 - 477.20] like PayPal venmo holds money in your venmo 
-balance until you transfer it to your bank while  
-[477.20 - 483.24] venmo Works similarly to UPI in terms of peer to 
-payments it often acts as an intermediary holding  
-[483.24 - 488.00] money in your venmo balance Apple pay and Google 
-pay allow users to make payments using their  
-[488.00 - 493.32] mobile phones by linking their bank account or 
-cards they work for in store purchases using NFC  
-[493.32 - 498.92] or nearfield communication as well as for online 
-payments they use encryption and tokenization to  
-[498.92 - 504.60] ensure secure payments especially for contactless 
-purchases but both Apple and Google p are primary  
-[504.60 - 510.80] digital wallets for storing card details in India 
-however there&#39;s a UPI version of Google pay which  
-[510.80 - 516.20] integrates with the UPI infrastructure for direct 
-bank-to-bank transfers but in other countries like  
-[516.20 - 521.08] in the US it functions more like Apple pay 
-UPI is actually similar to zel a real-time  
-[521.08 - 527.08] bank transfer system used in the US but their 
-infrastructure differ UPI is managed by npci in  
-[527.08 - 533.68] India it operates via API based architecture that 
-handles massive volumes with low latency zel on  
-[533.68 - 539.44] the other hand operates in the US using the a 
-network while both systems offer peer-to-peer  
-[539.44 - 545.56] transfers upi&#39;s API infrastructure allows for 
-faster real-time Bank settlements whereas zel&#39;s  
-[545.56 - 550.36] AC Network settles transactions in near real 
-time and if you&#39;re interested in learning more  
-[550.36 - 556.28] about zel and similar real-time payment systems 
-or want to dive deeper into how UPI was built in  
-[556.28 - 560.92] my next video I&#39;ll break down how a system like 
-UPI can be built from scratch we&#39;ll explore the  
-[560.92 - 566.36] apis infrastructure and all the critical Parts 
-you need to consider so don&#39;t forget to like  
-[566.36 - 577.56] And subscribe if you want to dive deeper 
-into the world of payment system design
-[577.56 - 577.98] [Music]
+[0.00 - 4.14] are you ready to use your coding skills
+[1.80 - 5.64] to build something simple useful and fun
+[4.14 - 7.98] that you can publish to the Chrome web
+[5.64 - 9.60] store for anyone to use while this
+[7.98 - 11.70] tutorial will show you how to build your
+[9.60 - 14.52] very own Chrome extension we&#39;re going to
+[11.70 - 16.14] be using Veet typescript and react and
+[14.52 - 18.00] this is what we&#39;re going to be building
+[16.14 - 19.50] this is a Chrome extension that you can
+[18.00 - 21.06] click on in the top corner of your
+[19.50 - 24.00] browser and it will open up this little
+[21.06 - 25.62] pop-up this has a Color Picker in it and
+[24.00 - 27.90] you can select a color and click this
+[25.62 - 29.64] button and our extension will change the
+[27.90 - 32.16] background color of the web page that
+[29.64 - 33.60] you&#39;re on fairly simple but you&#39;ll learn
+[32.16 - 35.28] a lot about Chrome extensions by
+[33.60 - 37.26] building this now this video is going to
+[35.28 - 39.66] be a step-by-step tutorial for building
+[37.26 - 41.04] this Chrome extension and like all these
+[39.66 - 42.66] tutorials on my channel we&#39;re going to
+[41.04 - 44.52] take an iterative approach to building
+[42.66 - 45.54] this so we&#39;re going to start small we&#39;re
+[44.52 - 47.28] going to build the simplest Chrome
+[45.54 - 49.26] extension possible we&#39;re going to load
+[47.28 - 50.82] it up in our browser test it out and
+[49.26 - 53.16] then go back to the code and add a bit
+[50.82 - 55.98] more functionality then we can load that
+[53.16 - 57.72] test it out and so on around this Loop
+[55.98 - 59.16] each time the Chrome extension we build
+[57.72 - 61.20] will get a little bit more complicated
+[59.16 - 63.48] and you&#39;ll learn A New Concept each time
+[61.20 - 65.10] we go around and this iterative approach
+[63.48 - 66.96] is good for learning because there&#39;ll be
+[65.10 - 68.76] lots of points in this tutorial where
+[66.96 - 71.34] you have a working extension that you
+[68.76 - 73.08] can play around with in your own browser
+[71.34 - 74.52] you can use the chapters along the play
+[73.08 - 76.32] bar of this video if you want to skip
+[74.52 - 78.96] ahead to the next section and the
+[76.32 - 80.64] chapters are going to look like this
+[78.96 - 82.26] first we&#39;re just going to build a very
+[80.64 - 84.06] basic Chrome extension that doesn&#39;t do
+[82.26 - 86.34] anything and then we&#39;re going to add an
+[84.06 - 87.90] icon and some other metadata
+[86.34 - 89.82] next we&#39;re going to put a script in
+[87.90 - 92.10] there that runs some JavaScript when the
+[89.82 - 93.66] Chrome extension is clicked on
+[92.10 - 95.64] and then we&#39;re going to add a basic
+[93.66 - 97.26] pop-ups a little bit of UI and then
+[95.64 - 99.42] lastly we&#39;re going to dive in and use
+[97.26 - 101.52] Veet and typescripts to really build out
+[99.42 - 102.90] the UI and the functionality of our
+[101.52 - 104.76] Chrome extension
+[102.90 - 106.32] before we get started writing code let
+[104.76 - 108.24] me teach you a little bit about how
+[106.32 - 109.80] Chrome extensions work
+[108.24 - 112.74] Chrome extensions are built using
+[109.80 - 114.06] JavaScript HTML and CSS so it&#39;s all the
+[112.74 - 116.88] same stuff that you use to build
+[114.06 - 118.44] websites and front-end web applications
+[116.88 - 120.18] when you click on extension in the
+[118.44 - 122.40] toolbar of chrome you often get a little
+[120.18 - 124.86] pop-up that appears well that pop-up is
+[122.40 - 126.78] your HTML file and just like the HTML
+[124.86 - 128.94] web page the markup for that file can
+[126.78 - 131.16] pull in CSS styles to control how it
+[128.94 - 133.74] looks and it can run JavaScript in the
+[131.16 - 135.48] context of that pop-up and what do you
+[133.74 - 137.10] mean by context well this is the second
+[135.48 - 138.48] thing that you need to know about Chrome
+[137.10 - 140.70] extensions
+[138.48 - 142.26] Chrome extensions run JavaScript and
+[140.70 - 144.84] there&#39;s three different contexts your
+[142.26 - 146.88] JavaScript can be run in and the context
+[144.84 - 148.98] controls what functionality is available
+[146.88 - 150.42] to that script and also what permissions
+[148.98 - 151.86] you need to be allowed to run that
+[150.42 - 154.86] script in the first place
+[151.86 - 156.60] so the first context is the pop-up so if
+[154.86 - 158.82] you have an HTML file for your Chrome
+[156.60 - 160.44] extension pop-up then that has a script
+[158.82 - 162.54] tag on it and that loads in some
+[160.44 - 165.54] JavaScript then that JavaScript will be
+[162.54 - 167.52] executed in the context of that pop-up
+[165.54 - 169.20] if you try to access the Dom in that
+[167.52 - 171.36] JavaScript it&#39;s then the document object
+[169.20 - 173.82] you get back will be the Dom of the UI
+[171.36 - 175.50] for that pop-up so not the web page that
+[173.82 - 177.96] the user is on but the web page that&#39;s
+[175.50 - 179.34] in the little pop-up View so if I have
+[177.96 - 181.68] some JavaScript that changes the
+[179.34 - 183.42] background color of a page and if I run
+[181.68 - 185.88] that in my pop-up then it will change
+[183.42 - 187.74] the background color of the pop-up so
+[185.88 - 190.32] that&#39;s the first context the second
+[187.74 - 192.60] context is the service worker a service
+[190.32 - 194.58] worker is a Javascript file that sits
+[192.60 - 195.90] outside the context of the pays that
+[194.58 - 198.00] you&#39;re visiting and it lets you respond
+[195.90 - 199.92] to events and intercept Network quests
+[198.00 - 201.66] and that sort of thing you can think of
+[199.92 - 204.30] a service worker a bit like a background
+[201.66 - 205.80] process to your web application it sits
+[204.30 - 208.08] in its own context in the background
+[205.80 - 210.42] running code that&#39;s attached from the UI
+[208.08 - 212.40] service workers are not exclusively a
+[210.42 - 214.38] Chrome extension thing all web pages can
+[212.40 - 216.24] have service workers and in Chrome
+[214.38 - 218.64] extensions the service worker makes up
+[216.24 - 221.58] the second separated context or
+[218.64 - 224.10] execution environment of your JavaScript
+[221.58 - 226.56] lastly the third context is the page
+[224.10 - 228.18] that the user is looking at so using a
+[226.56 - 229.98] Chrome extension it is possible to
+[228.18 - 232.08] execute JavaScript in the context of
+[229.98 - 234.24] whatever web page you&#39;ve got open at the
+[232.08 - 237.06] time and in a Chrome extension line
+[234.24 - 239.28] these are called content scripts so when
+[237.06 - 241.08] a Content script accesses the Dom it&#39;s
+[239.28 - 243.06] reading the actual page that the user is
+[241.08 - 245.10] browsing at the time so if you change
+[243.06 - 246.96] the background color of a body node in a
+[245.10 - 248.88] Content script that will actually change
+[246.96 - 250.74] the background color of the web page in
+[248.88 - 252.36] the browser and not the pop-up UI like
+[250.74 - 254.10] it was before
+[252.36 - 256.26] when you defined your Chrome extension
+[254.10 - 258.96] you can specify which websites you want
+[256.26 - 260.94] to run content scripts on and the user
+[258.96 - 262.62] that installs your Chrome extension they
+[260.94 - 264.72] can see those sites and they can grant
+[262.62 - 266.52] your extension permission to run those
+[264.72 - 268.14] content Scripts
+[266.52 - 270.42] right that&#39;s how Chrome extensions
+[268.14 - 271.92] execute JavaScript let&#39;s just look
+[270.42 - 273.54] quickly how you can load up a Chrome
+[271.92 - 275.58] extension that you&#39;ve built for testing
+[273.54 - 277.92] purposes yourself
+[275.58 - 280.38] so if you click on the jigsaw piece in
+[277.92 - 283.14] Chrome like this and go to manage
+[280.38 - 285.72] extensions that will take you to this
+[283.14 - 287.40] chrome slash extensions page here and
+[285.72 - 289.74] this is where you can manage all of your
+[287.40 - 292.08] Chrome extensions in one place
+[289.74 - 293.64] this extensions page also gives us the
+[292.08 - 295.08] option to load a Chrome extension that
+[293.64 - 297.24] we&#39;ve developed locally on our machine
+[295.08 - 300.48] so if you use this button here called
+[297.24 - 302.16] load unpacked this button lets you
+[300.48 - 303.96] select a folder from your machine that
+[302.16 - 305.94] contains the code for a Chrome extension
+[303.96 - 307.80] and then load it up in your browser for
+[305.94 - 309.60] testing now you&#39;ll be doing this at
+[307.80 - 311.16] multiple points in this tutorial so I
+[309.60 - 313.20] want you to be familiar with that first
+[311.16 - 315.30] off before we go any further
+[313.20 - 317.28] okay now let&#39;s start building the Chrome
+[315.30 - 319.92] extension so dive into Visual Studio
+[317.28 - 323.34] code and open up a new empty folder in
+[319.92 - 325.56] the explore window and let&#39;s get started
+[323.34 - 327.30] okay so the first step is to just create
+[325.56 - 329.46] a manifest file and we&#39;re going to use
+[327.30 - 331.26] that to create a very very basic Bare
+[329.46 - 333.00] Bones Chrome extension in Google Chrome
+[331.26 - 335.10] just to see what the Manifest file does
+[333.00 - 337.80] so if I go in here and create a new file
+[335.10 - 339.90] called manifest.json
+[337.80 - 341.88] and then if you go on see internet this
+[339.90 - 343.86] is called the Manifest file format page
+[341.88 - 345.72] I&#39;ll put a link in the description and
+[343.86 - 348.36] this tells you the schema of that
+[345.72 - 349.68] manifest file in Google so you can see
+[348.36 - 351.24] that the Manifest file&#39;s got a bunch of
+[349.68 - 352.86] stuff you can put in it but there&#39;s
+[351.24 - 354.72] actually only three properties that are
+[352.86 - 356.58] required so if we add these three
+[354.72 - 357.96] properties into our manifest file then
+[356.58 - 360.54] we&#39;ve got everything we need to create
+[357.96 - 362.94] the basic most simple Chrome extension
+[360.54 - 364.08] possible so go back into visual studio
+[362.94 - 365.64] and we&#39;re going to put into this
+[364.08 - 368.88] manifest file
+[365.64 - 370.44] we&#39;re going to put the version
+[368.88 - 372.60] version three
+[370.44 - 374.40] the name of it I call it my extension
+[372.60 - 377.34] and the version of the extension so this
+[374.40 - 379.92] is 1.0.8 now that&#39;s actually all that we
+[377.34 - 382.62] need if we go back into Chrome and go
+[379.92 - 384.12] into our extensions page and do load
+[382.62 - 385.98] unpacked
+[384.12 - 388.02] and I&#39;m just going to select that folder
+[385.98 - 389.40] that my manifest file is in and then you
+[388.02 - 391.92] can see it&#39;s actually created the
+[389.40 - 393.42] extension so this my extension here this
+[391.92 - 395.22] is from my manifest file that version
+[393.42 - 398.52] number is again from my manifest file
+[395.22 - 400.62] and if I open up the jigsaw pieces here
+[398.52 - 402.78] you can see that my extension is in the
+[400.62 - 404.28] list of extensions that are installed so
+[402.78 - 405.54] it&#39;s actually created a Chrome extension
+[404.28 - 407.16] for us there
+[405.54 - 409.02] um just using these three lines of code
+[407.16 - 410.40] in the Manifest file so that&#39;s the first
+[409.02 - 411.90] iteration there you go you can have your
+[410.40 - 414.00] very own Chrome extension just with
+[411.90 - 415.68] three lines of code not very exciting
+[414.00 - 417.36] doesn&#39;t really do anything so let&#39;s
+[415.68 - 420.24] iterate on this again and put some more
+[417.36 - 422.82] stuff into it if I look in this manifest
+[420.24 - 425.28] file format schema you can see we&#39;ve got
+[422.82 - 427.08] this icons property so this icons
+[425.28 - 429.00] property if I click on that
+[427.08 - 430.98] this is going to tell us how to add an
+[429.00 - 433.50] icon into our Chrome extension manifest
+[430.98 - 436.50] file so we add an icons node and then we
+[433.50 - 438.90] put in Keys into that Json object each
+[436.50 - 440.76] one says where you can find the icon for
+[438.90 - 442.62] that size we don&#39;t need all of these
+[440.76 - 444.48] they&#39;re all optional so if I just go
+[442.62 - 447.18] into here and
+[444.48 - 449.64] I&#39;ll create the icon PNG here so I&#39;ve
+[447.18 - 451.26] got icon32.png that&#39;s just a little
+[449.64 - 453.42] train to code icon
+[451.26 - 455.82] now if I go into the Manifest file and
+[453.42 - 457.62] add in an icons node and I&#39;ll just say
+[455.82 - 459.84] the 32 pixel version is called
+[457.62 - 462.48] icon32.png
+[459.84 - 465.36] so save that go back into the Chrome
+[462.48 - 467.34] extensions tab in Google
+[465.36 - 468.78] and if I click this little refresh
+[467.34 - 470.46] button here that&#39;s going to reload the
+[468.78 - 472.86] Chrome extension from the Manifest file
+[470.46 - 474.00] so if I do that and open up my
+[472.86 - 475.98] extensions
+[474.00 - 478.14] you can see that my extension now has
+[475.98 - 479.94] this icon onto it so now I&#39;ve got a
+[478.14 - 482.10] Chrome extension with a name a version
+[479.94 - 483.78] number and an icon that came from the
+[482.10 - 484.44] local folder that the Manifest file is
+[483.78 - 485.88] in
+[484.44 - 487.38] great
+[485.88 - 489.48] now let&#39;s add some action functionality
+[487.38 - 491.64] to this so remember we talked about the
+[489.48 - 493.26] three types of context that Chrome
+[491.64 - 495.30] extensions can have they can have
+[493.26 - 496.98] scripts that run inside the pop-up they
+[495.30 - 498.54] can have content scripts that run on the
+[496.98 - 499.92] page and they can have background
+[498.54 - 501.90] scripts they&#39;re just running their own
+[499.92 - 503.76] separate context and respond to events
+[501.90 - 506.04] so I think the simplest scripts to put
+[503.76 - 508.50] in here will be a background script so
+[506.04 - 510.66] if I go into my manifest file and add a
+[508.50 - 512.40] new node in here called background
+[510.66 - 513.56] and I&#39;ll say I&#39;ve got a service worker
+[512.40 - 515.22] and it&#39;s going to be called
+[513.56 - 516.90] serviceworker.js and that&#39;s going to be
+[515.22 - 520.04] a type module
+[516.90 - 521.76] so uh if I go and actually create that
+[520.04 - 523.80] serviceworker.js so I&#39;ll create a new
+[521.76 - 526.14] file and it&#39;s going to be called service
+[523.80 - 528.84] dashworker.js
+[526.14 - 529.92] and in there we can use the Chrome API
+[528.84 - 531.18] now this is the first time we&#39;ve been
+[529.92 - 533.64] using the Chrome API and it&#39;s
+[531.18 - 536.30] essentially a set of functions that you
+[533.64 - 538.80] can call from inside one of the Chrome
+[536.30 - 542.04] contexts and the way we do that is we
+[538.80 - 543.36] call Chrome and then dot action then dot
+[542.04 - 545.52] on clicked and then we&#39;re going to add
+[543.36 - 547.14] an event listener to this
+[545.52 - 548.82] so that means that when we click our
+[547.14 - 550.68] Chrome extension in the little jigsaw
+[548.82 - 552.42] tab that&#39;s going to fire this event
+[550.68 - 553.98] listener here and it&#39;s going to pass in
+[552.42 - 555.48] an instance of the tab that they
+[553.98 - 557.10] currently had open
+[555.48 - 558.48] so in here we&#39;re going to do some more
+[557.10 - 561.36] Chrome stuff we&#39;re going to call Chrome
+[558.48 - 562.56] dot scripting I&#39;m going to execute a
+[561.36 - 564.42] script
+[562.56 - 566.46] so again this chrome dot scripting we
+[564.42 - 568.20] can say what tab we want to execute it
+[566.46 - 570.24] on so we&#39;re passing the ID of the tab
+[568.20 - 572.46] that we had and there&#39;s a number of ways
+[570.24 - 574.68] you can execute a script you can pass in
+[572.46 - 577.08] a file to a Javascript file but what
+[574.68 - 579.84] we&#39;re going to do is put it in line so
+[577.08 - 582.60] we&#39;ll put in the funk property into here
+[579.84 - 585.84] and we&#39;re just going to say so an alert
+[582.60 - 588.24] that says hello from my extension
+[585.84 - 590.22] cool so now I&#39;ve got an event listener
+[588.24 - 592.20] that listens to the on collect event so
+[590.22 - 593.88] when you click the extension and inside
+[592.20 - 595.62] that is going to do some Chrome
+[593.88 - 598.14] scripting and it&#39;s going to execute a
+[595.62 - 601.32] script in the context of this tab that
+[598.14 - 602.76] says hello from my extension so if we go
+[601.32 - 604.08] back to the Manifest files a couple of
+[602.76 - 606.24] things we need to do the first thing we
+[604.08 - 608.10] need to do is enable this actions API
+[606.24 - 609.72] here if we did this now it would say
+[608.10 - 611.82] that we don&#39;t know what Chrome action is
+[609.72 - 613.50] so you need to go into manifest file and
+[611.82 - 614.88] add a new file in here a new node in
+[613.50 - 617.28] here called action and we can leave it
+[614.88 - 620.70] empty for now but that basically allows
+[617.28 - 622.08] us to use that chrome.action API
+[620.70 - 623.52] the other thing we need is we&#39;re going
+[622.08 - 625.92] to need a permission to run the script
+[623.52 - 628.26] if you look in this service worker this
+[625.92 - 629.88] is using the Chrome dot scripting API
+[628.26 - 631.50] which is some functionality that Chrome
+[629.88 - 633.00] extensions give you that can execute
+[631.50 - 634.56] scripts and that needs special
+[633.00 - 636.90] permissions so we&#39;re going to need to go
+[634.56 - 638.94] back into the Manifest file and add in a
+[636.90 - 640.62] permissions node
+[638.94 - 641.70] so this will be an array and we&#39;re going
+[640.62 - 644.10] to put an array and we&#39;re going to put
+[641.70 - 645.54] in an item of scripting so that&#39;s saying
+[644.10 - 648.96] our Chrome extension needs the
+[645.54 - 650.58] permission to be able to execute Scripts
+[648.96 - 652.98] we also need a node called host
+[650.58 - 654.78] permissions host permissions is going to
+[652.98 - 657.30] say these are the hosts or these are the
+[654.78 - 659.64] URLs that our scripts can run on so if
+[657.30 - 661.68] we just put HTTP and https like this
+[659.64 - 664.62] then we can say that our scripts can run
+[661.68 - 666.60] on any URL when it&#39;s open in Chrome
+[664.62 - 668.40] so that should be enough to now run our
+[666.60 - 670.56] background service worker so if we go
+[668.40 - 672.24] back into the extensions Tab and I&#39;m
+[670.56 - 673.92] just going to click this reload icon
+[672.24 - 675.96] here
+[673.92 - 678.17] there&#39;s a problem with that I think I&#39;ve
+[675.96 - 680.48] missed out comma one second
+[678.17 - 684.92] [Music]
+[680.48 - 684.92] I have Mr comma up here there we go
+[685.20 - 687.78] cool so I&#39;m gonna click this reload
+[686.52 - 688.98] button did you see it gave us an error
+[687.78 - 690.42] though it&#39;s actually quite useful to
+[688.98 - 692.04] have the error album really I sort of
+[690.42 - 694.38] skipped over that but anyway so a quick
+[692.04 - 696.18] reload that&#39;s reloaded it and you can
+[694.38 - 697.68] see now we&#39;ve got this service worker in
+[696.18 - 699.60] here you can actually click on this
+[697.68 - 701.82] service worker and you can get Dev tools
+[699.60 - 703.50] for the service worker itself so if the
+[701.82 - 704.94] service worker crashes or if you do any
+[703.50 - 706.32] console logging you can see it by
+[704.94 - 709.02] clicking the service worker in the
+[706.32 - 710.40] extensions tab so that&#39;s quite nice and
+[709.02 - 713.28] then what we can do is let&#39;s just go to
+[710.40 - 715.02] a web page so we go to example.com which
+[713.28 - 717.92] isn&#39;t a real web page but it&#39;s at least
+[715.02 - 717.92] loads up in Chrome
+[718.50 - 723.24] add an example.com we can open our
+[721.02 - 725.04] extensions Tab and actually click on my
+[723.24 - 728.16] extension and what that will do is it
+[725.04 - 730.68] will fire that on clicked event handler
+[728.16 - 732.78] and it will show an alert hello for my
+[730.68 - 734.58] extension so this alert has happened
+[732.78 - 736.26] because we clicked extension and it&#39;s
+[734.58 - 738.48] done that execute script using the
+[736.26 - 741.66] Chrome scripting API and it&#39;s shown that
+[738.48 - 743.28] alert on this page here example.com
+[741.66 - 745.14] so that&#39;s the second iteration of our
+[743.28 - 746.82] Chrome extension we&#39;ve got an icon we&#39;ve
+[745.14 - 748.62] got some metadata in there and we&#39;ve got
+[746.82 - 749.94] a script that executes when you click on
+[748.62 - 752.46] it we can do this again if you want just
+[749.94 - 753.54] to show you there you go hello from my
+[752.46 - 756.08] extension
+[753.54 - 756.08] cool
+[756.42 - 760.14] right the next iteration of this is
+[758.22 - 761.28] we&#39;re going to actually add a pop-up at
+[760.14 - 763.50] the minute when we click on our Chrome
+[761.28 - 764.46] extension it just runs some scripts but
+[763.50 - 766.08] wouldn&#39;t it be nice if we actually
+[764.46 - 768.36] showed like a little pop-up window to
+[766.08 - 771.06] the user there so the way we can do that
+[768.36 - 772.62] is let&#39;s first actually just take out
+[771.06 - 773.46] everything from our service worker
+[772.62 - 774.72] because we&#39;re not going to need that
+[773.46 - 776.04] again
+[774.72 - 779.34] and I&#39;m going to create a new file
+[776.04 - 782.40] called index.html and this HTML file is
+[779.34 - 784.92] going to be the HTML that&#39;s shown inside
+[782.40 - 786.54] the Chrome pop-up window and the way you
+[784.92 - 788.22] can just boilerplate an HTML file in
+[786.54 - 789.90] Visual Studio code is type exclamation
+[788.22 - 792.36] mark and then enter and that will give
+[789.90 - 794.70] us the basics of an HTML file
+[792.36 - 797.40] so we can go ahead and give it a better
+[794.70 - 799.68] name so we change this document to be
+[797.40 - 801.06] extension title and then we&#39;re just
+[799.68 - 802.26] going to put like a tag in here that
+[801.06 - 804.00] just says hello
+[802.26 - 805.74] cool
+[804.00 - 807.18] so we&#39;ve got an HTML file that&#39;s going
+[805.74 - 810.00] to show as a pop-up then what we need to
+[807.18 - 811.74] do is go into the Manifest file and tell
+[810.00 - 813.48] the Manifest about that so in this
+[811.74 - 816.84] actions object we&#39;ll say default pop-up
+[813.48 - 818.52] is index.html so this actions object was
+[816.84 - 820.56] blank before but now we&#39;ve added in this
+[818.52 - 822.84] default pop-up node that points to our
+[820.56 - 824.58] index.html and all these files by the
+[822.84 - 826.68] way are just in the root of our project
+[824.58 - 829.44] here so we&#39;ve got the icon the HTML file
+[826.68 - 831.48] and the service worker and the Manifest
+[829.44 - 833.88] so that should be enough to then show
+[831.48 - 835.68] our HTML file as a pop-up so we go back
+[833.88 - 838.44] into extensions
+[835.68 - 840.24] and we click the reload on here
+[838.44 - 842.84] reloaded and then we&#39;ll go back to
+[840.24 - 842.84] example.com
+[843.30 - 847.38] and now when I click this it will show
+[845.64 - 849.84] us a pop-up there we go just says hello
+[847.38 - 851.88] so that pop-up is coming from the HTML
+[849.84 - 853.56] file that we&#39;ve called index.html so
+[851.88 - 856.52] that&#39;s quite nice each time you click on
+[853.56 - 856.52] it it will open it up
+[856.80 - 860.70] there we go
+[858.12 - 862.38] cool so this index.html file at the
+[860.70 - 863.70] minute it just has a header tag in it
+[862.38 - 865.38] but I want to show you that you can
+[863.70 - 867.90] actually put scripts and things inside
+[865.38 - 870.36] that so what we&#39;re going to do is let&#39;s
+[867.90 - 871.86] open up the index file
+[870.36 - 874.56] and in here I&#39;m just going to add a
+[871.86 - 875.46] button call it my button and I say click
+[874.56 - 877.20] me
+[875.46 - 878.64] and then we&#39;re going to add a scripts
+[877.20 - 880.98] tag you can&#39;t actually put inline
+[878.64 - 882.90] scripts inside HTML pop-ups but you can
+[880.98 - 885.48] load in script files and they&#39;ll run in
+[882.90 - 886.92] the context of the pop-up so if I do a
+[885.48 - 889.68] script tag in it here and just say
+[886.92 - 891.78] index.js
+[889.68 - 893.10] and I need to create that index.js
+[891.78 - 895.44] script file so I&#39;ll just create a new
+[893.10 - 897.36] file called index.js and in here we&#39;re
+[895.44 - 900.18] going to put a function so let&#39;s just
+[897.36 - 901.44] create a function that says function say
+[900.18 - 903.78] hello
+[901.44 - 905.52] and what that&#39;ll do is it will need to
+[903.78 - 907.46] find we&#39;re going to have to call another
+[905.52 - 909.90] Chrome API here we&#39;re gonna have to call
+[907.46 - 913.50] chrome.tabs so if I do a new tab and
+[909.90 - 916.20] then do await chrome.tabs.query
+[913.50 - 917.76] and pass in active.true so what that&#39;s
+[916.20 - 919.56] going to do is it&#39;s going to query the
+[917.76 - 921.18] active tabs in your Chrome browser
+[919.56 - 923.28] window and it&#39;s going to pull out the
+[921.18 - 925.26] tab that&#39;s currently active so when
+[923.28 - 927.90] we&#39;re browsing on example.com that&#39;ll be
+[925.26 - 929.64] the tab that&#39;s got example.com in it
+[927.90 - 931.70] then we can call the scripts kpi again
+[929.64 - 934.14] so we call Chrome dot
+[931.70 - 936.24] scripting.execute script
+[934.14 - 937.86] and the target for this script will be
+[936.24 - 940.02] that tab so we&#39;re going to pass in the
+[937.86 - 942.12] tab ID of the target tab that we got
+[940.02 - 943.86] from the active tabs and then just like
+[942.12 - 947.04] before we&#39;ll just put a function in here
+[943.86 - 948.72] that does hello from my extension
+[947.04 - 950.88] finish this up
+[948.72 - 952.62] and then when this script file is loaded
+[950.88 - 954.12] up we&#39;re going to do some
+[952.62 - 954.98] Dom stuff in it here we&#39;re just going to
+[954.12 - 957.54] say
+[954.98 - 961.08] document.getelementbyid my button add
+[957.54 - 962.76] event listener click say hello
+[961.08 - 966.06] so if you remember from before when we
+[962.76 - 967.80] do document inside a index.html pop-up
+[966.06 - 970.08] that document is going to be the
+[967.80 - 972.42] document of this here so it&#39;s going to
+[970.08 - 975.30] give us this Dom so what we&#39;re saying
+[972.42 - 977.82] inside index.js is load up this Dom and
+[975.30 - 981.30] find the button with ID my button and
+[977.82 - 983.94] add a click event handler onto it the um
+[981.30 - 985.38] handles the click me event and when it
+[983.94 - 987.36] does that it&#39;s going to execute this
+[985.38 - 989.46] function called say hello
+[987.36 - 991.74] so let&#39;s uh load this back up in Chrome
+[989.46 - 994.28] go to extensions Tab and just click
+[991.74 - 994.28] reload
+[994.80 - 999.18] now when we go to example domain and
+[997.20 - 1000.80] open up our Chrome extension
+[999.18 - 1002.54] you can see I&#39;ve got this button on here
+[1000.80 - 1003.98] so that&#39;s the button inside the Chrome
+[1002.54 - 1005.54] extension we&#39;re going to click on that
+[1003.98 - 1007.22] and it&#39;s going to execute that
+[1005.54 - 1009.56] JavaScript which is going to say hello
+[1007.22 - 1012.02] for my extension but this time the
+[1009.56 - 1014.18] script has come from the index.html
+[1012.02 - 1015.62] pop-up
+[1014.18 - 1017.12] so that&#39;s quite a good Chrome extension
+[1015.62 - 1019.10] so far this is a Chrome extension that&#39;s
+[1017.12 - 1020.72] got a pop-up it&#39;s got some metadata and
+[1019.10 - 1024.02] it&#39;s got a little button that just runs
+[1020.72 - 1026.12] some script on the active tab if I had a
+[1024.02 - 1027.50] different tab active so if I went to a
+[1026.12 - 1030.20] different web page then it will run this
+[1027.50 - 1032.00] script in the context of that web page
+[1030.20 - 1033.86] and where we&#39;ve just got alert here we
+[1032.00 - 1035.72] can actually access the Dom so if we
+[1033.86 - 1039.20] wanted to do Dom inside here with the
+[1035.72 - 1041.30] document dot body then inside this
+[1039.20 - 1043.46] function this document node would point
+[1041.30 - 1046.64] to the document node of the page that
+[1043.46 - 1048.50] you&#39;re on so document.body here wouldn&#39;t
+[1046.64 - 1050.62] be the same as this document it would be
+[1048.50 - 1053.36] the body of let&#39;s say we&#39;re on
+[1050.62 - 1055.10] example.com it&#39;ll be the body of this
+[1053.36 - 1056.66] page so that&#39;s kind of cool that lets
+[1055.10 - 1058.16] you like inject stuff into the actual
+[1056.66 - 1059.96] page that the user is browsing that&#39;s
+[1058.16 - 1062.12] that third context that we spoke about
+[1059.96 - 1063.68] earlier
+[1062.12 - 1065.54] cool
+[1063.68 - 1067.46] okay so here we have a very simple
+[1065.54 - 1069.98] Chrome extension it&#39;s got a pop-up that
+[1067.46 - 1071.72] shows this index HTML page and it also
+[1069.98 - 1073.88] has a Javascript file that&#39;s loaded by
+[1071.72 - 1076.16] the index.html page pop-up when the
+[1073.88 - 1078.44] pop-up is opened the JavaScript is
+[1076.16 - 1081.26] executing some code in the context of
+[1078.44 - 1083.06] the active tab we also have the Manifest
+[1081.26 - 1085.40] file that defines the properties of the
+[1083.06 - 1087.08] Chrome extension so this is great and it
+[1085.40 - 1088.82] works but as you build out your Chrome
+[1087.08 - 1090.92] extension you might find that you end up
+[1088.82 - 1093.08] with many many many of these scripts and
+[1090.92 - 1095.24] these files and perhaps different HTML
+[1093.08 - 1097.04] templates as well and eventually this
+[1095.24 - 1098.78] kind of code can get a bit messy and it
+[1097.04 - 1101.06] can become a bit unmanageable especially
+[1098.78 - 1102.62] during development so next I&#39;m going to
+[1101.06 - 1104.72] show you how to recreate this same
+[1102.62 - 1106.82] Chrome extension but using Veet and
+[1104.72 - 1109.16] typescript and react
+[1106.82 - 1111.14] Veet is a fun and build tool that makes
+[1109.16 - 1113.54] it super easy to develop and test web
+[1111.14 - 1115.40] applications locally and typescript is
+[1113.54 - 1117.08] just generally all round good for Rapid
+[1115.40 - 1119.12] stereoscope development because it gives
+[1117.08 - 1120.68] you static type checking and it&#39;s just
+[1119.12 - 1123.98] generally much nicer and more
+[1120.68 - 1126.68] user-friendly than working in JavaScript
+[1123.98 - 1128.36] so to create this Chrome extension in V
+[1126.68 - 1130.64] we just go into the terminal in a new
+[1128.36 - 1133.52] directory and create a new Vita
+[1130.64 - 1135.88] application with npm create Veet at
+[1133.52 - 1135.88] latest
+[1159.56 - 1164.44] and then we could do npm one Dev here
+[1162.02 - 1164.44] and then
+[1168.92 - 1174.34] so if I open up this localhost file here
+[1171.20 - 1174.34] it&#39;s localized URL
+[1176.06 - 1179.72] then you can see this is our V
+[1177.74 - 1182.18] application and this is just a standard
+[1179.72 - 1186.14] V application that comes when we do npm1
+[1182.18 - 1188.12] create Veet at latest so we cancel that
+[1186.14 - 1191.42] and then we&#39;re also going to do an npm
+[1188.12 - 1193.22] run build so when you are ready to put
+[1191.42 - 1195.86] your V application into production you
+[1193.22 - 1197.24] run npm1 build and the build script will
+[1195.86 - 1200.50] bundle everything up and it&#39;ll create
+[1197.24 - 1200.50] you an output folder
+[1200.78 - 1205.82] so this output file is called dis and
+[1204.08 - 1207.74] when we create our Chrome extension it&#39;s
+[1205.82 - 1209.42] this dist folder here that we&#39;re going
+[1207.74 - 1210.98] to be putting into Google Chrome as that
+[1209.42 - 1212.42] extensions folder so when we do load
+[1210.98 - 1215.18] unpacked it&#39;s going to be this disk
+[1212.42 - 1217.28] folder that we load unpacked so let&#39;s go
+[1215.18 - 1219.50] into Visual Studio code
+[1217.28 - 1221.18] right so in here we have the code for a
+[1219.50 - 1222.62] new Vita application that was created
+[1221.18 - 1224.60] for us and if you see here that&#39;s the
+[1222.62 - 1225.92] disk folder so this disk folder is the
+[1224.60 - 1227.12] one that we&#39;re going to add into Google
+[1225.92 - 1228.98] Chrome and this is going to be our
+[1227.12 - 1231.02] Chrome extension so at the minute the
+[1228.98 - 1233.66] disk folder has just got an index HTML
+[1231.02 - 1235.46] file and it&#39;s got an image in it
+[1233.66 - 1237.74] we can recreate this disk folder at any
+[1235.46 - 1240.08] time by going back into the terminal and
+[1237.74 - 1242.24] just doing npm run
+[1240.08 - 1244.34] build
+[1242.24 - 1246.02] so as we&#39;re adding stuff into this V
+[1244.34 - 1247.52] application we&#39;ll be doing npm one build
+[1246.02 - 1248.96] we&#39;ll be creating that this folder and
+[1247.52 - 1250.28] then we&#39;ll be loading that into Google
+[1248.96 - 1253.40] Chrome
+[1250.28 - 1255.02] so there&#39;s a bunch of stuff in here that
+[1253.40 - 1256.70] isn&#39;t particularly useful for us right
+[1255.02 - 1258.20] now but the first thing we&#39;re going to
+[1256.70 - 1259.82] do is we&#39;re going to create a manifest
+[1258.20 - 1261.62] Json so if you remember you need a
+[1259.82 - 1262.82] manifest Json for every Chrome extension
+[1261.62 - 1265.76] that&#39;s the one file that you absolutely
+[1262.82 - 1268.34] need so if we go into this public folder
+[1265.76 - 1269.96] here in V anything inside this special
+[1268.34 - 1272.38] public folder will just be copied
+[1269.96 - 1274.82] straight to the dist folder so this
+[1272.38 - 1277.22] veets.svg that it came with that&#39;s being
+[1274.82 - 1279.38] copied into this vs GG into the disk
+[1277.22 - 1280.70] folder here so in this public folder
+[1279.38 - 1283.16] this is where we&#39;re going to be adding
+[1280.70 - 1285.38] our manifest Json file
+[1283.16 - 1287.66] so we go into there and we&#39;ll create a
+[1285.38 - 1290.06] new Json file called manifest Json and
+[1287.66 - 1291.68] we&#39;ll say manifest version 3 again
+[1290.06 - 1294.08] and the version of my Chrome extension
+[1291.68 - 1296.78] is going to be 1.8.0 and the name will
+[1294.08 - 1300.32] be my VTE extension
+[1296.78 - 1302.18] so if I go in here and do npm1 build
+[1300.32 - 1304.16] then building this is going to copy that
+[1302.18 - 1306.08] manifest Json file just as it is into
+[1304.16 - 1308.36] the dist folder so now we&#39;ve got
+[1306.08 - 1310.88] manifest Json in the dist folder and
+[1308.36 - 1312.86] that&#39;s now enough to load up this Vita
+[1310.88 - 1315.56] application as a Chrome extension using
+[1312.86 - 1318.08] this manifest file so if we go back into
+[1315.56 - 1320.42] the extensions tab we&#39;ll remove our
+[1318.08 - 1322.70] previous extension
+[1320.42 - 1325.10] and we do load unpacked and we&#39;re going
+[1322.70 - 1327.08] to navigate to that dist folder and I&#39;m
+[1325.10 - 1328.94] going to select the dist folder as my
+[1327.08 - 1330.74] Chrome extension and you can see now
+[1328.94 - 1333.20] it&#39;s extension loaded and it&#39;s called My
+[1330.74 - 1334.88] Veet extension we can open up the jigsaw
+[1333.20 - 1337.52] and we should see that the VTE extension
+[1334.88 - 1339.38] is in here as my VTE extension
+[1337.52 - 1341.66] so we&#39;ve actually got an extension Now
+[1339.38 - 1342.86] using Veet doesn&#39;t do anything but again
+[1341.66 - 1344.90] we&#39;ll get on to that in the next
+[1342.86 - 1346.88] iteration
+[1344.90 - 1348.92] so if we go into this manifest file and
+[1346.88 - 1350.86] we give it a pop-up we&#39;re going to say
+[1348.92 - 1354.02] action default pop-up is going to be
+[1350.86 - 1356.36] index.html now that index.html is going
+[1354.02 - 1358.46] to point to the HTML file that V creates
+[1356.36 - 1359.84] for us and puts in our dist folder so
+[1358.46 - 1361.28] that&#39;s all very good we&#39;re also going to
+[1359.84 - 1363.26] need the scripting permissions like
+[1361.28 - 1365.06] before
+[1363.26 - 1367.88] and we&#39;re going to need the permissions
+[1365.06 - 1370.40] to do the host so this means that you
+[1367.88 - 1372.02] can run content scripts on any URL when
+[1370.40 - 1373.82] you do this in real like for production
+[1372.02 - 1375.20] you probably want to put real URLs in
+[1373.82 - 1377.42] here because the extension that we&#39;re
+[1375.20 - 1378.62] building today can work on any URL but
+[1377.42 - 1380.30] you probably will be wanting to build
+[1378.62 - 1382.16] extensions that only work on certain
+[1380.30 - 1383.48] pages and your users might be a little
+[1382.16 - 1385.22] bit alarmed if they install the Chrome
+[1383.48 - 1386.78] extension that can change any web page
+[1385.22 - 1389.48] they visit but I&#39;m just doing this for
+[1386.78 - 1392.36] demos purposes because it&#39;s easier Let&#39;s
+[1389.48 - 1396.32] uh put our icon back in here as well
+[1392.36 - 1398.54] so icon 32 is going to be in there
+[1396.32 - 1399.92] so if I put icon 32 into this public
+[1398.54 - 1403.34] folder
+[1399.92 - 1405.38] then when we do an NPR V npm1 build it
+[1403.34 - 1407.84] will copy the icon and the Manifest into
+[1405.38 - 1411.76] the dist folder so we can try now
+[1407.84 - 1411.76] actually let&#39;s do npm one build
+[1411.80 - 1417.14] and as that finishes you&#39;ll see the icon
+[1414.80 - 1418.34] appear in this disk folder there we go
+[1417.14 - 1421.46] then we can go back into the Chrome
+[1418.34 - 1425.66] extensions tab reload it
+[1421.46 - 1429.02] uh okay I&#39;ve got an error because there
+[1425.66 - 1432.20] is a comma missing there we go
+[1429.02 - 1434.30] reload that still not right because ah
+[1432.20 - 1435.92] yes okay so this is one thing to know
+[1434.30 - 1437.42] whereas previously I was just changing
+[1435.92 - 1439.46] the Manifest and then reloading it in
+[1437.42 - 1441.14] Chrome now because it&#39;s in this public
+[1439.46 - 1444.92] folder I need to change the Manifest
+[1441.14 - 1446.18] save it and then run npm run build to
+[1444.92 - 1449.00] copy the saved version of that
+[1446.18 - 1450.86] manifested to the output
+[1449.00 - 1452.54] so if I do that the Manifest in the
+[1450.86 - 1454.22] output should now have that comma I just
+[1452.54 - 1457.16] added it back in we can go into
+[1454.22 - 1459.32] extensions Tab and we can reload this
+[1457.16 - 1461.54] and the Vita extension should now have
+[1459.32 - 1465.26] that icon on it my VTE extension with
+[1461.54 - 1466.94] the trains code icon we can open this up
+[1465.26 - 1469.40] and you can see it opens a pop-up that&#39;s
+[1466.94 - 1471.08] got the Veet app inside it this is
+[1469.40 - 1472.82] running exactly the same way that it was
+[1471.08 - 1475.16] running in this tab here this one this
+[1472.82 - 1476.90] was running locally on localhost and
+[1475.16 - 1478.76] this one is running inside a Chrome
+[1476.90 - 1480.56] extension
+[1478.76 - 1482.18] there we go so it&#39;s the same route
+[1480.56 - 1484.58] application but we&#39;ve bundled it inside
+[1482.18 - 1486.44] that pop-up window we&#39;ve basically told
+[1484.58 - 1488.78] the Chrome extension to use the output
+[1486.44 - 1491.26] of the V bundle as its pop-up window so
+[1488.78 - 1491.26] that&#39;s kind of cool
+[1491.60 - 1496.30] so let&#39;s uh make this actually do
+[1493.58 - 1498.92] something then so if we go into Source
+[1496.30 - 1500.36] app.tsx this is the main application and
+[1498.92 - 1501.80] we&#39;ll change the title here to just be
+[1500.36 - 1504.44] my extension
+[1501.80 - 1506.06] save that and what we can do is we can
+[1504.44 - 1508.58] replace what happens when you click this
+[1506.06 - 1510.56] button the default Vita application just
+[1508.58 - 1512.78] sort of increments a counter that&#39;s not
+[1510.56 - 1515.54] very exciting so if I go in here and I
+[1512.78 - 1517.40] change this set count to be an on click
+[1515.54 - 1518.96] function and then I need to go and
+[1517.40 - 1520.22] create the enclip function I&#39;ll just say
+[1518.96 - 1522.02] click me
+[1520.22 - 1525.16] and create the on click function up here
+[1522.02 - 1525.16] inside our app component
+[1525.80 - 1529.58] and the on click function is going to do
+[1528.02 - 1532.40] a similar thing as we were doing before
+[1529.58 - 1533.96] where it alerts something on the page so
+[1532.40 - 1536.36] inside that on click we&#39;re going to call
+[1533.96 - 1540.94] the Chrome API so we&#39;re going to let the
+[1536.36 - 1543.20] tab equals Chrome dot tabs Dot
+[1540.94 - 1544.76] active true
+[1543.20 - 1547.52] now typescript doesn&#39;t actually
+[1544.76 - 1549.08] recognize this because the Chrome API is
+[1547.52 - 1550.70] a kind of extra package now you can
+[1549.08 - 1552.26] access it but typescript just doesn&#39;t
+[1550.70 - 1554.18] know about it so in order to make
+[1552.26 - 1555.92] typescript know about this we need to go
+[1554.18 - 1558.62] back into the console and we need to
+[1555.92 - 1561.38] install a package called
+[1558.62 - 1562.94] types forward slash Chrome so that&#39;s
+[1561.38 - 1566.32] going to tell typescript about the
+[1562.94 - 1566.32] Chrome API so if you do that
+[1567.92 - 1572.24] then next time we build this Vita
+[1570.20 - 1574.34] application we should have removed the
+[1572.24 - 1575.96] warning about types Chrome so if we wait
+[1574.34 - 1578.18] a little second there we go so that
+[1575.96 - 1580.04] disappears so that now knows about this
+[1578.18 - 1581.48] chrome API and we can have autocomplete
+[1580.04 - 1582.62] on tabs and query and everything like
+[1581.48 - 1584.12] that and this is another reason why
+[1582.62 - 1586.94] typescript&#39;s awesome and why the support
+[1584.12 - 1588.68] for typescript is growing every time
+[1586.94 - 1590.18] so let&#39;s go into here and we&#39;ll do
+[1588.68 - 1592.58] another thing we&#39;ll do Chrome dot
+[1590.18 - 1594.02] scripting and execute script and just
+[1592.58 - 1596.66] like we were doing before we&#39;re passing
+[1594.02 - 1598.04] the target of the tab ID
+[1596.66 - 1599.84] um we&#39;ll say there&#39;s gonna be a function
+[1598.04 - 1601.58] in here
+[1599.84 - 1605.20] this guy&#39;s just showing alert pop-up
+[1601.58 - 1605.20] saying hello from my extension
+[1606.80 - 1610.28] cool
+[1607.94 - 1612.50] now let&#39;s just uh delete that unused
+[1610.28 - 1615.02] import at the top here
+[1612.50 - 1617.18] and then we can build this so we go into
+[1615.02 - 1619.48] the console and we&#39;ll do npm one build
+[1617.18 - 1619.48] again
+[1624.08 - 1626.66] and then when we load it up in Google
+[1625.40 - 1630.26] Chrome
+[1626.66 - 1632.60] so I&#39;ll reload the extension here
+[1630.26 - 1634.40] go into any web page and open up our
+[1632.60 - 1637.28] Chrome extension
+[1634.40 - 1638.84] now when I click this click me button it
+[1637.28 - 1640.64] will fire that script and it will fire
+[1638.84 - 1642.74] and say hello from my extension like it
+[1640.64 - 1644.24] was doing in the previous iteration so
+[1642.74 - 1646.46] that&#39;s happening from that on click
+[1644.24 - 1648.26] Handler that we put inside the app.tsx
+[1646.46 - 1649.76] component
+[1648.26 - 1651.08] great now let&#39;s make it do something a
+[1649.76 - 1653.06] little bit more exciting than just
+[1651.08 - 1655.40] saying hello let&#39;s make it actually
+[1653.06 - 1657.32] change the background color of the page
+[1655.40 - 1660.80] so in order to do that we&#39;re going to
+[1657.32 - 1662.90] need to uh do document dot body dot
+[1660.80 - 1665.36] style and then background color and
+[1662.90 - 1668.56] we&#39;ll just set that to Red for now
+[1665.36 - 1668.56] so if I just build that
+[1668.66 - 1672.44] what that&#39;s going to do is this document
+[1670.94 - 1674.18] node here this is going to be the
+[1672.44 - 1676.22] document node of the tab that they&#39;re
+[1674.18 - 1677.72] currently on so if we go to example.com
+[1676.22 - 1680.30] that&#39;ll be the document node of
+[1677.72 - 1681.32] example.com once that&#39;s built which I
+[1680.30 - 1683.54] think it has
+[1681.32 - 1687.04] once that&#39;s built we can go into the
+[1683.54 - 1687.04] extensions Tab and reload it
+[1687.50 - 1693.14] and now when I click this button
+[1690.62 - 1696.92] it should change the background color of
+[1693.14 - 1698.90] the page to Red let&#39;s try it out
+[1696.92 - 1700.40] there we go so that&#39;s changed the
+[1698.90 - 1702.56] background color to Red so we&#39;re getting
+[1700.40 - 1704.66] there this is good we&#39;re interacting
+[1702.56 - 1706.52] with the Dom of the example tab for my
+[1704.66 - 1708.80] right Chrome extension
+[1706.52 - 1710.24] cool so now we want to do is make it so
+[1708.80 - 1712.94] they can actually pick the background
+[1710.24 - 1714.44] color using a little color pop-up so
+[1712.94 - 1717.26] let&#39;s uh
+[1714.44 - 1718.58] create a color constant in here
+[1717.26 - 1720.14] and we&#39;re just going to do use States
+[1718.58 - 1722.54] and we&#39;re going to store the color into
+[1720.14 - 1724.96] a state file we&#39;ll just import you stay
+[1722.54 - 1724.96] at the top
+[1726.02 - 1728.84] and I&#39;m going to create an HTML input
+[1727.82 - 1731.86] here
+[1728.84 - 1731.86] type is color
+[1737.06 - 1741.56] there so I&#39;ve created an input where the
+[1739.10 - 1743.60] type is color that&#39;s the built-in HTML5
+[1741.56 - 1745.10] Color Picker and then when you change
+[1743.60 - 1747.74] that it&#39;s going to call the set color
+[1745.10 - 1748.94] function which is uh in our you state at
+[1747.74 - 1750.80] the top here
+[1748.94 - 1752.72] and it&#39;s going to set the color to the
+[1750.80 - 1754.22] carbon color that you&#39;d selected and the
+[1752.72 - 1756.62] value is going to be the current value
+[1754.22 - 1758.18] from our state
+[1756.62 - 1759.56] okay and the only thing we need to do
+[1758.18 - 1761.54] now is where we&#39;re setting background
+[1759.56 - 1763.46] color to Red we need to set background
+[1761.54 - 1765.56] color to the color that&#39;s in our state
+[1763.46 - 1767.00] now this isn&#39;t as simple as it might
+[1765.56 - 1768.20] seem at first there&#39;s actually going to
+[1767.00 - 1769.94] be a little bit of complexity where we
+[1768.20 - 1771.56] have to switch context here so let me
+[1769.94 - 1775.28] explain what&#39;s going to go on here
+[1771.56 - 1777.14] if we uh replace this with color
+[1775.28 - 1778.70] that&#39;s not going to work the reason
+[1777.14 - 1781.28] that&#39;s not going to work is because this
+[1778.70 - 1783.68] function is executing inside the context
+[1781.28 - 1785.54] of the tab that they&#39;re currently on and
+[1783.68 - 1788.06] the rest of this code is executing in
+[1785.54 - 1789.80] the context of the pop-up so where we&#39;re
+[1788.06 - 1793.22] doing this color variable here that
+[1789.80 - 1795.98] variable is being stored inside the code
+[1793.22 - 1798.68] inside the pop-up and this document is
+[1795.98 - 1800.60] happening inside the page and so you
+[1798.68 - 1803.30] can&#39;t access variables from the
+[1800.60 - 1804.14] component inside the Dom so what we&#39;re
+[1803.30 - 1806.30] going to have to do is we&#39;re going to
+[1804.14 - 1808.16] have to pass in this color variable when
+[1806.30 - 1810.56] we&#39;re doing execute script
+[1808.16 - 1812.90] so the way you can do that is we can use
+[1810.56 - 1814.94] this args function here so we&#39;re going
+[1812.90 - 1817.28] to pass in this color variable into the
+[1814.94 - 1819.08] args of our script
+[1817.28 - 1821.00] now typescript doesn&#39;t know about this
+[1819.08 - 1822.26] args because it needs to be strongly
+[1821.00 - 1824.66] tied so the way we can do that in
+[1822.26 - 1826.10] typescript is we&#39;ll just tell it about
+[1824.66 - 1828.26] it by putting some generic type
+[1826.10 - 1829.64] parameters in here
+[1828.26 - 1831.62] so we&#39;ll say that we&#39;re going to be
+[1829.64 - 1832.88] using a string array so our arguments
+[1831.62 - 1834.68] function is going to be a string array
+[1832.88 - 1836.48] and then it can be whatever so our
+[1834.68 - 1838.64] string is just going to be the color and
+[1836.48 - 1841.52] then that should be enough to go into
+[1838.64 - 1843.44] here and set the color so the function
+[1841.52 - 1846.26] color will coming in here and that will
+[1843.44 - 1848.42] be that color that gets passed in here
+[1846.26 - 1850.58] so there we have it let&#39;s uh build this
+[1848.42 - 1852.62] and try it out so I&#39;ll do an npm run
+[1850.58 - 1854.54] build and just wait for that to build
+[1852.62 - 1856.28] and this should create the Color Picker
+[1854.54 - 1857.48] on the screen it should execute the
+[1856.28 - 1859.52] script it should pass that color
+[1857.48 - 1861.38] variable through to the context of the
+[1859.52 - 1864.08] page and then we&#39;ll see what happens
+[1861.38 - 1866.36] let&#39;s go refresh this so it goes back to
+[1864.08 - 1868.64] being normal color
+[1866.36 - 1870.92] reload or Chrome extension
+[1868.64 - 1872.12] go to example.com open up our Chrome
+[1870.92 - 1873.98] extension
+[1872.12 - 1876.02] and you&#39;ll see that we have this Color
+[1873.98 - 1878.72] Picker now so if I select a color on
+[1876.02 - 1879.98] this Color Picker Let&#39;s uh let&#39;s select
+[1878.72 - 1882.38] a nice blue
+[1879.98 - 1884.12] sort of Bluey purple when I do this
+[1882.38 - 1885.98] click me it&#39;s going to take that color
+[1884.12 - 1887.84] which is the bluey purple and it&#39;s going
+[1885.98 - 1889.82] to pass it through that execute script
+[1887.84 - 1892.88] as an argument and it&#39;s going to set it
+[1889.82 - 1895.76] in the background color on the page
+[1892.88 - 1897.32] there we go it&#39;s blue
+[1895.76 - 1899.84] let&#39;s just make this another color let&#39;s
+[1897.32 - 1901.88] make this green
+[1899.84 - 1903.56] and again each time we do this we&#39;re
+[1901.88 - 1905.60] setting the color variable in our state
+[1903.56 - 1906.86] inside our react component and then
+[1905.60 - 1909.76] we&#39;re passing it through to the
+[1906.86 - 1909.76] background color of the page
+[1911.90 - 1915.32] so there we go we&#39;ve got a Chrome
+[1913.16 - 1917.18] extension that lets you change the
+[1915.32 - 1918.26] background color of any page that you&#39;re
+[1917.18 - 1920.36] on so let&#39;s just try it on different
+[1918.26 - 1922.16] page Zone if I go to train to code.com
+[1920.36 - 1924.20] and so should you
+[1922.16 - 1926.48] the background color of my page now is
+[1924.20 - 1928.76] this kind of light gray color so if I
+[1926.48 - 1930.86] open up my Chrome extension my VTE
+[1928.76 - 1932.54] extension and let&#39;s say I want the
+[1930.86 - 1935.80] background color of this page to be a
+[1932.54 - 1935.80] sort of fuchsia color
+[1935.90 - 1939.26] when I do click me you can see it&#39;s
+[1937.88 - 1941.42] changing the background color of train
+[1939.26 - 1942.98] to code.com so you can do it on any web
+[1941.42 - 1944.06] page you want basically it will inject
+[1942.98 - 1945.68] the script and it will pass the
+[1944.06 - 1947.72] background color through and it will run
+[1945.68 - 1949.94] it on the active tab which in this case
+[1947.72 - 1951.56] is train to cone.com and in this case it
+[1949.94 - 1953.12] was example.com
+[1951.56 - 1954.80] this has been a quick tutorial on
+[1953.12 - 1956.78] building Chrome extensions but if you
+[1954.80 - 1958.64] want to go deeper into V then check out
+[1956.78 - 1960.92] my V course which is linked in the
+[1958.64 - 1962.72] description below and why not watch this
+[1960.92 - 1965.36] next video about how to run typescript
+[1962.72 - 1967.04] in vs code including how to get the
+[1965.36 - 1969.32] debugger working which is something that
+[1967.04 - 1971.06] I know you&#39;ll find extremely useful so
+[1969.32 - 1975.04] until next time my name is James Charles
+[1971.06 - 1975.04] and this is train to code on YouTube
+[1975.41 - 1978.51] [Music]

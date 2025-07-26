@@ -2,55 +2,55 @@
   "questions": [
     {
       "id": 1,
-      "question": "According to the first verse, what kind of relationship is the singer seeking?",
+      "question": "What is a primary advantage of using UPI for users, as mentioned in the transcript?",
       "difficulty": "easy",
       "options": [
-        "A casual friendship",
-        "A secret romance",
-        "A full commitment",
-        "A short-term fling"
+        "It is primarily designed for large international transactions.",
+        "It allows users to earn interest on the balance held in the app.",
+        "It is free for users and enables instant, 24/7 transfers using just a mobile number or UPI ID.",
+        "It holds funds securely in a digital wallet before transferring them to a bank account."
       ],
-      "answer": "A full commitment",
-      "explanation": "The transcript explicitly states at [27.04 - 31.04], 'A full commitment's what I'm thinking of'."
+      "answer": "It is free for users and enables instant, 24/7 transfers using just a mobile number or UPI ID.",
+      "explanation": "The transcript explicitly states at [5.36-11.80] that UPI is 'fast secure and available 247 allowing you to instantly send money just using your mobile number or UPA ID' and at [18.20-24.84] that 'best of all UPI is free for users'."
     },
     {
       "id": 2,
-      "question": "Based on the lyrics, what does the singer believe is preventing the other person from expressing their feelings?",
+      "question": "According to the transcript, what is the key architectural difference between UPI and systems like PayPal and Alipay?",
       "difficulty": "medium",
       "options": [
-        "A lack of interest",
-        "Anger and resentment",
-        "A busy schedule",
-        "Shyness and past heartache"
+        "UPI requires complex bank details for every transaction, while PayPal does not.",
+        "UPI transactions are slower but more secure than PayPal and Alipay.",
+        "UPI is only available for use during business hours, unlike PayPal.",
+        "UPI facilitates direct bank-to-bank transfers, while PayPal and Alipay typically hold funds in an intermediary wallet balance."
       ],
-      "answer": "Shyness and past heartache",
-      "explanation": "The lyrics at [64.88 - 69.04] state, 'Your heart's been aching but you're too shy to say it,' indicating both past pain ('aching') and current hesitation ('shy')."
+      "answer": "UPI facilitates direct bank-to-bank transfers, while PayPal and Alipay typically hold funds in an intermediary wallet balance.",
+      "explanation": "The transcript highlights this difference multiple times, stating that UPI 'doesn't hold your funds in a middle lay like a digital wallet' ([70.40-74.88]) and that unlike UPI, PayPal ([406.44-411.00]) and Alipay ([450.64-456.04]) hold funds in a wallet."
     },
     {
       "id": 3,
-      "question": "What does the line 'We know the game and we're gonna play it' imply in the context of the song?",
-      "difficulty": "hard",
+      "question": "In the context of a UPI transaction, what is the role of the National Payments Corporation of India (NPCI)?",
+      "difficulty": "medium",
       "options": [
-        "That the relationship is based on deception.",
-        "That both individuals are tired of playing games and want to be direct.",
-        "That they both understand the unspoken rules of courtship and are ready to engage.",
-        "That the singer is challenging the other person to a competition."
+        "It acts as the Payment Service Provider (PSP) app that the customer uses, like Google Pay.",
+        "It functions as the user's bank, holding their funds and checking their balance.",
+        "It acts as the central network or backbone that routes payment requests between the different banks.",
+        "It creates the Virtual Payment Address (VPA) for the customer."
       ],
-      "answer": "That they both understand the unspoken rules of courtship and are ready to engage.",
-      "explanation": "Preceded by 'Inside we both know what's been going on,' the line suggests a mutual, unspoken understanding of their feelings. 'The game' refers to the game of love or courtship, which they are now mutually ready to 'play' or participate in openly."
+      "answer": "It acts as the central network or backbone that routes payment requests between the different banks.",
+      "explanation": "The transcript describes the NPCI as the 'backbone of UPI' ([162.52]) and the network that receives requests from the PSP, communicates with the payer's and payee's banks, and facilitates the direct transfer ([211.72-224.12])."
     },
     {
       "id": 4,
-      "question": "Which of the following is NOT a promise made in the song's chorus?",
-      "difficulty": "medium",
+      "question": "How does the transcript distinguish UPI's function from that of a traditional payment gateway or payment processor?",
+      "difficulty": "hard",
       "options": [
-        "Never gonna make you cry",
-        "Never gonna run around and desert you",
-        "Never gonna let you down",
-        "Never gonna make you rich"
+        "UPI is defined as both a payment gateway and a payment processor, just like PayPal.",
+        "UPI functions as a payment infrastructure or system, rather than a gateway that authorizes payments or a processor that handles the transfer itself.",
+        "UPI is a payment gateway because it acts like a checkout counter, but it is not a processor.",
+        "UPI is a payment processor because it uses credit card networks like Visa, unlike a payment gateway."
       ],
-      "answer": "Never gonna make you rich",
-      "explanation": "The chorus, repeated multiple times, includes promises not to 'give you up,' 'let you down,' 'run around and desert you,' 'make you cry,' 'say goodbye,' or 'tell a lie and hurt you.' There is no mention of financial promises."
+      "answer": "UPI functions as a payment infrastructure or system, rather than a gateway that authorizes payments or a processor that handles the transfer itself.",
+      "explanation": "The transcript explicitly states at [123.52-128.36] that 'UPI is neither strictly a payment processor nor a payment Gateway. It functions more as a payment infrastructure or system that facilitates real-time bank-to-bank transfers'."
     }
   ]
 }

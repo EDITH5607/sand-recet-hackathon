@@ -1,4 +1,4 @@
-console.log("✅ content.js loaded");
+console.log(" content.js loaded");
 
 let lastVideoId = null;
 let pauseTimer = null;
@@ -25,25 +25,24 @@ function sendVideoIdToServer(videoId) {
 			return res.json();
 		})
 		.then((data) => {
-			console.log("✅ Transcript saved:", data);
+			console.log("Transcript saved:", data);
 		})
 		.catch((err) => {
-			console.error("❌ Error sending videoId:", err);
+			console.error(" Error sending videoId:", err);
 		});
 }
 
 // Send pause event to server
-function sendPauseEventToServer(videoId, pauseTime, intervalMinutes, playbackPosition) {
-  console.log("Sending pause event to server:", { videoId, pauseTime, intervalMinutes, playbackPosition });
+function sendPauseEventToServer(videoId,  intervalMinutes, playbackPosition) {
+  console.log("Sending pause event to server:", { videoId, intervalMinutes, playbackPosition });
 
   fetch("http://localhost:3000/api/pause-event", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ 
-      videoId, 
-      pauseTime, 
+      videoId,  
       interval: intervalMinutes,
-      position: playbackPosition 
+      pauseTime: playbackPosition 
     }),
   })
   .then(res => {
@@ -51,10 +50,10 @@ function sendPauseEventToServer(videoId, pauseTime, intervalMinutes, playbackPos
     return res.json();
   })
   .then(data => {
-    console.log("✅ Pause event recorded:", data);
+    console.log(" Pause event recorded:", data);
   })
   .catch(err => {
-    console.error("❌ Error sending pause event:", err);
+    console.error(" Error sending pause event:", err);
   });
 }
 
@@ -63,12 +62,12 @@ function startPauseTimer(intervalMs) {
   clearTimeout(pauseTimer);
   pauseTimer = setTimeout(() => {
     if (currentVideo && !currentVideo.paused) {
-      const pauseTime = new Date().toISOString();
+      //const pauseTime = new Date().toISOString();
       const intervalMinutes = intervalMs / 60000;
       const playbackPosition = currentVideo.currentTime;
       
       currentVideo.pause();
-      console.log(`⏸️ Auto-paused at position: ${playbackPosition.toFixed(1)}s`);
+      console.log(`Auto-paused at position: ${playbackPosition.toFixed(1)}s`);
       
       // Show pause notification
       showPauseNotification(intervalMinutes);
@@ -78,7 +77,7 @@ function startPauseTimer(intervalMs) {
       
       // Send pause event to server
       if (videoId) {
-        sendPauseEventToServer(videoId, pauseTime, intervalMinutes, playbackPosition);
+        sendPauseEventToServer(videoId, intervalMinutes, playbackPosition);
       }
     }
   }, intervalMs);
