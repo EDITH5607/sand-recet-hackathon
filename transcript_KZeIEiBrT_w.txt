@@ -1,0 +1,1073 @@
+[0.21 - 3.06] - How many times do you need
+to shuffle a deck of cards
+[3.06 - 5.22] to make them truly random?
+[5.22 - 8.67] How much uranium does it
+take to build a nuclear bomb?
+[8.67 - 10.02] (explosion booming)
+[10.02 - 12.87] How can you predict the
+next word in a sentence?
+[12.87 - 15.21] And how does Google know which page
+[15.21 - 17.04] you&#39;re actually searching for?
+[17.04 - 18.21] Well, the reason we know the answer
+[18.21 - 19.59] to all of these questions
+[19.59 - 22.50] is because of a strange
+math feud in Russia
+[22.50 - 24.87] that took place over 100 years ago.
+[26.67 - 29.79] In 1905, socialist
+groups all across Russia
+[29.79 - 33.15] rose up against the Tsar,
+the ruler of the empire.
+[33.15 - 35.64] They demanded a complete political reform,
+[35.64 - 39.45] or failing that, that he stepped
+down from power entirely.
+[39.45 - 41.43] - This divided the nation into two.
+[41.43 - 44.04] So on one side you got
+the Tsarists, right?
+[44.04 - 46.14] They wanted to defend the status quo
+[46.14 - 48.06] and keep the Tsar in power.
+[48.06 - 49.08] But then on the other side,
+[49.08 - 50.37] you had the socialists
+[50.37 - 53.31] who wanted this complete political reform.
+[53.31 - 54.75] And this division was so bad
+[54.75 - 57.48] that it crept into every part of society
+[57.48 - 59.25] to the point where even mathematicians
+[59.25 - 60.96] started picking sides.
+[60.96 - 63.84] - [Derek] On the side of
+the Tsar was Pavel Nekrasov,
+[63.84 - 66.74] unofficially called the
+Tsar of Probability.
+[66.74 - 70.26] Nekrasov was a deeply
+religious and powerful man,
+[70.26 - 73.11] and he used his status to
+argue that math could be used
+[73.11 - 75.75] to explain free will and the will of God.
+[76.83 - 79.35] - His intellectual nemesis
+on the socialist side
+[79.35 - 83.28] was Andrey Markov, also
+known as Andrey The Furious.
+[84.36 - 85.71] Markov was an atheist
+[85.71 - 87.36] and he had no patience for people
+[87.36 - 89.16] who were being unrigorous,
+[89.16 - 91.38] something he considered Nekrasov to be,
+[91.38 - 92.37] because in his eyes,
+[92.37 - 95.34] math had nothing to do
+with free will or religion.
+[95.34 - 98.04] So he publicly criticized Nekrasov&#39;s work,
+[98.04 - 101.52] listing it among &quot;the
+abuses of mathematics.&quot;
+[101.52 - 103.44] Their feud centered on the main idea
+[103.44 - 106.95] people had used to do probability
+for the last 200 years.
+[106.95 - 110.28] And we can illustrate this
+with a simple coin flip.
+[110.28 - 111.72] When I flip the coin 10 times,
+[111.72 - 114.45] I get six times heads
+and four times tails,
+[114.45 - 117.39] which is obviously not
+the 50/50 you&#39;d expect.
+[117.39 - 119.13] But if I keep flipping the coin,
+[119.13 - 122.07] then at first the ratio
+jumps all over the place.
+[122.07 - 124.14] But after a large number of flips,
+[124.14 - 128.01] we see that it slowly settles
+down and approaches 50/50.
+[128.01 - 130.53] And in this case, after 100 flips,
+[130.53 - 134.07] we end up on 51 heads and 49 tails,
+[134.07 - 137.37] which is almost exactly
+what you would expect.
+[137.37 - 139.50] This behavior that the average outcome
+[139.50 - 142.11] gets closer and closer
+to the expected value
+[142.11 - 144.54] as you run more and
+more independent trials
+[144.54 - 147.21] is known as the law of large numbers.
+[147.21 - 150.84] It was first proven by
+Jacob Bernoulli in 1713,
+[150.84 - 152.19] and it was the key concept
+[152.19 - 154.20] at the heart of probability theory
+[154.20 - 156.75] right up until Markov and Nekrasov.
+[156.75 - 158.46] But Bernoulli only proved
+[158.46 - 160.29] that it worked for independent events
+[160.29 - 162.06] like a fair coin flip,
+[162.06 - 163.74] or when you ask people to guess
+[163.74 - 165.90] how much they think an item is worth,
+[165.90 - 169.29] where one event doesn&#39;t
+influence the others.
+[169.29 - 172.29] But now imagine that instead
+of asking each person
+[172.29 - 174.42] to submit their guess individually,
+[174.42 - 177.90] you ask people to shout
+out their answer in public.
+[177.90 - 178.98] Well, in this case,
+[178.98 - 180.27] the first person might think
+[180.27 - 182.49] it&#39;s an extraordinarily valuable item,
+[182.49 - 185.58] and say it&#39;s worth around $2,000,
+[185.58 - 187.95] but now all the other people in the room
+[187.95 - 189.63] are influenced by this value,
+[189.63 - 192.84] and so, their guesses
+have become dependent.
+[192.84 - 196.14] And now the average doesn&#39;t
+converge to the true value,
+[196.14 - 199.56] but instead it clusters
+around a higher amount.
+[199.56 - 201.42] - And so, for 200 years,
+[201.42 - 204.30] probability had relied
+on this key assumption,
+[204.30 - 206.04] that you need independence
+[206.04 - 208.68] to observe the law of large numbers.
+[208.68 - 210.03] And this was the idea
+[210.03 - 212.82] that sparked Nekrasov and Markov&#39;s feud.
+[212.82 - 214.83] See, Nekrasov agreed with Bernoulli
+[214.83 - 217.80] that you need independence to
+get the law of large numbers.
+[217.80 - 219.78] But he took it one step further.
+[219.78 - 222.30] He said, if you see the
+law of large numbers,
+[222.30 - 224.88] you can infer that the underlying events
+[224.88 - 227.55] must be independent.
+[227.55 - 232.38] - Take this table of Belgian
+marriages from 1841 to 1845.
+[232.38 - 235.50] Now you see that every year
+the average is about 29,000.
+[235.50 - 238.29] And so, it seems like the values converge
+[238.29 - 241.14] and therefore that they follow
+the law of large numbers.
+[241.14 - 243.72] And when Nekrasov looked
+at other social statistics
+[243.72 - 245.82] like crime rates and birth rates,
+[245.82 - 247.98] he noticed a similar pattern.
+[247.98 - 250.65] But now think about where
+all this data is coming from.
+[250.65 - 252.99] It&#39;s coming from decisions to get married,
+[252.99 - 254.52] decisions to commit crimes,
+[254.52 - 256.14] and decisions to have babies,
+[256.14 - 258.21] at least for the most part.
+[258.21 - 260.49] So Nekrasov reasoned that
+because these statistics
+[260.49 - 262.14] followed the law of large numbers,
+[262.14 - 264.81] the decisions causing
+them must be independent.
+[264.81 - 265.77] In other words,
+[265.77 - 269.04] he argued that they must
+be acts of free will.
+[269.04 - 272.19] So to him, free will wasn&#39;t
+just something philosophical,
+[272.19 - 274.05] it was something you could measure.
+[274.05 - 275.58] It was scientific.
+[277.11 - 280.74] - [Derek] But to Markov,
+Nekrasov was delusional.
+[280.74 - 281.88] He thought it was absurd
+[281.88 - 284.64] to link mathematical
+independence to free will.
+[285.72 - 288.75] So Markov set out to prove
+that dependent events
+[288.75 - 291.45] could also follow the
+law of large numbers,
+[291.45 - 295.11] and that you can still do
+probability with dependent events.
+[296.43 - 297.93] - To do this, he needed something
+[297.93 - 301.32] where one event clearly
+depended on what came before,
+[301.32 - 304.65] and he got the idea that
+this is what happens in text.
+[304.65 - 307.50] Whether your next letter
+is a consonant or a vowel
+[307.50 - 310.53] depends heavily on what
+the current letter is.
+[310.53 - 313.14] So to test this, Markov turned to a poem
+[313.14 - 315.07] at the heart of Russian literature,
+[315.07 - 317.67] &quot;Eugene Onegin&quot; by Alexander Pushkin.
+[319.05 - 321.54] - He took the first 20,000
+letters of the poem,
+[321.54 - 324.09] stripped out all punctuation and spaces,
+[324.09 - 327.81] and pushed them together into
+one long string of characters.
+[327.81 - 328.86] He counted the letters
+[328.86 - 333.48] and found that 43% were vowels
+and 57% were consonants.
+[333.48 - 337.11] Then Markov broke the string
+into overlapping pairs,
+[337.11 - 339.72] that gave him four possible combinations,
+[339.72 - 341.70] vowel-vowel, consonant-consonant,
+[341.70 - 344.65] vowel-consonant, or consonant-vowel.
+[344.65 - 346.86] Now, if the letters were independent,
+[346.86 - 348.72] the probability of a vowel-vowel pair
+[348.72 - 351.60] would just be the
+probability of a vowel twice,
+[351.60 - 355.20] which is about 0.18 or an 18% chance.
+[356.16 - 358.41] But when Markov actually counted,
+[358.41 - 363.15] he found vowel-vowel pairs
+only show up 6% of the time,
+[363.15 - 366.24] way less than if they were independent.
+[366.24 - 367.89] And when he checked the other pairs,
+[367.89 - 370.92] he found that all actual
+values differed greatly
+[370.92 - 373.86] from what the independent
+case would predict.
+[373.86 - 377.13] So Markov had shown that
+the letters were dependent.
+[378.09 - 381.03] And to beat Nekrasov, all
+he needed to do now was show
+[381.03 - 384.03] that these letters still followed
+the law of large numbers.
+[384.03 - 388.05] So he created a prediction
+machine of sorts.
+[388.05 - 390.06] He started by drawing two circles,
+[390.06 - 392.43] one for a vowel and one for a consonant.
+[392.43 - 394.41] These were his states.
+[394.41 - 396.15] Now, say you&#39;re at a vowel,
+[396.15 - 399.66] then the next letter could
+either be a vowel or a consonant.
+[399.66 - 402.94] So he drew two arrows to
+represent these transitions.
+[402.94 - 406.44] But what are these
+transition probabilities?
+[406.44 - 409.32] Well, Markov knew that if you
+pick a random starting point,
+[409.32 - 412.44] there is a 43% chance
+that it&#39;ll be a vowel.
+[412.44 - 414.45] He also knew that vowel-vowel pairs
+[414.45 - 417.15] occur about 6% of the time.
+[417.15 - 418.26] So to find the probability
+[418.26 - 420.45] of going from a vowel to another vowel,
+[420.45 - 423.45] he divided 0.06 by 0.43
+[423.45 - 427.14] to find a transition
+probability of about 13%.
+[427.14 - 429.42] And since there is a 100% chance
+[429.42 - 431.43] that another letter comes next,
+[431.43 - 433.62] all the arrows going from the same state
+[433.62 - 435.36] need to add up to one.
+[435.36 - 437.19] So the chance of going to a consonant
+[437.19 - 441.57] is one minus 0.13, or 87%.
+[441.57 - 443.52] He repeated this process
+for the consonants
+[443.52 - 445.98] to complete his predictive machine.
+[445.98 - 447.81] So let&#39;s see how it works.
+[448.89 - 450.12] We&#39;ll start at a vowel.
+[451.17 - 454.71] Next, we generate a random
+number between zero and one.
+[454.71 - 457.47] If it&#39;s below 0.13, we get another vowel,
+[457.47 - 459.84] if it&#39;s above, we get a consonant.
+[459.84 - 462.66] We got 0.78, so we get a consonant,
+[462.66 - 463.98] then we generate another number,
+[463.98 - 466.90] and check if it&#39;s above or below 0.67,
+[466.90 - 469.05] 0.21, so we get a vowel.
+[470.01 - 471.39] Now, we can keep doing this
+[471.39 - 474.57] and keep track of the ratio
+of vowels to consonants.
+[474.57 - 477.21] At first, the ratio
+jumps all over the place,
+[477.21 - 480.96] but after a while, it
+converges to a steady value,
+[480.96 - 484.23] 43% vowels and 57% consonants,
+[484.23 - 487.59] the exact split Markov
+had counted by hand.
+[489.21 - 491.82] So Markov had built a dependent system,
+[491.82 - 493.89] a literal chain of events,
+[493.89 - 495.69] and he showed that it still followed
+[495.69 - 497.25] the law of large numbers,
+[497.25 - 500.04] which meant that observing
+convergence in social statistics
+[500.04 - 503.16] didn&#39;t prove that the underlying
+decisions were independent.
+[503.16 - 504.15] In other words,
+[504.15 - 507.33] those statistics don&#39;t
+prove free will at all.
+[507.33 - 511.20] Markov had shattered Nekrasov&#39;s
+argument, and he knew it.
+[511.20 - 514.96] So he ended his paper with
+one final dig at his rival.
+[514.96 - 519.18] &quot;Thus, free will is not
+necessary to do probability.&quot;
+[519.18 - 520.77] In fact, independence
+[520.77 - 523.17] isn&#39;t even necessary to do probability.
+[523.17 - 525.84] With this Markov chain,
+as it came to be known,
+[525.84 - 529.59] he found a way to do probability
+with dependent events.
+[529.59 - 531.63] This should have been a huge breakthrough,
+[531.63 - 533.19] because in the real world,
+[533.19 - 536.16] almost everything is
+dependent on something else.
+[536.16 - 537.75] I mean, the weather tomorrow
+[537.75 - 540.24] depends on the conditions today.
+[540.24 - 541.32] How a disease spreads
+[541.32 - 543.45] depends on who&#39;s infected right now,
+[543.45 - 545.40] and the behavior of particles
+[545.40 - 548.82] depends on the behavior
+of particles around them.
+[548.82 - 550.20] Many of these processes
+[550.20 - 552.45] could be modeled using Markov chains.
+[553.59 - 555.39] Do people think it was
+like a mic drop moment
+[555.39 - 559.31] and like, &quot;Oh, Nekrasov&#39;s
+out, like, Markov&#39;s the man&quot;?
+[559.31 - 561.71] Or people didn&#39;t really
+notice, or it was obscure, or?
+[562.74 - 565.56] - I feel like people didn&#39;t really notice,
+[565.56 - 567.69] like, it wasn&#39;t a really big thing.
+[568.77 - 571.53] And Markov himself
+seemingly didn&#39;t care much
+[571.53 - 574.56] about how it might be
+applied to practical events.
+[574.56 - 577.23] He wrote, &quot;I&#39;m concerned
+only with questions
+[577.23 - 578.76] of pure analysis.
+[578.76 - 581.25] I refer to the question
+of the applicability
+[581.25 - 582.66] with indifference.&quot;
+[583.74 - 587.25] Little did he know that this
+new form of probability theory
+[587.25 - 589.05] would soon play a major role
+[589.05 - 591.18] in one of the most important developments
+[591.18 - 592.47] of the 20th century.
+[594.30 - 598.11] On the morning of the 16th of July, 1945,
+[598.11 - 601.23] the United States detonated The Gadget,
+[601.23 - 603.48] the world&#39;s first nuclear bomb.
+[604.86 - 608.16] The six kilogram plutonium
+bomb created an explosion
+[608.16 - 612.69] that was equivalent to
+nearly 25,000 tons of TNT.
+[612.69 - 614.34] This was the culmination
+[614.34 - 616.95] of the top secret Manhattan Project,
+[616.95 - 618.33] a three-year long effort
+[618.33 - 620.82] by some of the smartest people alive,
+[620.82 - 623.19] including people like
+J. Robert Oppenheimer,
+[623.19 - 624.75] John von Neumann,
+[624.75 - 627.54] and a little known mathematician
+named Stanislaw Ulam.
+[629.82 - 631.29] - [Derek] Even after the war ended,
+[631.29 - 633.06] Ulam continued trying to figure out
+[633.06 - 635.91] how neutrons behave inside a nuclear bomb.
+[635.91 - 638.55] Now, a nuclear bomb works
+something like this.
+[638.55 - 641.43] Say you have a core of uranium-235,
+[641.43 - 644.64] then when a neutron hits a U-235 nucleus,
+[644.64 - 646.89] the nucleus splits releasing energy
+[646.89 - 650.37] and, crucially, two or
+three more neutrons.
+[650.37 - 652.86] If, on average, those
+new neutrons go on to hit
+[652.86 - 656.07] and split more than one
+other U-235 nucleus,
+[656.07 - 658.38] you get a runaway chain reaction,
+[658.38 - 660.66] so you have a nuclear bomb.
+[660.66 - 663.96] But uranium-235, the fissile
+fuel needed for the bombs
+[663.96 - 665.55] was really hard to get.
+[665.55 - 668.40] So one of the key questions
+was just how much of it
+[668.40 - 670.32] do you need to build a bomb?
+[670.32 - 672.57] And this is why Ulam wanted to understand
+[672.57 - 674.37] how the neutrons behave.
+[675.45 - 678.09] - [Casper] But then in January of 1946,
+[678.09 - 680.95] everything came to a halt.
+[680.95 - 684.72] Ulam was struck by a sudden and
+severe case of encephalitis,
+[684.72 - 688.71] an inflammation of the brain,
+that nearly killed him.
+[688.71 - 690.69] His recovery was long and slow,
+[690.69 - 694.02] with Ulam spending most
+of his time in beds.
+[694.02 - 698.31] To pass the time, he played a
+simple card game, Solitaire.
+[698.31 - 700.20] But as he played countless games,
+[700.20 - 702.57] winning some, losing others,
+[702.57 - 705.03] one question kept nagging at him,
+[705.03 - 706.08] what are the chances
+[706.08 - 710.16] that a randomly-shuffled game
+of Solitaire could be won?
+[710.16 - 713.58] It was a deceivingly
+difficult problem to solve.
+[713.58 - 715.77] Ulam played with all 52 cards
+[715.77 - 718.41] where each arrangement
+created a unique game,
+[718.41 - 722.34] so the total number of possible
+games was 52 factorial,
+[722.34 - 725.22] or about eight times 10 to 67.
+[726.18 - 729.15] So solving this analytically was hopeless.
+[730.20 - 732.60] But then Ulam had a flash of insight,
+[732.60 - 734.55] what if I just play hundreds of games
+[734.55 - 736.83] and count how many could be won?
+[736.83 - 737.66] That would give him
+[737.66 - 740.49] some sort of statistical
+approximation of the answer.
+[741.75 - 743.97] Back at Los Alamos, the
+remaining scientists
+[743.97 - 746.85] grappled with much harder
+problems than Solitaire,
+[746.85 - 750.18] like figuring out how neutrons
+behave inside a nuclear core.
+[751.41 - 752.28] In a nuclear core,
+[752.28 - 754.47] there are trillions and
+trillions of neutrons
+[754.47 - 756.81] all interacting with their surroundings.
+[756.81 - 759.30] So the number of possible
+outcomes is immense,
+[759.30 - 762.66] and computing it directly
+seemed impossible.
+[762.66 - 764.40] - [Derek] But when Ulam returned to work,
+[764.40 - 766.71] he had a sudden revelation.
+[766.71 - 768.45] What if we could simulate these systems
+[768.45 - 770.82] by generating lots of random outcomes
+[770.82 - 772.86] like I did with Solitaire?
+[772.86 - 774.78] He shared this idea with von Neumann,
+[774.78 - 777.27] who immediately recognized its power,
+[777.27 - 779.43] but also spotted a key problem.
+[780.39 - 783.24] - See, in Solitaire,
+each game is independent.
+[783.24 - 785.01] How the cards are dealt in one game
+[785.01 - 789.10] have no effect on the next,
+but neutrons aren&#39;t like that.
+[789.10 - 791.52] A neutron&#39;s behavior
+depends on where it is
+[791.52 - 793.29] and what it has done before.
+[794.52 - 797.04] So you couldn&#39;t just
+sample random outcomes
+[797.04 - 798.33] like in Solitaire.
+[798.33 - 801.57] Instead, you needed to model
+a whole chain of events
+[801.57 - 804.33] where each step influenced the next.
+[804.33 - 805.92] What von Neumann realized
+[805.92 - 808.89] is that you needed a Markov chain.
+[808.89 - 810.15] So they made one
+[810.15 - 812.04] and a much simplified version of it
+[812.04 - 814.11] works something like this.
+[814.11 - 815.22] Now, the starting state
+[815.22 - 817.74] is just a neutron
+traveling through the core,
+[817.74 - 819.78] and from there, three things can happen.
+[819.78 - 822.81] It can scatter off an
+atom and keep traveling,
+[822.81 - 825.69] so that gives you an arrow
+going back to itself.
+[825.69 - 826.95] It can leave the system
+[826.95 - 829.23] or get absorbed by a non-fissile material,
+[829.23 - 832.47] in which case it no longer takes
+part in the chain reaction,
+[832.47 - 835.17] and so it ends its Markov chain,
+[835.17 - 838.53] or it can strike another uranium-235 atom,
+[838.53 - 840.15] triggering a fission event
+[840.15 - 842.49] and releasing two or three more neutrons
+[842.49 - 844.41] that then start their own chains.
+[845.34 - 846.51] But in this chain,
+[846.51 - 848.85] the transition probabilities aren&#39;t fixed,
+[848.85 - 851.25] they depend on things like
+the neutron&#39;s position,
+[851.25 - 852.75] velocity and energy,
+[852.75 - 855.81] as well as the overall
+configuration and mass of uranium.
+[856.95 - 860.31] So a fast-moving neutron might
+have a 30% chance to scatter,
+[860.31 - 862.59] a 50% chance to be absorbed or leave,
+[862.59 - 865.08] and a 20% chance to cause fission.
+[865.08 - 866.49] But a slower-moving neutron
+[866.49 - 868.24] would have different probabilities.
+[869.58 - 871.08] Next, they ran this chain
+[871.08 - 874.59] on the world&#39;s first
+electronic computer, the ENIAC.
+[874.59 - 875.52] The computer started
+[875.52 - 878.16] by randomly generating a
+neutron starting conditions
+[878.16 - 879.30] and stepped through the chain
+[879.30 - 880.95] to keep track of how many neutrons
+[880.95 - 883.50] were produced on average per run,
+[883.50 - 886.41] known as the multiplication factor k.
+[886.41 - 888.42] So if, on average, one neutron
+[888.42 - 892.38] produces another two neutrons,
+then k is equal to two.
+[892.38 - 895.95] And if on average every two
+neutrons produce three neutrons,
+[895.95 - 899.40] then k is equal to three
+over two, and so on.
+[899.40 - 901.23] Then, after stepping
+through the full chain
+[901.23 - 903.12] for a specified number of steps,
+[903.12 - 904.89] we collect the average k-value
+[904.89 - 907.50] and record that number in a histogram.
+[907.50 - 910.11] This process was then
+repeated hundreds of times,
+[910.11 - 911.79] and the results tallied up,
+[911.79 - 915.28] giving you a statistical
+distribution of the outcome.
+[915.28 - 918.39] If you find that in most
+cases, k is less than one,
+[918.39 - 919.89] the reaction dies down.
+[919.89 - 921.27] If it&#39;s equal to one,
+[921.27 - 923.40] there&#39;s a self-sustaining chain reaction,
+[923.40 - 924.84] but it doesn&#39;t grow.
+[924.84 - 926.40] And if k is larger than one,
+[926.40 - 928.32] the reaction grows exponentially
+[928.32 - 929.76] and you&#39;ve got a bomb.
+[931.29 - 934.14] - With it, von Neumann and
+Ulam had a statistical way
+[934.14 - 936.69] to figure out how many
+neutrons were produced
+[936.69 - 939.81] without having to do
+any exact calculations.
+[939.81 - 940.64] In other words,
+[940.64 - 942.60] they could approximate
+differential equations
+[942.60 - 945.66] that were too hard to solve analytically.
+[945.66 - 948.96] All that was needed was a
+name for the new method.
+[948.96 - 951.09] Now, Ulam&#39;s uncle was a gambler,
+[951.09 - 952.20] and the random sampling
+[952.20 - 954.18] and high stakes reminded Ulam
+[954.18 - 958.23] of the Monte Carlo Casino in
+Monaco, and the name stuck.
+[958.23 - 961.65] The  Monte
+Carlo method was born.
+[961.65 - 963.51] The method was so successful
+[963.51 - 965.94] that it didn&#39;t stay secret for long.
+[965.94 - 967.53] By the end of 1948,
+[967.53 - 970.47] scientists at another
+lab, Argonne, in Chicago,
+[970.47 - 973.14] used it to study nuclear reactor designs,
+[973.14 - 976.43] and from there, the idea spread quickly.
+[976.43 - 978.19] Ulam later remarked,
+[978.19 - 981.06] &quot;It is still an unending
+source of surprise for me
+[981.06 - 983.40] to see how a few scribbles on a blackboard
+[983.40 - 985.98] could change the course of human affairs.&quot;
+[987.18 - 988.77] And it wouldn&#39;t be the last time
+[988.77 - 990.09] Markov chain based method
+[990.09 - 992.69] changed the course of human affairs.
+[992.68 - 995.88] (upbeat music)
+[995.88 - 999.09] - In 1993, the internet
+was open to the public,
+[999.09 - 1001.28] and soon it exploded.
+[1001.28 - 1004.88] By the mid-1990s, thousands of
+new pages appeared every day,
+[1004.88 - 1008.00] and that number was only growing.
+[1008.00 - 1010.76] This created a new kind of problem.
+[1010.76 - 1012.50] I mean, how do you find anything
+[1012.50 - 1015.65] in this ever-expending sea of information?
+[1015.65 - 1018.71] In 1994, two Stanford PhD students,
+[1018.71 - 1020.60] Jerry Yang and David Filo,
+[1020.60 - 1022.31] founded the search engine Yahoo,
+[1022.31 - 1026.45] to address this issue,
+but they needed money.
+[1026.45 - 1028.70] So a year later, they arranged to meet
+[1028.70 - 1031.46] with Japanese billionaire, Masayoshi Son,
+[1031.46 - 1033.98] also known as the Bill Gates of Japan.
+[1033.98 - 1035.18] (gong clangs)
+[1035.18 - 1037.37] - They were looking to raise $5 million
+[1037.37 - 1041.21] for their next startup,
+but Son has other plans.
+[1042.17 - 1046.01] He offers to invest a
+full $100 million instead.
+[1046.01 - 1049.43] That&#39;s 20 times more than
+what the founders asked for.
+[1049.43 - 1053.12] So Jerry Yang declines saying,
+&quot;We don&#39;t need that much,&quot;
+[1053.12 - 1055.20] but Son disagrees,
+[1055.20 - 1058.42] &quot;Jerry, everyone needs $100 million.&quot;
+[1058.42 - 1060.14] (Son laughs)
+[1060.14 - 1062.39] Before the founders get
+a chance to respond,
+[1062.39 - 1064.11] Son jumps in again and asks,
+[1064.11 - 1066.03] &quot;Who are your biggest competitors?&quot;
+[1066.03 - 1069.32] &quot;Excite and lycos,&quot; the pair respond.
+[1069.32 - 1071.93] Son orders his associate
+to write those names down.
+[1071.93 - 1074.75] And then he says, &quot;If you
+don&#39;t let me invest in Yahoo,
+[1074.75 - 1078.17] I will invest in one of
+them and I&#39;ll kill you.&quot;
+[1079.16 - 1081.38] See, Son had realized something.
+[1081.38 - 1083.63] None of the leading
+search engines at the time
+[1083.63 - 1085.67] had any superior technology.
+[1085.67 - 1089.18] They didn&#39;t have a technological
+advantage over the others.
+[1089.18 - 1090.89] They all just ranked pages
+[1090.89 - 1094.31] by how often a search term
+appears on a given page.
+[1094.31 - 1096.65] So the battle for the
+number one search engine
+[1096.65 - 1099.59] would be decided by who
+could attract the most users,
+[1099.59 - 1101.84] who could spend the most on marketing.
+[1101.84 - 1103.70] - [Announcer 1] Lycos, go get it.
+[1103.70 - 1106.46] - [Announcer 2] Get Lycos, or get lost.
+[1106.46 - 1108.62] - [Announcer 3] This is revolution.
+[1108.62 - 1111.42] (upbeat funky music)
+[1111.42 - 1113.60] ♪ Yahoo ♪
+[1113.60 - 1115.70] - [Derek] And marketing
+required a lot of money,
+[1115.70 - 1120.65] money that Son had, so he
+could decide who won the war.
+[1120.65 - 1123.50] Yahoo&#39;s founders realized they
+were left with no real choice
+[1123.50 - 1126.20] but to accept Son&#39;s investment.
+[1126.20 - 1128.54] - [Speaker] So here we are,
+right in the middle of Yahoo.
+[1128.54 - 1129.77] - [Derek] And within four years,
+[1129.77 - 1132.95] Yahoo became the most
+popular site on the planet.
+[1132.95 - 1135.50] - [Reporter] In the time it
+takes to say this sentence,
+[1135.50 - 1140.50] Yahoo will answer 79,000
+information requests worldwide,
+[1140.51 - 1144.72] the two men are now
+worth $120 million each.
+[1144.72 - 1146.72] ♪ Yahoo ♪
+[1147.71 - 1150.74] - But Yahoo had a critical weakness.
+[1151.64 - 1154.58] See, Yahoo&#39;s keyword
+search was easy to trick.
+[1154.58 - 1155.99] To get your page ranked highly,
+[1155.99 - 1158.60] you could just repeat
+keywords hundreds of times,
+[1158.60 - 1161.00] hidden with white text
+on a white background.
+[1161.99 - 1165.08] - One thing they didn&#39;t
+have in those early days
+[1165.08 - 1168.23] was a notion of quality of the result.
+[1168.23 - 1171.35] So they had a notion of relevance saying,
+[1171.35 - 1173.81] does this document talk about the thing
+[1173.81 - 1175.61] that you&#39;re interested in?
+[1175.61 - 1179.18] But there wasn&#39;t really a
+notion of which ones are better.
+[1179.18 - 1181.55] - What they really needed
+was a way to rank pages
+[1181.55 - 1184.13] by both relevance and quality.
+[1184.13 - 1186.77] But how do you measure
+the quality of a webpage?
+[1186.77 - 1188.09] Well, to understand that,
+[1188.09 - 1190.49] we need to borrow an idea from libraries.
+[1190.49 - 1193.22] - So I&#39;m old enough that library books
+[1193.22 - 1195.26] used to have a paper card in it
+[1195.26 - 1197.24] that was a stamp of all the due dates
+[1197.24 - 1198.50] of when it was due back.
+[1198.50 - 1200.21] You took a book and if
+it had a lot of those,
+[1200.21 - 1201.86] you said, &quot;Oh, this is
+probably a good book.&quot;
+[1201.86 - 1203.88] And if it didn&#39;t have any, you said,
+[1203.88 - 1206.15] &quot;Well, maybe this isn&#39;t the best book.&quot;
+[1206.15 - 1207.89] - Stamps acted like endorsements.
+[1207.89 - 1209.99] The more stamps, the
+better the book must be.
+[1209.99 - 1212.84] And the same idea can
+be applied to the web.
+[1212.84 - 1215.21] Over at Stanford, two PhD students,
+[1215.21 - 1216.98] Sergey Brin and Larry Page,
+[1216.98 - 1219.32] were working on this exact problem.
+[1219.32 - 1222.47] Brin and Page realized
+that each link to a page
+[1222.47 - 1224.63] can be thought of as an endorsement.
+[1224.63 - 1226.52] And the more links a page sends out,
+[1226.52 - 1229.73] the less valuable each vote becomes.
+[1229.73 - 1232.31] So what they realized is
+that we can model the web
+[1232.31 - 1233.36] as a Markov chain.
+[1234.68 - 1236.12] - [Derek] To see how this works,
+[1236.12 - 1239.30] imagine a toy internet
+with just four webpages.
+[1239.30 - 1242.57] Call them Amy, Ben, Chris, and Dan.
+[1242.57 - 1244.31] These are our states.
+[1244.31 - 1246.56] Typically, one webpage links to others,
+[1246.56 - 1248.33] allowing you to move between them.
+[1248.33 - 1250.49] These are our transitions.
+[1250.49 - 1252.86] In this setup, Amy only links to Ben,
+[1252.86 - 1256.79] so there&#39;s a 100% chance
+of going from Amy to Ben.
+[1256.79 - 1258.98] Ben links to Amy, Chris, and Dan,
+[1258.98 - 1262.67] so there&#39;s a 33% chance of
+going to any of those pages,
+[1262.67 - 1265.01] and we can fill out the other
+transition probabilities
+[1265.01 - 1266.12] in the same way.
+[1267.05 - 1270.02] So now we can run this Markov
+chain and see what happens.
+[1270.89 - 1273.11] Imagine you&#39;re a surfer on this web.
+[1273.11 - 1275.63] You start on a random page, say, Amy,
+[1275.63 - 1277.52] and you keep running the machine
+[1277.52 - 1279.29] and keep track of the percentage of time
+[1279.29 - 1281.54] you spend on each page.
+[1281.54 - 1283.61] Over time, the ratio settles
+[1283.61 - 1285.38] and the scores give us some measure
+[1285.38 - 1288.20] of the relative importance of these pages.
+[1288.20 - 1289.64] You spend the most time on Ben,
+[1289.64 - 1292.91] so Ben is ranked first,
+followed by Amy, then Dan,
+[1292.91 - 1294.98] and lastly Chris.
+[1294.98 - 1297.71] It might seem like there&#39;s an
+easy way to beat the system,
+[1297.71 - 1300.74] just make 100 pages all
+linking to your website.
+[1300.74 - 1302.48] Now you get 100 full votes
+[1302.48 - 1307.22] and you&#39;ll always rank on
+top, but that is not the case.
+[1307.22 - 1308.87] While during their first few steps,
+[1308.87 - 1310.97] they might make your page seem important,
+[1310.97 - 1313.07] none of the other websites link to them.
+[1313.07 - 1317.15] So over many steps, their
+contributions don&#39;t matter.
+[1317.15 - 1318.53] You might have many links,
+[1318.53 - 1320.06] but they&#39;re not quality links,
+[1320.06 - 1321.89] so they don&#39;t affect the algorithm.
+[1323.78 - 1325.82] - But there is still one problem, though,
+[1325.82 - 1327.71] not all pages are connected.
+[1327.71 - 1329.21] In networks like this one,
+[1329.21 - 1331.40] a random server can get stuck in a loop,
+[1331.40 - 1333.62] never reaching the rest of the web.
+[1333.62 - 1335.03] So to fix this,
+[1335.03 - 1337.94] we can set a rule that 85% of the time,
+[1337.94 - 1340.85] our random server just
+follows a link like normal.
+[1340.85 - 1342.95] But then for about 15% of the time,
+[1342.95 - 1345.65] they just jump to a page at random.
+[1345.65 - 1347.33] This damping factor makes sure
+[1347.33 - 1349.64] that we explore all
+possible parts of the web
+[1349.64 - 1351.32] without ever getting stuck.
+[1352.40 - 1354.02] By using Markov chains,
+[1354.02 - 1356.66] Page and Brin had built
+a better search engine,
+[1356.66 - 1358.55] and they called it PageRank.
+[1358.55 - 1362.42] - Because it&#39;s talking
+about how pages react,
+[1362.42 - 1363.77] webpages react with each other
+[1363.77 - 1366.53] and also &#39;cause the
+founder&#39;s name is Larry Page,
+[1366.53 - 1368.24] so he snuck that in.
+[1368.24 - 1369.14] - With PageRank,
+[1369.14 - 1371.36] Google got much better search results,
+[1371.36 - 1372.74] often getting you to the site
+[1372.74 - 1374.93] you were looking for in one go.
+[1374.93 - 1378.15] Although, to some, this
+sounded like a terrible idea.
+[1378.15 - 1380.87] - Others said, &quot;Oh, well you&#39;re
+telling me you get a search
+[1380.87 - 1384.17] that will get the right
+result on the first answer?
+[1384.17 - 1385.01] Well, I don&#39;t want that
+[1385.01 - 1388.91] because if it takes them
+three or four chances,
+[1388.91 - 1390.50] searches to get the right answer,
+[1390.50 - 1393.26] then I have three or
+four chances to show ads,
+[1393.26 - 1395.27] and if you get &#39;em the answer right away,
+[1395.27 - 1396.29] I&#39;m just gonna lose them.
+[1396.29 - 1400.46] So, you know, I don&#39;t see
+why better search is better.&quot;
+[1400.46 - 1402.20] - But Page and Brin disagreed.
+[1402.20 - 1404.96] They were convinced that if
+their product was far superior,
+[1404.96 - 1406.73] then people would flock to it.
+[1406.73 - 1410.42] - I would say it actually
+is a democracy that works.
+[1410.42 - 1412.20] If all pages were equal,
+[1412.20 - 1415.13] anybody can manufacture as
+many pages as they want.
+[1415.13 - 1418.40] I can set up a billion
+pages in my server tomorrow.
+[1418.40 - 1420.20] We shouldn&#39;t treat them all as equal.
+[1420.20 - 1422.99] Just looking at the data out of curiosity,
+[1422.99 - 1424.28] we found that we had technology
+[1424.28 - 1425.78] to do a better job of search,
+[1425.78 - 1429.71] and we realized how impactful
+having great search can be.
+[1429.71 - 1433.04] - And so, in 1998, they
+launched their new search engine
+[1433.04 - 1434.51] to take on Yahoo.
+[1434.51 - 1436.37] Initially, they called it BackRub,
+[1436.37 - 1438.65] after the backlinks it analyzed,
+[1438.65 - 1439.48] but then they realized
+[1439.48 - 1442.25] that maybe that&#39;s not
+the most attractive name.
+[1442.25 - 1443.81] Now, their ambitions were big
+[1443.81 - 1446.93] to essentially index all
+the pages on the internet,
+[1446.93 - 1449.42] and they needed a name equally as big.
+[1449.42 - 1452.45] So they thought of the largest
+number they could think of,
+[1452.45 - 1455.51] 10 to the power of 100, a googol.
+[1455.51 - 1457.73] But then when trying to
+register their domain,
+[1457.73 - 1459.32] they accidentally misspelled it.
+[1459.32 - 1461.84] And so, Google was born.
+[1461.84 - 1464.59] (dramatic music)
+[1466.65 - 1467.99] Over the next four years,
+[1467.99 - 1469.49] Google overthrew Yahoo
+[1469.49 - 1471.53] to become the most used search engine.
+[1471.53 - 1472.97] - Everyone who knows the internet
+[1472.97 - 1474.83] almost certainly knows Google.
+[1474.83 - 1477.89] - Googling is like oxygen to teenagers.
+[1477.89 - 1479.27] - [Casper] And today, Alphabet,
+[1479.27 - 1480.89] which is Google&#39;s parent company,
+[1480.89 - 1483.29] is worth around $2 trillion.
+[1483.29 - 1485.81] - When Google makes even
+the slightest change
+[1485.81 - 1488.41] in its algorithms, it
+can have huge effects.
+[1488.41 - 1489.41] - Google.
+- Google.
+[1489.41 - 1491.78] - Google.
+- Google.
+[1491.78 - 1492.74] - They&#39;re on fire.
+[1492.74 - 1493.97] And the reason why they&#39;re on fire
+[1493.97 - 1495.08] is because they&#39;re focused
+[1495.08 - 1497.06] and they&#39;re more focused
+than Yahoo who does search,
+[1497.06 - 1498.38] they&#39;re more focused than Microsoft
+[1498.38 - 1499.58] who does search with Bing.
+[1499.58 - 1501.59] Yahoo has lots of
+traffic, they always have,
+[1501.59 - 1503.24] they have some really great properties,
+[1503.24 - 1506.48] but I don&#39;t think Yahoo is
+the go-to place, you know.
+[1506.48 - 1509.33] - And at the heart of this
+trillion dollar algorithm
+[1509.33 - 1512.90] is a Markov chain, which only
+looks at the current state
+[1512.90 - 1514.94] to predict what&#39;s going to happen next.
+[1515.99 - 1518.78] But in the 1940s, Claude Shannon,
+[1518.78 - 1520.64] the father of information theory,
+[1520.64 - 1523.46] started asking a different question.
+[1523.46 - 1526.85] He went back to Markov&#39;s
+original idea of predicting text,
+[1526.85 - 1529.25] but instead of just using
+vowels and consonants,
+[1529.25 - 1531.89] he focused on individual letters.
+[1531.89 - 1532.79] And he wondered,
+[1532.79 - 1534.02] what if instead of looking
+[1534.02 - 1536.06] at only the last letter as a predictor,
+[1536.06 - 1537.95] I look at the last two?
+[1537.95 - 1541.13] Well, with that, he got
+text that looked like this.
+[1541.13 - 1542.45] Now, it doesn&#39;t make much sense,
+[1542.45 - 1544.43] but there are some recognizable words
+[1544.43 - 1546.47] like &quot;whey&quot;, &quot;of&quot;, and &quot;the&quot;.
+[1547.70 - 1549.89] But Shannon was convinced
+he could do better.
+[1549.89 - 1552.05] So next, instead of looking at letters,
+[1552.05 - 1555.74] he wondered, what if I use
+entire words as predictors?
+[1555.74 - 1557.88] That gave him sentences like this,
+[1557.88 - 1560.78] &quot;The head and in frontal
+attack on an English writer
+[1560.78 - 1562.28] that the character of this point
+[1562.28 - 1564.68] is therefore another
+method for the letters
+[1564.68 - 1567.32] that the time of who ever told the problem
+[1567.32 - 1568.70] for an unexpected.&quot;
+[1569.63 - 1572.27] Now, clearly, this doesn&#39;t make any sense,
+[1572.27 - 1575.48] but Shannon did notice that
+sequences of four words or so
+[1575.48 - 1577.22] generally did make sense.
+[1577.22 - 1579.86] For instance, &quot;attack
+on an English writer&quot;
+[1579.86 - 1581.45] kind of makes sense.
+[1581.45 - 1583.40] So Shannon learned that
+you can make better
+[1583.40 - 1584.48] and better predictions
+[1584.48 - 1586.43] about what the next word is going to be
+[1586.43 - 1590.60] by taking into account more
+and more of the previous words.
+[1590.60 - 1592.31] It&#39;s kind of like what Gmail does
+[1592.31 - 1595.49] when it predicts what
+you&#39;re going to type next.
+[1595.49 - 1597.29] And this is no coincidence,
+[1597.29 - 1599.45] the algorithms that make these predictions
+[1599.45 - 1601.52] are based on Markov chains.
+[1601.52 - 1604.43] - They&#39;re not necessarily
+using letters, you know,
+[1604.43 - 1605.30] -Yeah
+[1605.30 - 1607.31] they use what they call tokens,
+[1607.31 - 1610.34] some of which are letters,
+some of which are words,
+[1610.34 - 1612.68] marks of punctuation, whatever.
+[1612.68 - 1616.19] So it&#39;s a bigger set
+than just the alphabet.
+[1616.19 - 1620.39] The game is simply, we
+have this string of tokens
+[1620.39 - 1624.17] that, you know, might be 30 long,
+[1624.17 - 1626.63] and we&#39;re asking what are the odds
+[1626.63 - 1629.45] that the next token is
+this or this or this?
+[1629.45 - 1630.83] - [Derek] But today&#39;s
+large language models
+[1630.83 - 1633.23] don&#39;t treat all those tokens equally,
+[1633.23 - 1635.03] because unlike simple Markov chains,
+[1635.03 - 1637.07] they also use something called attention,
+[1637.07 - 1640.04] which tells the model
+what to pay attention to.
+[1640.04 - 1642.50] So in the phrase, &quot;the
+structure of the cell,&quot;
+[1642.50 - 1644.57] the model can use previous context
+[1644.57 - 1645.95] like blood and mitochondria
+[1645.95 - 1648.23] to know the cell most likely refers
+[1648.23 - 1650.45] to biology rather than a prison cell.
+[1650.45 - 1653.75] And it uses that to tune its prediction.
+[1653.75 - 1656.39] But as large language models
+become more widespread,
+[1656.39 - 1658.43] one concern is that the text they produce
+[1658.43 - 1659.57] ends up on the internet
+[1659.57 - 1662.75] and that becomes training
+data for future models.
+[1663.86 - 1665.45] - When you start doing that,
+[1667.07 - 1668.99] the game is very soon over.
+[1668.99 - 1672.53] You come, in this case, to
+us, a very dull, stable state,
+[1672.53 - 1673.67] it just says the same thing
+[1673.67 - 1675.47] over and over and over again forever.
+[1675.47 - 1679.43] The language models are
+vulnerable to this process.
+[1679.43 - 1682.28] - And any system like this
+where we have a feedback loop,
+[1682.28 - 1685.76] will become hard to model
+using Markov chains.
+[1685.76 - 1687.38] Take global warming, for instance,
+[1687.38 - 1689.69] as we increase the amount of
+carbon dioxide in the air,
+[1689.69 - 1692.33] the average temperature
+of the Earth increases.
+[1692.33 - 1693.68] But as the temperature increases,
+[1693.68 - 1695.81] the atmosphere can hold more water vapor,
+[1695.81 - 1698.39] which is an incredibly
+powerful greenhouse gas.
+[1698.39 - 1699.80] And with more water vapor,
+[1699.80 - 1701.36] the temperature increases further
+[1701.36 - 1703.37] allowing for even more water vapor.
+[1703.37 - 1705.35] So you get this positive feedback loop,
+[1705.35 - 1708.41] which makes it hard to predict
+what&#39;s going to happen next.
+[1708.41 - 1711.74] So there are some systems
+where Markov chains don&#39;t work,
+[1711.74 - 1713.54] but for many other dependent systems,
+[1713.54 - 1716.51] they offer a way of doing probability.
+[1716.51 - 1717.71] - But what&#39;s fascinating
+[1717.71 - 1721.25] is that all these systems
+have extremely long histories.
+[1721.25 - 1723.89] I mean, you could trace back
+all the letters in a text,
+[1723.89 - 1726.47] trace back all the interactions
+of what a neutron did,
+[1726.47 - 1729.11] or trace back the weather for weeks.
+[1729.11 - 1731.60] But the beautiful thing
+Markov and others found
+[1731.60 - 1733.46] is that for many of these systems
+[1733.46 - 1735.74] you can ignore almost all of that.
+[1735.74 - 1737.96] You can just look at the current state
+[1737.96 - 1740.24] and forget about the rest,
+[1740.24 - 1742.94] that makes these systems memoryless.
+[1742.94 - 1745.34] And it&#39;s this memoryless property
+[1745.34 - 1747.83] that makes Markov chains so powerful
+[1747.83 - 1749.09] because it&#39;s what allows you
+[1749.09 - 1751.58] to take these extremely complex systems
+[1751.58 - 1753.35] and simplify them a lot
+[1753.35 - 1756.23] to still make meaningful predictions.
+[1756.23 - 1758.06] - [Derek] As one paper
+put it, &quot;Problem-solving
+[1758.06 - 1759.71] is often a matter of cooking up
+[1759.71 - 1761.39] an appropriate Markov chain.&quot;
+[1762.23 - 1763.97] - It&#39;s kind of ridiculous to me
+[1763.97 - 1766.64] that this basic fact of mathematics
+[1766.64 - 1768.62] would come out of a fight like that,
+[1768.62 - 1771.23] which, you know, really
+had nothing to do with it.
+[1771.23 - 1773.57] But all the evidence suggests
+[1773.57 - 1776.69] that it really was this determination
+[1776.69 - 1781.52] to show up Nekrasov that
+led Markov to do the work.
+[1781.52 - 1784.64] - But there&#39;s one question
+we still haven&#39;t answered.
+[1784.64 - 1786.23] When playing Solitaire,
+[1786.23 - 1789.44] how did Ulam know his cards
+were perfectly shuffled?
+[1789.44 - 1791.99] I mean, how many shuffles does it take
+[1791.99 - 1796.10] to get a completely random
+arrangement of cards?
+[1796.10 - 1797.81] - If you have a deck of cards,
+[1797.81 - 1800.06] you need to shuffle it, right?
+[1800.06 - 1802.10] How often, if you&#39;re
+shuffling, like, you know,
+[1802.10 - 1804.11] you split it in half, and then you do the
+[1804.11 - 1805.52] (cards riffling).
+[1805.52 - 1807.59] How often do you have to shuffle it
+[1807.59 - 1809.51] to make it completely random?
+[1809.51 - 1811.16] - Two.
+- Two?
+[1811.16 - 1812.24] I&#39;m going with 26.
+[1812.24 - 1813.86] - Yeah, four times.
+- Four times?
+[1813.86 - 1815.84] - I don&#39;t know, 52 times?
+[1815.84 - 1816.67] - Okay. Okay.
+[1816.67 - 1818.22] It&#39;s not a bad guess.
+[1818.22 - 1819.24] - Seven?
+[1819.24 - 1821.03] - It is seven.
+[1821.03 - 1822.05] - Really?
+- Yeah.
+[1822.05 - 1824.42] So you can think of card
+shuffling as a Markov chain
+[1824.42 - 1826.94] where each deck arrangement is a state,
+[1826.94 - 1828.80] and then each shuffle is a step.
+[1828.80 - 1830.44] And so for a deck of 52 cards,
+[1830.44 - 1832.79] if you riffle shuffle it seven times,
+[1832.79 - 1835.67] then every arrangement of the
+deck is about equally likely,
+[1835.67 - 1837.44] so it&#39;s basically random.
+[1838.88 - 1840.59] But I can&#39;t shuffle like that.
+[1840.59 - 1843.77] So for me, what I do is I do it like this.
+[1843.77 - 1845.81] How many times do you think
+you have to shuffle like this
+[1845.81 - 1847.27] to get it random?
+[1847.27 - 1848.30] (beeping)
+[1848.30 - 1849.65] - What do you think?
+[1849.65 - 1851.39] And perhaps more importantly,
+[1851.39 - 1854.09] how would you go about working it out?
+[1854.09 - 1856.58] Well, that&#39;s where today&#39;s
+sponsor Brilliant comes in.
+[1856.58 - 1857.90] Brilliant is a learning app
+[1857.90 - 1861.29] that gets you hands-on with
+problems just like this.
+[1861.29 - 1863.69] Whether it&#39;s math, physics, programming,
+[1863.69 - 1867.14] or even AI, Brilliant&#39;s
+interactive lessons and challenges
+[1867.14 - 1869.90] let you play your way to a sharper mind.
+[1869.90 - 1872.93] You can discover how large
+language models actually work
+[1872.93 - 1876.20] from basic Markov chains
+to complex neural networks,
+[1876.20 - 1879.65] or dig into the math behind
+this shuffling question.
+[1879.65 - 1881.69] It&#39;s a fun way to build
+knowledge and skills
+[1881.69 - 1884.15] that help you solve all kinds of problems,
+[1884.15 - 1886.52] which brings us back to our shuffle.
+[1886.52 - 1889.58] So Casper, what actually is the answer?
+[1889.58 - 1891.50] - It&#39;s actually over 2,000.
+[1891.50 - 1892.33] - What?
+- Over-
+[1892.33 - 1893.42] - Crazy, right?
+- Yeah.
+[1893.42 - 1896.09] - So the next time someone
+offers to shuffle before a game,
+[1896.09 - 1897.59] make sure they&#39;re doing it right,
+[1897.59 - 1900.17] seven riffles or it doesn&#39;t count.
+[1900.17 - 1901.25] But the interesting part
+[1901.25 - 1903.95] isn&#39;t just knowing that,
+it&#39;s understanding why
+[1903.95 - 1905.45] and seeing how a simple question
+[1905.45 - 1909.23] can lead you to some
+surprisingly complex mathematics.
+[1909.23 - 1912.03] And that&#39;s what Brilliant is all about.
+[1912.03 - 1915.29] So to try everything Brilliant
+has to offer for free
+[1915.29 - 1916.49] for a full 30 days,
+[1916.49 - 1918.89] visit brilliant.org/veritasium,
+[1918.89 - 1920.39] click that link in the description
+[1920.39 - 1922.79] or scan this handy QR code.
+[1922.79 - 1923.69] And if you sign up,
+[1923.69 - 1927.01] you&#39;ll also get 20% off their
+annual premium subscription.
+[1927.01 - 1929.33] So I wanna thank Brilliant
+for sponsoring this video
+[1929.33 - 1931.63] and I wanna thank you for watching.
+[1931.63 - 1934.21] (upbeat music)
+[1941.15 - 1942.10] - Easy.
+[1942.10 - 1944.00] (light music)
