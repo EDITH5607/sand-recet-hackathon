@@ -2,6 +2,7 @@
   "questions": [
     {
       "id": 1,
+<<<<<<< HEAD
       "question": "What is the primary problem the speaker created the Chrome extension to solve?",
       "difficulty": "easy",
       "options": [
@@ -51,6 +52,57 @@
       ],
       "answer": "D) WXT, because it enables the use of modern frontend frameworks like React and provides features like hot reloading.",
       "explanation": "The speaker introduces the framework as WXT (714.52) and highlights its ability to use frameworks like React. They also praise its hot reload support, which avoids the manual refresh process required with Vanilla JS development (957.36 - 974.36)."
+=======
+      "question": "What is the name of the new openweight coding model released by the Chinese company Alibaba?",
+      "difficulty": "easy",
+      "options": [
+        "Gemini CLI",
+        "Claude 4",
+        "Quen 3 coder",
+        "Kimmy K2"
+      ],
+      "answer": "Quen 3 coder",
+      "explanation": "The transcript explicitly states that the Chinese company Alibaba dropped a new model named 'Quen 3 coder' [0.08-11.12]."
+    },
+    {
+      "id": 2,
+      "question": "The programming performance of Quen 3 coder is presented as being comparable to which model, described as the 'undisputed leader'?",
+      "difficulty": "medium",
+      "options": [
+        "Gemini",
+        "OpenAI's latest model",
+        "Chinese Kimmy K2",
+        "Claude 4"
+      ],
+      "answer": "Claude 4",
+      "explanation": "The transcript says Quen 3 coder is the first openweight model that 'matches the programming performance of Claude 4, the undisputed leader of AI vibe coding tools' [11.12-17.52]."
+    },
+    {
+      "id": 3,
+      "question": "What specific 'agentic property' of the new CLI tool is highlighted in the transcript?",
+      "difficulty": "hard",
+      "options": [
+        "Its ability to achieve gold medals in math competitions.",
+        "Its openweight architecture as a mixture of experts model.",
+        "The ability to run, execute, and test code from the command line.",
+        "Its capacity to fork from any existing open-source tool."
+      ],
+      "answer": "The ability to run, execute, and test code from the command line.",
+      "explanation": "The transcript mentions the new CLI tool takes advantage of the model's agentic properties, specifically citing 'the ability to run, execute, and test your code from the command line' [27.52-33.68]."
+    },
+    {
+      "id": 4,
+      "question": "Besides developments in coding AI, the transcript mentions which two companies have recently achieved success in the International Mathematical Olympiad?",
+      "difficulty": "medium",
+      "options": [
+        "Alibaba and Google",
+        "Alibaba and OpenAI",
+        "Google and OpenAI",
+        "The creators of Claude 4 and Kimmy K2"
+      ],
+      "answer": "Google and OpenAI",
+      "explanation": "The speaker states that mathematicians are 'on life support' because 'both Google and OpenAI just achieved gold medals in the International Mathematical Olympiad' [37.60-44.08]."
+>>>>>>> 3239b77e7f9f9f5132f426222ea47b7fdd861edd
     }
   ]
 }

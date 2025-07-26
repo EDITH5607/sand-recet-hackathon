@@ -1,203 +1,124 @@
-[0.16 - 5.36] unified payments interface or UPI has 
-revolutionized real-time payments in India  
-[5.36 - 11.80] it&#39;s fast secure and available 247 allowing you to 
-instantly send money just using your mobile number  
-[11.80 - 18.20] or UPA ID no more complex Bank details or delays 
-UPI transfers money directly between bank accounts  
-[18.20 - 24.84] in real time and best of all UPI is free for users 
-unlike PayPal which charges fees for transaction  
-[24.84 - 30.44] especially International ones in today&#39;s video 
-we break down how UPI Works in digital payments  
-[30.44 - 34.76] compare it with Global Systems like 
-PayPal alip venbo and zel and wrap up  
-[34.76 - 37.96] by exploring where India&#39;s UPI 
-fits into the Global Payments
-[37.96 - 46.16] ecosystem traditionally if you wanted to send 
-money to someone&#39;s bank account you would need  
-[46.16 - 52.84] to know their bank account number the Bank name 
-the branch name and the ifsc code which is like a  
-[52.84 - 59.36] postal code for banks in India UPI simplifies all 
-of this it&#39;s like sending a letter but instead of  
-[59.36 - 65.48] a full address you just need a short code called 
-a UPI ID or even just their mobile number and  
-[65.48 - 70.40] the system takes care of the rest in seconds 
-the money reaches the right account what sets  
-[70.40 - 74.88] UPI apart from other system is that it doesn&#39;t 
-hold your funds in a middle lay like a digital  
-[74.88 - 81.12] wallet before they are transferred UPI enables 
-realtime bank to bank transfers directly from  
-[81.12 - 87.04] one account to another it&#39;s not just secure it&#39;s 
-efficient and cost free for users now before we  
-[87.04 - 91.52] get into the comparisons let me remind you that 
-I have previous L made a video explaining how  
-[91.52 - 96.72] payment gateways and payment process work so do 
-check that out for a more detailed breakdown of  
-[96.72 - 102.20] how different payment Technologies operate behind 
-the scenes but at a high level think of a payment  
-[102.20 - 107.80] Gateway like a checkout counter at a store it 
-authorizes and processes your payment whether  
-[107.80 - 112.88] you are using a card or bank account the payment 
-processor on the other hand handles the behind  
-[112.88 - 117.96] the-scenes work actually transferring the money 
-between your account and the Merchant&#39;s account  
-[117.96 - 123.52] PayPal and stripe are examples of both UPI 
-is neither strictly a payment processor nor  
-[123.52 - 128.36] a payment Gateway it functions more as 
-a payment infrastructure or system that  
-[128.36 - 133.28] facilitates real-time bank-to-bank transfers it&#39;s 
-an interbank payment system built by the national  
-[133.28 - 140.08] payments Corporation of India or npci UPI acts as 
-a network allowing realtime transfers between bank  
-[140.08 - 145.12] accounts using a mobile phone it doesn&#39;t really 
-process payments in the traditional sense like a  
-[145.12 - 150.68] credit card processor such as Visa or Mastercard 
-rather it facilitates Direct in instantaneous bank  
-[150.68 - 155.88] to bank transfers this diagram explains the flow 
-of UPI transaction let&#39;s say you are using Google  
-[155.88 - 162.52] pay when you initiate a transfer Google pay talks 
-to your bank let&#39;s say IC Bank in India through  
-[162.52 - 168.96] something called the npci which is the backbone 
-of UPI npci then checks if everything is okay  
-[168.96 - 173.80] like whether you have enough balance and ensures 
-the money moves directly from your account to the  
-[173.80 - 180.56] recipient&#39;s bank account say HDFC Bank in India 
-and that to within seconds let let&#39;s further break  
-[180.56 - 187.88] it down step by step say the payer or the customer 
-opens their PSP app now a PSP or payment service  
-[187.88 - 194.24] provider helps connect customers with their Bank 
-to complete transactions for instance in India  
-[194.24 - 199.68] Google pay acts as a PSP so when you initiate a 
-payment it interacts with your bank to process  
-[199.68 - 205.48] it securely in fact Google&#39;s UPI app is linked 
-with various Bank similarly phone pay in India  
-[205.48 - 211.72] was linked with yes Bank as PSP initially now IC 
-Bank in India once authenticated the payers PSP  
-[211.72 - 218.04] sends a payment request to the UPI Network npci 
-this request includes the payers and pays UPI  
-[218.04 - 224.12] IDs and the payment details the UPI Network first 
-resolves the pay address mapping it to their bank  
-[224.12 - 231.08] account via their PSP the pays PSP verifies the 
-pays details and responds back the UPI Network  
-[231.08 - 237.20] then sends a debit request to the payers Bank also 
-known as the remitter or issuer Bank asking for  
-[237.20 - 241.92] authorization to dedu the specified amount from 
-the pay account the issuer bank processes the  
-[241.92 - 247.28] debit request checking if the paer has sufficient 
-funds and if the transaction is valid it sends a  
-[247.28 - 253.04] confirmation response back to the UPI Network and 
-after receiving the confirmation the UPI Network  
-[253.04 - 258.20] sends a credit request to the beneficiaries Bank 
-also called the pays Bank informing it to credit  
-[258.20 - 262.92] the amount into the pays account the beneficiary 
-Bank processes the credit request and confirms  
-[262.92 - 267.56] the successful transfer to the UPI Network the 
-network then release the successful transaction  
-[267.56 - 275.12] status back to both the payers PSP and the pay 
-PSP completing the transaction in simpler terms  
-[275.12 - 280.80] UPI is the infrastructure that Banks and apps like 
-Google pay or phone pay use to directly move money  
-[280.80 - 286.56] between accounts UPI is not a digital wallet 
-either money is transferred directly between  
-[286.56 - 291.56] bank accounts whereas in digital wallets funds 
-are stored in an intermediate balance before  
-[291.56 - 296.44] being used for one more important thing in this 
-UPA diagram is that the customer also creates a  
-[296.44 - 302.16] virtual payment address or vpa through the PSP app 
-which links directly to their bank account once  
-[302.16 - 308.04] confirmed the vpa allows secure payments without 
-sharing sensitive Bank details for QR code based  
-[308.04 - 314.24] payments the customer scans the QR code which 
-contains the pay vpa or details it authorizes  
-[314.24 - 320.00] the payment with their NP in or mobile pin and 
-the request is sent to the UPI network via the  
-[320.00 - 326.20] PSP following the regular transaction flow now UPI 
-operates through an API based architecture every  
-[326.20 - 333.16] time you use apps like Google pay phone pay or 
-PTM in India these apps are calling NPC apis these  
-[333.16 - 338.88] apis do everything from verifying user identities 
-through UPI pins to making sure the money lands  
-[338.88 - 344.00] in the correct account once that is done the 
-transaction is confirmed by both the senders and  
-[344.00 - 349.32] receivers Banks all in a blink of an eye behind 
-the scenes Banks act as payment service providers  
-[349.32 - 355.28] or PSPs so for instance when you use Google pay 
-IC Bank might be processing the transaction as  
-[355.28 - 361.00] its PSP while phone pay might partner with yes 
-Bank this banks handle your request and interact  
-[361.00 - 367.32] with NPC&#39;s platform to complete the transfers to 
-understand how UPI fits into the bigger picture  
-[367.32 - 372.36] let&#39;s compare it to other widely used Payment 
-Systems around the world each of the systems has  
-[372.36 - 377.88] a slightly different structure but they all aim 
-to provide seamless money transfers and here is  
-[377.88 - 384.32] how they Stack Up PayPal is a household name in 
-the Global Payments landscape serving as digital  
-[384.32 - 389.88] wallet a payment Gateway and a payment processor 
-as a digital wallet PayPal allows you users to  
-[389.88 - 395.40] store funds and use them for future purchases 
-or transfers as a payment Gateway it connects  
-[395.40 - 400.80] Merchants to financial institutions facilitating 
-online payments and as a payment processor it  
-[400.80 - 406.44] handles actual transaction by routing payments 
-through card networks or bank accounts unlike UPI  
-[406.44 - 411.00] PayPal typically holds funds in an intermediate 
-balance your PayPal wallet before transferring it  
-[411.00 - 417.20] to your bank account the step introduces an 
-extra lar that UPI bypasses entirely as UPI  
-[417.20 - 422.80] facilitates instant bank to bank transfer with 
-no intermediary balance for example when using  
-[422.80 - 427.56] PayPal you will usually link a bank account debit 
-card or credit card to Paypal when you receive a  
-[427.56 - 432.44] payment the money is first held in your PayPal 
-balance from there you can transfer it to your  
-[432.44 - 438.68] bank account or use it directly for purchases in 
-contrast UPI transfers funds immediately from One  
-[438.68 - 444.36] bank account to another without holding money in a 
-wallet alip is China&#39;s leading payment system and  
-[444.36 - 450.64] is widely used for everything from shopping online 
-to paying with QR codes in stores but unlike UPI  
-[450.64 - 456.04] it holds funds in a wallet before spending or 
-transferring adding an extra layer of friction  
-[456.04 - 461.44] that UPI skips venmo is a social P2P payment 
-platform that&#39;s popular in the US you&#39;ll link  
-[461.44 - 465.84] your bank account debit card or credit card 
-to send and receive payments between friends  
-[465.84 - 471.52] or businesses and there is even a social fee to 
-share transaction details with contacts however  
-[471.52 - 477.20] like PayPal venmo holds money in your venmo 
-balance until you transfer it to your bank while  
-[477.20 - 483.24] venmo Works similarly to UPI in terms of peer to 
-payments it often acts as an intermediary holding  
-[483.24 - 488.00] money in your venmo balance Apple pay and Google 
-pay allow users to make payments using their  
-[488.00 - 493.32] mobile phones by linking their bank account or 
-cards they work for in store purchases using NFC  
-[493.32 - 498.92] or nearfield communication as well as for online 
-payments they use encryption and tokenization to  
-[498.92 - 504.60] ensure secure payments especially for contactless 
-purchases but both Apple and Google p are primary  
-[504.60 - 510.80] digital wallets for storing card details in India 
-however there&#39;s a UPI version of Google pay which  
-[510.80 - 516.20] integrates with the UPI infrastructure for direct 
-bank-to-bank transfers but in other countries like  
-[516.20 - 521.08] in the US it functions more like Apple pay 
-UPI is actually similar to zel a real-time  
-[521.08 - 527.08] bank transfer system used in the US but their 
-infrastructure differ UPI is managed by npci in  
-[527.08 - 533.68] India it operates via API based architecture that 
-handles massive volumes with low latency zel on  
-[533.68 - 539.44] the other hand operates in the US using the a 
-network while both systems offer peer-to-peer  
-[539.44 - 545.56] transfers upi&#39;s API infrastructure allows for 
-faster real-time Bank settlements whereas zel&#39;s  
-[545.56 - 550.36] AC Network settles transactions in near real 
-time and if you&#39;re interested in learning more  
-[550.36 - 556.28] about zel and similar real-time payment systems 
-or want to dive deeper into how UPI was built in  
-[556.28 - 560.92] my next video I&#39;ll break down how a system like 
-UPI can be built from scratch we&#39;ll explore the  
-[560.92 - 566.36] apis infrastructure and all the critical Parts 
-you need to consider so don&#39;t forget to like  
-[566.36 - 577.56] And subscribe if you want to dive deeper 
-into the world of payment system design
-[577.56 - 577.98] [Music]
+[0.08 - 4.16] Yesterday, Chinese company Alibaba
+[2.32 - 6.56] dropped a brand new openweight long
+[4.16 - 9.20] horizon mixture of experts agent coding
+[6.56 - 11.12] model named Quen 3 coder. And amazingly,
+[9.20 - 12.96] it&#39;s the first openweight model that
+[11.12 - 15.36] matches the programming performance of
+[12.96 - 17.52] Claude 4, the undisputed leader of AI
+[15.36 - 19.84] vibe coding tools at the present time.
+[17.52 - 21.68] Not only is the Quen 3 coder model open,
+[19.84 - 23.84] but they also just released a brand new
+[21.68 - 25.84] CLI tool forked from the recently open
+[23.84 - 27.52] source Gemini CLI that can take
+[25.84 - 29.76] advantage of all the models agentic
+[27.52 - 31.68] properties like the ability to run,
+[29.76 - 33.68] execute, and test your code from the
+[31.68 - 35.60] command line. That&#39;s terrifying news for
+[33.68 - 37.60] any programmer still left with a job,
+[35.60 - 39.44] but mathematicians are also on life
+[37.60 - 41.84] support right now because both Google
+[39.44 - 44.08] and OpenAI just achieved gold medals in
+[41.84 - 45.68] the International Mathematical Olympiad.
+[44.08 - 47.60] In today&#39;s video, we&#39;ll take a look at
+[45.68 - 49.76] the latest AI breakthroughs and find out
+[47.60 - 52.96] if Quen 3 coder can actually compete
+[49.76 - 54.80] with Claude 4. It is July 23rd, 2025,
+[52.96 - 56.80] and you&#39;re watching the code report.
+[54.80 - 59.28] Just last week, the open model scene got
+[56.80 - 61.52] a big upgrade with the Chinese Kimmy K2,
+[59.28 - 63.92] but now Quen 3 coder pushes things even
+[61.52 - 66.88] further. The model was trained on 7.5
+[63.92 - 68.16] trillion tokens with a 70% code ratio.
+[66.88 - 69.68] In other words, it&#39;s seen a billion
+[68.16 - 71.68] times more code than the average
+[69.68 - 73.44] developer with 50 years of experience.
+[71.68 - 75.44] They even use their previous model to
+[73.44 - 77.20] clean up noisy training data, the highly
+[75.44 - 79.04] meta process where AI basically
+[77.20 - 80.72] determines which data to use to train
+[79.04 - 82.48] itself. When it comes to the training
+[80.72 - 84.56] process, they use something called long
+[82.48 - 86.96] horizon reinforcement learning across
+[84.56 - 88.56] 20,000 parallel environments. The model
+[86.96 - 90.48] actually tries to solve real world
+[88.56 - 92.40] problems in real environments where it&#39;s
+[90.48 - 94.00] executing and testing code. You can
+[92.40 - 96.16] think of Quen&#39;s training infrastructure
+[94.00 - 97.68] like a coding boot camp with 20,000
+[96.16 - 99.52] graduates all working on the same
+[97.68 - 101.68] problem simultaneously, except they
+[99.52 - 103.44] never get tired, never argue, and never
+[101.68 - 104.96] ask, &quot;Is this a breaking change?&quot; And
+[103.44 - 106.56] the end result speaks for itself in
+[104.96 - 108.56] these benchmarks. Based on this
+[106.56 - 111.76] benchmark, Quen is outperforming Kimmy
+[108.56 - 113.84] and GPT4.1 and almost on par with Claude
+[111.76 - 115.76] 4, but doing so with a much smaller
+[113.84 - 117.12] model size, which is important because
+[115.76 - 119.36] the bigger the model, the more
+[117.12 - 121.20] electricity and GPUs you need to run it.
+[119.36 - 124.32] What&#39;s also really impressive about Quen
+[121.20 - 126.32] 3 coder is that it has a 256,000 token
+[124.32 - 128.32] context window that can stretch up to 1
+[126.32 - 129.92] million tokens. For reference, that&#39;s
+[128.32 - 131.76] enough to hold the entire codebase of
+[129.92 - 133.68] most startups and all of their technical
+[131.76 - 134.96] debt. Quen 3 coder is an openweight
+[133.68 - 136.88] model, but if you think you&#39;re going to
+[134.96 - 139.04] run it locally on your laptop, it&#39;s time
+[136.88 - 141.12] for a reality check. To harness the full
+[139.04 - 142.56] girth of the 480 billion parameter
+[141.12 - 144.24] version, you would need tens of
+[142.56 - 146.32] thousands, if not hundreds of thousands
+[144.24 - 147.76] of dollars worth of GPUs along with a
+[146.32 - 149.68] large wallet to pay the electricity
+[147.76 - 151.36] bill. Realistically, to try it, you&#39;d
+[149.68 - 152.96] want to get an API key from a cloud
+[151.36 - 155.28] provider, then hook it up to the new
+[152.96 - 157.36] Quen CLI tool, which again is a fork of
+[155.28 - 159.28] the Gemini CLI. Overall, this does
+[157.36 - 161.20] appear to be a big leap forward for open
+[159.28 - 162.64] coding models. But I doubt that it will
+[161.20 - 164.40] make much of a dent in Claude&#39;s
+[162.64 - 166.16] dominance in the coding world. To be
+[164.40 - 167.60] Claude, a company needs to release a
+[166.16 - 170.00] model that&#39;s not only open and
+[167.60 - 172.08] inexpensive, but that surpasses Claude&#39;s
+[170.00 - 174.08] capabilities by a significant margin.
+[172.08 - 175.92] Like OpenAI was recently supposed to
+[174.08 - 177.52] release its own Open model, but that&#39;s
+[175.92 - 179.36] been delayed with the rumor for the
+[177.52 - 181.20] delay being that these Chinese models
+[179.36 - 183.12] would absolutely crush it. That&#39;s just
+[181.20 - 184.96] one of many L&#39;s taken by OpenAI
+[183.12 - 187.12] recently, like Zuck gutting all of their
+[184.96 - 188.80] talent. But OpenAI did get a big win a
+[187.12 - 190.72] few days ago when they achieved a gold
+[188.80 - 192.32] medal in the International Mathematical
+[190.72 - 194.08] Olympiad. What&#39;s funny though is that
+[192.32 - 195.76] they made a dick move by announcing this
+[194.08 - 197.84] before the closing ceremonies of the
+[195.76 - 199.68] event in order to overshadow Google and
+[197.84 - 201.44] the press, who also achieved gold medal
+[199.68 - 203.04] level performance. However, that ended
+[201.44 - 204.72] up backfiring because it just made
+[203.04 - 206.56] OpenAI look desperate. But if you want
+[204.72 - 208.24] to write really good code with AI, you
+[206.56 - 210.40] need to check out Code Rabbit, the
+[208.24 - 212.32] sponsor of today&#39;s video. Their free VS
+[210.40 - 213.92] Code extension gives you advanced code
+[212.32 - 216.16] reviews right in your editor. And their
+[213.92 - 218.24] new fix all with AI feature passes all
+[216.16 - 220.48] of Code Rabbit&#39;s review context directly
+[218.24 - 222.32] to the AI code agent of your choice is
+[220.48 - 223.92] so it can make all the changes for you.
+[222.32 - 225.92] This saves you from needing to click on
+[223.92 - 227.92] each review comment yourself, giving you
+[225.92 - 229.92] more time to write even more broken code
+[227.92 - 232.00] like a true artisan. Code Rabbit is free
+[229.92 - 234.16] to use in the IDE and works seamlessly
+[232.00 - 235.92] with VS Code and forks like Cursor and
+[234.16 - 237.52] Windsurf. Download it for free with the
+[235.92 - 239.52] link below to try it out. This has been
+[237.52 - 243.56] the code Report. Thanks for watching and
+[239.52 - 243.56] I will see you in the next one.

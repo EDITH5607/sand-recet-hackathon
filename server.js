@@ -2,43 +2,51 @@ import express from "express";
 import cors from "cors";
 import getYoutubeTranscript from "./getTranscript.js";
 import fs from "fs/promises";
+import { sendTranscriptToSupabase } from "./sendToSupabase.js";
 
 const app = express();
 app.use(cors());
 app.use(express.json());
 /////////
-async function logPauseEvent({ videoId, pauseTime, interval, position }) {
-	const formattedPosition = (Math.round(position * 100) / 100).toFixed(2);
+async function logPauseEvent({ videoId,  interval, pauseTime }) {
+	
+	const formattedpauseTime = (Math.round(pauseTime * 100) / 100).toFixed(2);
 	const logEntry = {
-		timestamp: new Date().toISOString(),
 		videoId,
-		pauseTime,
 		interval,
-		position: formattedPosition,
+		pauseTime: formattedpauseTime,
 		type: "AUTO_PAUSE",
 	};
 
-	const logString = JSON.stringify(logEntry) + ",\n";
+	//const logString = JSON.stringify(logEntry) + ",\n";
 
 	try {
 		//await fs.appendFile("pause-events.log", logString);
+
 		console.log("Pause event logged:", logEntry);
+
+		console.log("Sending the transcript to Supabase...");
+    	await sendTranscriptToSupabase(pauseTime);
+		console.log("Transcript sent to Supabase");
+
+		return logEntry;
 	} catch (error) {
-		console.error("Error logging pause event:", error);
+		console.error("Error logging pause event or sending to supabase:", error);
 	}
 }
 
 // Add new endpoint for pause events
 app.post("/api/pause-event", async (req, res) => {
-	const { videoId, pauseTime, interval, position } = req.body;
+	const { videoId,  interval, pauseTime } = req.body;
 
-	if (!videoId || !pauseTime || !interval || position === undefined) {
+	if (!videoId ||  !interval || !pauseTime === undefined) {
 		return res.status(400).json({ error: "Missing required fields" });
 	}
 
 	try {
-		await logPauseEvent({ videoId, pauseTime, interval, position });
-		res.json({ message: "Pause event recorded" });
+		const logEntry = await logPauseEvent({ videoId,  interval, pauseTime });
+		//res.json({ message: "Pause event recorded" });
+		res.json(logEntry);
 	} catch (error) {
 		console.error("Pause event error:", error);
 		res.status(500).json({ error: "Failed to record pause event" });

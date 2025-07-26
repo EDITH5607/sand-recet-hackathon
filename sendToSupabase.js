@@ -1,10 +1,24 @@
 import fs from 'fs/promises';
 import fetch from 'node-fetch'; // Not needed in Node.js 18+, remove this line in that case
 
-async function sendTranscriptToSupabase() {
+ function filterTranscriptByTime(transcript, currentTime) {
+	const lines = transcript.split('\n');
+	return lines
+		.filter((line) => {
+			const match = line.match(/\[(\d+(\.\d+)?)\s*-\s*(\d+(\.\d+)?)\]/);
+			if (!match) return true; // If no timestamp, keep it
+			const endTime = parseFloat(match[3]);
+			return endTime <= currentTime;
+		})
+		.join('\n');
+ }
+
+export async function sendTranscriptToSupabase(pauseTime) {
 	try {
 		// 1. Read the transcript
 		const transcriptText = await fs.readFile('transcript.txt', 'utf-8');
+
+        const filteredTranscript = filterTranscriptByTime(transcriptText, pauseTime);
 
 		// 2. POST to Supabase Edge Function
 		const response = await fetch(
@@ -15,7 +29,7 @@ async function sendTranscriptToSupabase() {
 					'Content-Type': 'application/json',
 					'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5hYXR2ZmNza3ZjZ2x3dGV5d2RjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTM0NzMxMjcsImV4cCI6MjA2OTA0OTEyN30.hYpywNLVSuLrdCKKh5eOa7uvZcz3orMcAttn9-YbCxg',
 				},
-				body: JSON.stringify({ transcript: transcriptText }),
+				body: JSON.stringify({ transcript: filteredTranscript, pauseTime }),
 			}
 		);
 
@@ -43,7 +57,10 @@ async function sendTranscriptToSupabase() {
 	} catch (error) {
 		console.error('❌ Error sending transcript to Supabase:', error);
 	}
+
+   
+
 }
 
 // ✅ Run the function
-sendTranscriptToSupabase();
+//sendTranscriptToSupabase();
