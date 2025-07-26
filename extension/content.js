@@ -33,16 +33,17 @@ function sendVideoIdToServer(videoId) {
 }
 
 // Send pause event to server
-function sendPauseEventToServer(videoId, pauseTime, intervalMinutes) {
-  console.log("Sending pause event to server:", { videoId, pauseTime, intervalMinutes });
-  
+function sendPauseEventToServer(videoId, pauseTime, intervalMinutes, playbackPosition) {
+  console.log("Sending pause event to server:", { videoId, pauseTime, intervalMinutes, playbackPosition });
+
   fetch("http://localhost:3000/api/pause-event", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ 
       videoId, 
       pauseTime, 
-      interval: intervalMinutes 
+      interval: intervalMinutes,
+      position: playbackPosition 
     }),
   })
   .then(res => {
@@ -64,9 +65,10 @@ function startPauseTimer(intervalMs) {
     if (currentVideo && !currentVideo.paused) {
       const pauseTime = new Date().toISOString();
       const intervalMinutes = intervalMs / 60000;
+      const playbackPosition = currentVideo.currentTime;
       
       currentVideo.pause();
-      console.log(`⏸️ Auto-paused after ${intervalMinutes} minutes`);
+      console.log(`⏸️ Auto-paused at position: ${playbackPosition.toFixed(1)}s`);
       
       // Show pause notification
       showPauseNotification(intervalMinutes);
@@ -76,7 +78,7 @@ function startPauseTimer(intervalMs) {
       
       // Send pause event to server
       if (videoId) {
-        sendPauseEventToServer(videoId, pauseTime, intervalMinutes);
+        sendPauseEventToServer(videoId, pauseTime, intervalMinutes, playbackPosition);
       }
     }
   }, intervalMs);

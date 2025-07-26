@@ -7,12 +7,15 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 /////////
-async function logPauseEvent({ videoId, pauseTime, interval }) {
+async function logPauseEvent({ videoId, pauseTime, interval, position }) {
+	
+	const formattedPosition = (Math.round(position * 100) / 100).toFixed(2);
 	const logEntry = {
 		timestamp: new Date().toISOString(),
 		videoId,
 		pauseTime,
 		interval,
+		position: formattedPosition,
 		type: "AUTO_PAUSE",
 	};
 
@@ -28,14 +31,14 @@ async function logPauseEvent({ videoId, pauseTime, interval }) {
 
 // Add new endpoint for pause events
 app.post("/api/pause-event", async (req, res) => {
-	const { videoId, pauseTime, interval } = req.body;
+	const { videoId, pauseTime, interval, position } = req.body;
 
-	if (!videoId || !pauseTime || !interval) {
+	if (!videoId || !pauseTime || !interval || position === undefined) {
 		return res.status(400).json({ error: "Missing required fields" });
 	}
 
 	try {
-		await logPauseEvent({ videoId, pauseTime, interval });
+		await logPauseEvent({ videoId, pauseTime, interval, position });
 		res.json({ message: "Pause event recorded" });
 	} catch (error) {
 		console.error("Pause event error:", error);
