@@ -7,6 +7,45 @@ import fs from "fs/promises"; // Add this import
 const app = express();
 app.use(cors()); // 👈 ALLOW requests from content script
 app.use(express.json());
+/////////
+async function logPauseEvent({ videoId, pauseTime, interval }) {
+  const logEntry = {
+    timestamp: new Date().toISOString(),
+    videoId,
+    pauseTime,
+    interval,
+    type: "AUTO_PAUSE"
+  };
+  
+  const logString = JSON.stringify(logEntry) + ",\n";
+  
+  try {
+    await fs.appendFile('pause-events.log', logString);
+    console.log("Pause event logged:", logEntry);
+  } catch (error) {
+    console.error("Error logging pause event:", error);
+  }
+}
+
+// Add new endpoint for pause events
+app.post("/api/pause-event", async (req, res) => {
+  const { videoId, pauseTime, interval } = req.body;
+  
+  if (!videoId || !pauseTime || !interval) {
+    return res.status(400).json({ error: "Missing required fields" });
+  }
+  
+  try {
+    await logPauseEvent({ videoId, pauseTime, interval });
+    res.json({ message: "Pause event recorded" });
+  } catch (error) {
+    console.error("Pause event error:", error);
+    res.status(500).json({ error: "Failed to record pause event" });
+  }
+});
+/////////
+
+
 
 app.post("/api/transcript", async (req, res) => {
 	const { videoId } = req.body;
@@ -23,7 +62,7 @@ app.post("/api/transcript", async (req, res) => {
 			)
 			.join("\n");
 
-		const fileName = `transcript_${videoId}.txt`;
+		const fileName = `transcript.txt`;
 		await fs.writeFile(fileName, formatted);
 
 		console.log(`Transcript for ${videoId} saved as ${fileName}`);

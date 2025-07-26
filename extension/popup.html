@@ -20,9 +20,14 @@
 	</head>
 	<body class="hero">
 		<h3><span id="youtube">YouTube</span><span> Extension</span></h3>
-		<button id="pauseBtn">Pause Video</button>
 		<button id="toggleBtn">Disable Extension</button>
 		<p id="status">Status: unknown</p>
+		
+		<div class="interval-controls">
+			<label for="intervalInput">Auto-pause interval (minutes):</label>
+			<input type="number" id="intervalInput" min="1" value="30">
+			<button id="saveIntervalBtn">Save Interval</button>
+		</div>
 		<script src="popup.js"></script>
 	</body>
 </html>
