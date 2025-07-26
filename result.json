@@ -2,55 +2,55 @@
   "questions": [
     {
       "id": 1,
-      "question": "According to the transcript, what are two things the speaker repeatedly promises they will not do?",
+      "question": "According to the transcript, what is something that both the singer and the listener know?",
       "difficulty": "easy",
       "options": [
-        "Give up and be shy",
-        "Play games and be a stranger",
-        "Desert and hurt the other person",
-        "Say goodbye and tell a lie"
+        "A) A secret plan",
+        "B) The rules",
+        "C) The singer's feelings",
+        "D) What's been going on"
       ],
-      "answer": "Desert and hurt the other person",
-      "explanation": "The phrases 'and desert you' and 'and hurt you' are repeated multiple times throughout the transcript, forming a core promise from the speaker to the listener."
+      "answer": "B) The rules",
+      "explanation": "The transcript explicitly contains the lyric, 'You know the rules and so do I', indicating this is a shared understanding between them."
     },
     {
       "id": 2,
-      "question": "What is the primary reason the speaker believes the other person has not vocalized their feelings?",
+      "question": "What reason does the singer give for the other person not verbalizing their feelings?",
       "difficulty": "medium",
       "options": [
-        "They are too blind to see the truth.",
-        "They are a stranger to love.",
-        "They are too shy to say what they feel.",
-        "They don't know the rules of the game."
+        "A) They are too blind to see",
+        "B) They are too shy to say it",
+        "C) They don't know what's been going on",
+        "D) They are waiting for the singer to act first"
       ],
-      "answer": "They are too shy to say what they feel.",
-      "explanation": "The transcript explicitly states the lines 'but you're too shy to say it' in connection with knowing the other person's heart has been 'aching for so long'."
+      "answer": "B) They are too shy to say it",
+      "explanation": "The line 'but you're too shy to say it' is repeated in the transcript, directly stating the singer's belief about why the other person is holding back."
     },
     {
       "id": 3,
-      "question": "Based on lines like 'You know the rules and so do I' and 'what's been going on', what can be inferred about the relationship between the two individuals?",
+      "question": "Based on the recurring phrases in the transcript, what is the central theme of the singer's message?",
       "difficulty": "medium",
       "options": [
-        "They have a new and uncertain relationship.",
-        "There is a mutual, unspoken understanding between them.",
-        "The relationship is based on a strict set of rules one has imposed.",
-        "They are in a competitive and challenging relationship."
+        "A) A confession of past wrongdoings",
+        "B) A description of a new game they will play",
+        "C) A plea for the listener to be less shy",
+        "D) A promise of unwavering commitment and fidelity"
       ],
-      "answer": "There is a mutual, unspoken understanding between them.",
-      "explanation": "These phrases suggest that both parties are aware of the situation and their feelings for each other, even if it hasn't been explicitly stated, pointing to a shared, silent comprehension."
+      "answer": "D) A promise of unwavering commitment and fidelity",
+      "explanation": "The repetition of phrases like 'and desert you' and 'and hurt you' are fragments of a larger promise. These fragments emphasize the negative actions the singer vows *not* to take, highlighting a theme of strong commitment."
     },
     {
       "id": 4,
-      "question": "What is the central theme conveyed by the combination of the speaker's promises and their observations about the other person?",
+      "question": "The transcript repeatedly juxtaposes the singer's awareness of the listener's feelings ('Your heart's been aching') with the listener's inaction. What does this suggest about the relationship's dynamic?",
       "difficulty": "hard",
       "options": [
-        "A feeling of frustration over unrequited love.",
-        "A declaration of unwavering commitment and reassurance.",
-        "A nostalgic memory of a past relationship.",
-        "A warning against being too trusting in a new romance."
+        "A) The singer is frustrated by the listener's lack of emotional depth.",
+        "B) The singer feels they have a deeper understanding of the situation and is trying to encourage the listener to act on a mutual feeling.",
+        "C) The relationship is one-sided, with only the singer having strong feelings.",
+        "D) The listener is intentionally playing 'hard to get' to test the singer's commitment."
       ],
-      "answer": "A declaration of unwavering commitment and reassurance.",
-      "explanation": "The speaker contrasts the other person's shyness and perceived blindness with definitive promises not to 'desert' or 'hurt' them, creating an overall message intended to reassure them of the speaker's steadfast commitment."
+      "answer": "B) The singer feels they have a deeper understanding of the situation and is trying to encourage the listener to act on a mutual feeling.",
+      "explanation": "The singer claims to know the 'rules' and what the listener is feeling ('Your heart's been aching but you're too shy to say it'). This implies the singer believes the feelings are mutual but is taking the lead to bridge the communication gap caused by the listener's shyness, rather than being frustrated or seeing the relationship as one-sided."
     }
   ]
 }
