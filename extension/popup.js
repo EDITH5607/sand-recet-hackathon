@@ -16,7 +16,7 @@ chrome.storage.local.get(["extensionEnabled", "pauseInterval"], (res) => {
 	}
 
 	// Set interval input value
-	document.getElementById("intervalInput").value = res.pauseInterval || 30;
+	document.getElementById("intervalInput").value = res.pauseInterval || 0.02;
 });
 
 // Toggle enable/disable button
@@ -31,13 +31,10 @@ document.getElementById("toggleBtn").addEventListener("click", () => {
 
 // Save interval button handler
 document.getElementById("saveIntervalBtn").addEventListener("click", () => {
-	const interval =
-		Math.round(
-			parseFloat(document.getElementById("intervalInput").value) * 10
-		) / 10;
+	const interval = parseFloat(document.getElementById("intervalInput").value);
 
-	if (isNaN(interval) || interval < 0.1) {
-		alert("Please enter a valid number (minimum 0.1 minute)");
+	if (isNaN(interval) || interval < 0.02) {
+		alert("Please enter a valid number (minimum 0.02 minute)");
 		return;
 	}
 

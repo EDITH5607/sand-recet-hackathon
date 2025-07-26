@@ -2,51 +2,55 @@
   "questions": [
     {
       "id": 1,
-      "question": "According to the lyrics, what does the singer believe is preventing the other person from expressing their feelings?",
+      "question": "According to the first verse, what kind of relationship is the singer seeking?",
       "difficulty": "easy",
       "options": [
-        "A. A lack of interest",
-        "B. Shyness",
-        "C. Anger",
-        "D. A previous commitment"
+        "A casual friendship",
+        "A secret romance",
+        "A full commitment",
+        "A short-term fling"
       ],
-      "answer": "B. Shyness"
+      "answer": "A full commitment",
+      "explanation": "The transcript explicitly states at [27.04 - 31.04], 'A full commitment's what I'm thinking of'."
     },
     {
       "id": 2,
-      "question": "The singer states, \"A full commitment's what I'm thinking of.\" Which of the following promises from the chorus best exemplifies this idea of commitment?",
+      "question": "Based on the lyrics, what does the singer believe is preventing the other person from expressing their feelings?",
       "difficulty": "medium",
       "options": [
-        "A. Never gonna make you cry",
-        "B. Never gonna say goodbye",
-        "C. Never gonna run around and desert you",
-        "D. Gotta make you understand"
+        "A lack of interest",
+        "Anger and resentment",
+        "A busy schedule",
+        "Shyness and past heartache"
       ],
-      "answer": "C. Never gonna run around and desert you"
+      "answer": "Shyness and past heartache",
+      "explanation": "The lyrics at [64.88 - 69.04] state, 'Your heart's been aching but you're too shy to say it,' indicating both past pain ('aching') and current hesitation ('shy')."
     },
     {
       "id": 3,
-      "question": "What is the implied nature of the \"game\" mentioned in the line, \"We know the game and we're gonna play it\"?",
+      "question": "What does the line 'We know the game and we're gonna play it' imply in the context of the song?",
       "difficulty": "hard",
       "options": [
-        "A. A contest to see who will confess their feelings first.",
-        "B. A playful rivalry between two friends.",
-        "C. The unspoken, mutual progression towards a romantic relationship.",
-        "D. A deceitful plan to trick the other person."
+        "That the relationship is based on deception.",
+        "That both individuals are tired of playing games and want to be direct.",
+        "That they both understand the unspoken rules of courtship and are ready to engage.",
+        "That the singer is challenging the other person to a competition."
       ],
-      "answer": "C. The unspoken, mutual progression towards a romantic relationship."
+      "answer": "That they both understand the unspoken rules of courtship and are ready to engage.",
+      "explanation": "Preceded by 'Inside we both know what's been going on,' the line suggests a mutual, unspoken understanding of their feelings. 'The game' refers to the game of love or courtship, which they are now mutually ready to 'play' or participate in openly."
     },
     {
       "id": 4,
-      "question": "The singer contrasts his reliability with that of others by stating:",
+      "question": "Which of the following is NOT a promise made in the song's chorus?",
       "difficulty": "medium",
       "options": [
-        "A. \"We've known each other for so long\"",
-        "B. \"You wouldn't get this from any other guy\"",
-        "C. \"Don't tell me you're too blind to see\"",
-        "D. \"You know the rules and so do I\""
+        "Never gonna make you cry",
+        "Never gonna run around and desert you",
+        "Never gonna let you down",
+        "Never gonna make you rich"
       ],
-      "answer": "B. \"You wouldn't get this from any other guy\""
+      "answer": "Never gonna make you rich",
+      "explanation": "The chorus, repeated multiple times, includes promises not to 'give you up,' 'let you down,' 'run around and desert you,' 'make you cry,' 'say goodbye,' or 'tell a lie and hurt you.' There is no mention of financial promises."
     }
   ]
 }

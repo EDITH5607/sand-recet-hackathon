@@ -104,7 +104,7 @@ function showPauseNotification(minutes) {
 		<div>Video paused after ${minutes} minutes</div>
 	`;
 	document.body.appendChild(notification);
-	
+
 	setTimeout(() => {
 		notification.style.transition = "opacity 0.5s";
 		notification.style.opacity = "0";
@@ -115,11 +115,11 @@ function showPauseNotification(minutes) {
 // Setup video event listeners
 function setupVideoListeners() {
 	if (!currentVideo) return;
-	
+
 	// Remove existing listeners to prevent duplicates
 	currentVideo.removeEventListener("play", handleVideoPlay);
 	currentVideo.removeEventListener("pause", handleVideoPause);
-	
+
 	// Add new listeners
 	currentVideo.addEventListener("play", handleVideoPlay);
 	currentVideo.addEventListener("pause", handleVideoPause);
@@ -145,20 +145,20 @@ function handleVideoPause() {
 // Monitor URL changes (for YouTube SPA navigation)
 function monitorVideoChanges() {
 	const currentId = getCurrentVideoId();
-	
+
 	if (currentId && currentId !== lastVideoId) {
 		lastVideoId = currentId;
 		sendVideoIdToServer(currentId);
-		
+
 		// Clear existing timer when video changes
 		clearTimeout(pauseTimer);
-		
+
 		// Setup new video reference
 		currentVideo = document.querySelector("video");
-		
+
 		if (currentVideo) {
 			setupVideoListeners();
-			
+
 			// If video is already playing when detected
 			if (!currentVideo.paused) {
 				handleVideoPlay();
@@ -184,14 +184,14 @@ chrome.storage.onChanged.addListener((changes) => {
 	if (changes.pauseInterval || changes.extensionEnabled) {
 		if (currentVideo && !currentVideo.paused) {
 			clearTimeout(pauseTimer);
-			
+
 			if (changes.extensionEnabled?.newValue !== false) {
 				chrome.storage.local.get(["pauseInterval"], (data) => {
 					if (data.pauseInterval) {
 						// Calculate remaining time for new interval
 						const elapsed = Date.now() - lastPlayTimestamp;
-						const remaining = (data.pauseInterval * 60000) - elapsed;
-						
+						const remaining = data.pauseInterval * 60000 - elapsed;
+
 						if (remaining > 0) {
 							startPauseTimer(remaining);
 						} else {
@@ -211,31 +211,33 @@ chrome.runtime.onMessage.addListener((message) => {
 	if (message.type === "INTERVAL_CHANGED") {
 		if (currentVideo && !currentVideo.paused) {
 			clearTimeout(pauseTimer);
-			chrome.storage.local.get(["pauseInterval", "extensionEnabled"], (data) => {
-				if (data.extensionEnabled && data.pauseInterval) {
-					// Calculate remaining time for new interval
-					const elapsed = Date.now() - lastPlayTimestamp;
-					const remaining = (data.pauseInterval * 60000) - elapsed;
-					
-					if (remaining > 0) {
-						startPauseTimer(remaining);
-					} else {
-						currentVideo.pause();
-						startPauseTimer(data.pauseInterval * 60000);
+			chrome.storage.local.get(
+				["pauseInterval", "extensionEnabled"],
+				(data) => {
+					if (data.extensionEnabled && data.pauseInterval) {
+						// Calculate remaining time for new interval
+						const elapsed = Date.now() - lastPlayTimestamp;
+						const remaining = data.pauseInterval * 60000 - elapsed;
+
+						if (remaining > 0) {
+							startPauseTimer(remaining);
+						} else {
+							currentVideo.pause();
+							startPauseTimer(data.pauseInterval * 60000);
+						}
 					}
 				}
-			});
+			);
 		}
 	}
 });
-
 
 function showPauseNotification(minutes) {
 	// Notification Banner
 	const notification = document.createElement("div");
 	notification.style = `
 		position: fixed;
-		top: 20px;
+		bottom: 20px;
 		right: 20px;
 		background: rgba(0,0,0,0.8);
 		color: white;
@@ -261,7 +263,6 @@ function showPauseNotification(minutes) {
 	showFloatingPanel();
 }
 
-
 function showFloatingPanel() {
 	if (document.getElementById("yt-qa-panel")) return;
 
@@ -269,33 +270,35 @@ function showFloatingPanel() {
 	panel.id = "yt-qa-panel";
 	panel.style = `
 		position: fixed;
-		bottom: 30px;
-		right: 30px;
-		width: 400px;
-		max-height: 60vh;
-		background: white;
-		border: 2px solid #888;
-		border-radius: 10px;
-		box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-		padding: 15px;
+		top: 50px;
+		right: 50px;
+		width: 480px;
+		max-height: 90vh;
+		opacity: 95%;
+		background: #273F4F;
+		backdrop-filter: blur(10px);
+		border: 2px solid black;
+		border-radius: 12px;
+		padding: 20px;
 		z-index: 10001;
 		overflow-y: auto;
 		font-family: Arial, sans-serif;
+		color: white;
+		font-size: 16px;
 	`;
 
 	panel.innerHTML = `
-		<div style="display: flex; justify-content: space-between; align-items: center;">
+		<div style="font-size: 22px; display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
 			<strong>🧠 Learning Checkpoint</strong>
-			<button id="yt-qa-close" style="border:none;background:none;font-size:16px;cursor:pointer;">✖️</button>
+			<button id="yt-qa-close" style="border:none;background:none;font-size:24px; color:red;cursor:pointer;">🗙</button>
 		</div>
-		<div id="yt-qa-questions" style="margin-top:10px;">
+		<div id="yt-qa-questions" style="font-size: 16px;">
 			<p>⏳ Loading questions...</p>
 		</div>
 	`;
 
 	document.body.appendChild(panel);
 
-	// Close button
 	document.getElementById("yt-qa-close").onclick = () => {
 		panel.remove();
 	};
