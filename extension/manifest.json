@@ -8,7 +8,7 @@
 		"service_worker": "background.js",
 		"type": "module"
 	},
-	"matches": ["*://www.youtube.com/watch*"],
+
 	"action": {
 		"default_popup": "popup.html"
 	},
