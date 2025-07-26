@@ -1,11 +1,10 @@
-// server.js
 import express from "express";
 import cors from "cors";
-import getYoutubeTranscript from "./getTranscript.js"; // assuming it’s exported
-import fs from "fs/promises"; // Add this import
+import getYoutubeTranscript from "./getTranscript.js";
+import fs from "fs/promises";
 
 const app = express();
-app.use(cors()); // 👈 ALLOW requests from content script
+app.use(cors());
 app.use(express.json());
 /////////
 async function logPauseEvent({ videoId, pauseTime, interval }) {
@@ -49,7 +48,7 @@ app.post("/api/pause-event", async (req, res) => {
 
 app.post("/api/transcript", async (req, res) => {
 	const { videoId } = req.body;
-	console.log("Received videoId on server:", videoId); // <== Add this line
+	console.log("Received videoId on server:", videoId);
 	if (!videoId) return res.status(400).json({ error: "No videoId provided" });
 
 	try {
