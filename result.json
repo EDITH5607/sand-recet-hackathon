@@ -2,51 +2,51 @@
   "questions": [
     {
       "id": 1,
-      "question": "What is the primary theme conveyed in the song's recurring chorus?",
+      "question": "What food and drink did Jesse and Wendy claim to have consumed during their three-day party?",
       "difficulty": "easy",
       "options": [
-        "The singer's desire to win a competitive game.",
-        "The singer's unwavering loyalty and commitment.",
-        "A warning about the dangers of falling in love.",
-        "A confession of past mistakes and lies."
+        "A) Takeout from a corner restaurant and water",
+        "B) Funyuns, Hot Pockets, and root beer",
+        "C) Crystal meth and takeout from Tuco's",
+        "D) Funyuns and Hot Pockets from a vending machine"
       ],
-      "answer": "The singer's unwavering loyalty and commitment."
+      "answer": "D) Funyuns and Hot Pockets from a vending machine"
     },
     {
       "id": 2,
-      "question": "According to the lyrics, what is preventing the relationship from progressing despite the long-standing acquaintance?",
+      "question": "What item did the interrogators find that Jesse immediately denied was his?",
       "difficulty": "medium",
       "options": [
-        "The singer is not yet ready for a full commitment.",
-        "They disagree on the 'rules' of the relationship.",
-        "The listener is too reticent to express their feelings.",
-        "The singer believes the listener is seeing another person."
+        "A) A cell phone",
+        "B) A bag of crystal meth",
+        "C) Over $67,000 in cash",
+        "D) A gun used to shoot Tuco"
       ],
-      "answer": "The listener is too reticent to express their feelings."
+      "answer": "C) Over $67,000 in cash"
     },
     {
       "id": 3,
-      "question": "The line 'We know the game and we're gonna play it' implies that both individuals are:",
+      "question": "What is the primary reason Jesse gives for not noticing his car was missing?",
       "difficulty": "medium",
       "options": [
-        "Preparing to deceive one another.",
-        "Aware of their mutual attraction and are ready to act on it.",
-        "Tired of the relationship and are planning to end it.",
-        "Engaged in a friendly competition with unclear rules."
+        "A) He was too high on crystal meth to be aware.",
+        "B) He never left the room until the police broke down the door.",
+        "C) He had already sold the car to Tuco.",
+        "D) He assumed Wendy had borrowed it to get food."
       ],
-      "answer": "Aware of their mutual attraction and are ready to act on it."
+      "answer": "B) He never left the room until the police broke down the door."
     },
     {
       "id": 4,
-      "question": "What is the central tension or conflict presented in the song's narrative?",
+      "question": "What is the final result of Wendy's interrogation within this transcript?",
       "difficulty": "hard",
       "options": [
-        "The singer's clear declaration of commitment versus the listener's apparent hesitation and shyness.",
-        "A disagreement over whether their long acquaintance is a solid foundation for a relationship.",
-        "The singer's fear that he cannot live up to the promises he is making in the chorus.",
-        "The struggle between the singer's feelings and the 'rules' he feels obligated to follow."
+        "A) She admits that Jesse left the room for a short period.",
+        "B) She gets distracted by recognizing an officer and refuses to say more.",
+        "C) She fully corroborates Jesse's alibi that he never left the room.",
+        "D) She trades information about Tuco for a root beer."
       ],
-      "answer": "The singer's clear declaration of commitment versus the listener's apparent hesitation and shyness."
+      "answer": "C) She fully corroborates Jesse's alibi that he never left the room."
     }
   ]
 }
