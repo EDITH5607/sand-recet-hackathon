@@ -2,6 +2,7 @@ import express from "express";
 import cors from "cors";
 import getYoutubeTranscript from "./getTranscript.js";
 import fs from "fs/promises";
+import { sendTranscriptToSupabase } from "./sendToSupabase.js";
 
 const app = express();
 app.use(cors());
@@ -21,10 +22,16 @@ async function logPauseEvent({ videoId,  interval, pauseTime }) {
 
 	try {
 		//await fs.appendFile("pause-events.log", logString);
+
 		console.log("Pause event logged:", logEntry);
+
+		console.log("Sending the transcript to Supabase...");
+    	await sendTranscriptToSupabase(pauseTime);
+		console.log("Transcript sent to Supabase");
+
 		return logEntry;
 	} catch (error) {
-		console.error("Error logging pause event:", error);
+		console.error("Error logging pause event or sending to supabase:", error);
 	}
 }
 

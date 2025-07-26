@@ -2,55 +2,55 @@
   "questions": [
     {
       "id": 1,
-      "question": "What is a primary advantage of using UPI for users, as mentioned in the transcript?",
+      "question": "What is the name of the new openweight coding model released by the Chinese company Alibaba?",
       "difficulty": "easy",
       "options": [
-        "It is primarily designed for large international transactions.",
-        "It allows users to earn interest on the balance held in the app.",
-        "It is free for users and enables instant, 24/7 transfers using just a mobile number or UPI ID.",
-        "It holds funds securely in a digital wallet before transferring them to a bank account."
+        "Gemini CLI",
+        "Claude 4",
+        "Quen 3 coder",
+        "Kimmy K2"
       ],
-      "answer": "It is free for users and enables instant, 24/7 transfers using just a mobile number or UPI ID.",
-      "explanation": "The transcript explicitly states at [5.36-11.80] that UPI is 'fast secure and available 247 allowing you to instantly send money just using your mobile number or UPA ID' and at [18.20-24.84] that 'best of all UPI is free for users'."
+      "answer": "Quen 3 coder",
+      "explanation": "The transcript explicitly states that the Chinese company Alibaba dropped a new model named 'Quen 3 coder' [0.08-11.12]."
     },
     {
       "id": 2,
-      "question": "According to the transcript, what is the key architectural difference between UPI and systems like PayPal and Alipay?",
+      "question": "The programming performance of Quen 3 coder is presented as being comparable to which model, described as the 'undisputed leader'?",
       "difficulty": "medium",
       "options": [
-        "UPI requires complex bank details for every transaction, while PayPal does not.",
-        "UPI transactions are slower but more secure than PayPal and Alipay.",
-        "UPI is only available for use during business hours, unlike PayPal.",
-        "UPI facilitates direct bank-to-bank transfers, while PayPal and Alipay typically hold funds in an intermediary wallet balance."
+        "Gemini",
+        "OpenAI's latest model",
+        "Chinese Kimmy K2",
+        "Claude 4"
       ],
-      "answer": "UPI facilitates direct bank-to-bank transfers, while PayPal and Alipay typically hold funds in an intermediary wallet balance.",
-      "explanation": "The transcript highlights this difference multiple times, stating that UPI 'doesn't hold your funds in a middle lay like a digital wallet' ([70.40-74.88]) and that unlike UPI, PayPal ([406.44-411.00]) and Alipay ([450.64-456.04]) hold funds in a wallet."
+      "answer": "Claude 4",
+      "explanation": "The transcript says Quen 3 coder is the first openweight model that 'matches the programming performance of Claude 4, the undisputed leader of AI vibe coding tools' [11.12-17.52]."
     },
     {
       "id": 3,
-      "question": "In the context of a UPI transaction, what is the role of the National Payments Corporation of India (NPCI)?",
-      "difficulty": "medium",
+      "question": "What specific 'agentic property' of the new CLI tool is highlighted in the transcript?",
+      "difficulty": "hard",
       "options": [
-        "It acts as the Payment Service Provider (PSP) app that the customer uses, like Google Pay.",
-        "It functions as the user's bank, holding their funds and checking their balance.",
-        "It acts as the central network or backbone that routes payment requests between the different banks.",
-        "It creates the Virtual Payment Address (VPA) for the customer."
+        "Its ability to achieve gold medals in math competitions.",
+        "Its openweight architecture as a mixture of experts model.",
+        "The ability to run, execute, and test code from the command line.",
+        "Its capacity to fork from any existing open-source tool."
       ],
-      "answer": "It acts as the central network or backbone that routes payment requests between the different banks.",
-      "explanation": "The transcript describes the NPCI as the 'backbone of UPI' ([162.52]) and the network that receives requests from the PSP, communicates with the payer's and payee's banks, and facilitates the direct transfer ([211.72-224.12])."
+      "answer": "The ability to run, execute, and test code from the command line.",
+      "explanation": "The transcript mentions the new CLI tool takes advantage of the model's agentic properties, specifically citing 'the ability to run, execute, and test your code from the command line' [27.52-33.68]."
     },
     {
       "id": 4,
-      "question": "How does the transcript distinguish UPI's function from that of a traditional payment gateway or payment processor?",
-      "difficulty": "hard",
+      "question": "Besides developments in coding AI, the transcript mentions which two companies have recently achieved success in the International Mathematical Olympiad?",
+      "difficulty": "medium",
       "options": [
-        "UPI is defined as both a payment gateway and a payment processor, just like PayPal.",
-        "UPI functions as a payment infrastructure or system, rather than a gateway that authorizes payments or a processor that handles the transfer itself.",
-        "UPI is a payment gateway because it acts like a checkout counter, but it is not a processor.",
-        "UPI is a payment processor because it uses credit card networks like Visa, unlike a payment gateway."
+        "Alibaba and Google",
+        "Alibaba and OpenAI",
+        "Google and OpenAI",
+        "The creators of Claude 4 and Kimmy K2"
       ],
-      "answer": "UPI functions as a payment infrastructure or system, rather than a gateway that authorizes payments or a processor that handles the transfer itself.",
-      "explanation": "The transcript explicitly states at [123.52-128.36] that 'UPI is neither strictly a payment processor nor a payment Gateway. It functions more as a payment infrastructure or system that facilitates real-time bank-to-bank transfers'."
+      "answer": "Google and OpenAI",
+      "explanation": "The speaker states that mathematicians are 'on life support' because 'both Google and OpenAI just achieved gold medals in the International Mathematical Olympiad' [37.60-44.08]."
     }
   ]
 }
