@@ -1,0 +1,52 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the primary theme conveyed in the song's recurring chorus?",
+      "difficulty": "easy",
+      "options": [
+        "The singer's desire to win a competitive game.",
+        "The singer's unwavering loyalty and commitment.",
+        "A warning about the dangers of falling in love.",
+        "A confession of past mistakes and lies."
+      ],
+      "answer": "The singer's unwavering loyalty and commitment."
+    },
+    {
+      "id": 2,
+      "question": "According to the lyrics, what is preventing the relationship from progressing despite the long-standing acquaintance?",
+      "difficulty": "medium",
+      "options": [
+        "The singer is not yet ready for a full commitment.",
+        "They disagree on the 'rules' of the relationship.",
+        "The listener is too reticent to express their feelings.",
+        "The singer believes the listener is seeing another person."
+      ],
+      "answer": "The listener is too reticent to express their feelings."
+    },
+    {
+      "id": 3,
+      "question": "The line 'We know the game and we're gonna play it' implies that both individuals are:",
+      "difficulty": "medium",
+      "options": [
+        "Preparing to deceive one another.",
+        "Aware of their mutual attraction and are ready to act on it.",
+        "Tired of the relationship and are planning to end it.",
+        "Engaged in a friendly competition with unclear rules."
+      ],
+      "answer": "Aware of their mutual attraction and are ready to act on it."
+    },
+    {
+      "id": 4,
+      "question": "What is the central tension or conflict presented in the song's narrative?",
+      "difficulty": "hard",
+      "options": [
+        "The singer's clear declaration of commitment versus the listener's apparent hesitation and shyness.",
+        "A disagreement over whether their long acquaintance is a solid foundation for a relationship.",
+        "The singer's fear that he cannot live up to the promises he is making in the chorus.",
+        "The struggle between the singer's feelings and the 'rules' he feels obligated to follow."
+      ],
+      "answer": "The singer's clear declaration of commitment versus the listener's apparent hesitation and shyness."
+    }
+  ]
+}
