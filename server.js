@@ -22,7 +22,7 @@ async function logPauseEvent({ videoId, pauseTime, interval, position }) {
 	const logString = JSON.stringify(logEntry) + ",\n";
 
 	try {
-		await fs.appendFile("pause-events.log", logString);
+		//await fs.appendFile("pause-events.log", logString);
 		console.log("Pause event logged:", logEntry);
 	} catch (error) {
 		console.error("Error logging pause event:", error);

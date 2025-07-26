@@ -45,3 +45,5 @@
 {"timestamp":"2025-07-26T11:07:31.212Z","videoId":"dQw4w9WgXcQ","pauseTime":"2025-07-26T11:07:31.204Z","interval":0.02,"type":"AUTO_PAUSE"},
 {"timestamp":"2025-07-26T11:13:30.189Z","videoId":"dQw4w9WgXcQ","pauseTime":"2025-07-26T11:13:30.182Z","interval":0.02,"type":"AUTO_PAUSE"},
 >>>>>>> 1b8b9a31f7d1ccafde7cb18eb0f1de92a7e814d3
+{"timestamp":"2025-07-26T12:57:06.786Z","videoId":"iI2NaN_QVTI","pauseTime":"2025-07-26T12:57:06.782Z","interval":0.1,"position":"5.76","type":"AUTO_PAUSE"},
+{"timestamp":"2025-07-26T12:57:15.157Z","videoId":"iI2NaN_QVTI","pauseTime":"2025-07-26T12:57:15.154Z","interval":0.1,"position":"11.75","type":"AUTO_PAUSE"},
