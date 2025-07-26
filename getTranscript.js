@@ -1,13 +1,15 @@
+// getTranscript.js
 import fetch from "node-fetch";
 import { parseStringPromise } from "xml2js";
+
 /**
  * Get captions for a given YouTube video and language (default: English).
  * @param {string} videoId - YouTube video ID
  * @param {string} language - Language code, e.g., "en", "hi"
  * @returns {Promise<Array<{ caption: string, startTime: number, endTime: number }>>}
  */
-
-async function getYoutubeTranscript(videoId, language = "en") {
+export default async function getYoutubeTranscript(videoId, language = "en") {
+	console.log("Transcript fetched for:", videoId);
 	const videoUrl = `https://www.youtube.com/watch?v=${videoId}`;
 	const html = await fetch(videoUrl).then((res) => res.text());
 
@@ -48,16 +50,3 @@ async function getYoutubeTranscript(videoId, language = "en") {
 		endTime: parseFloat(entry.$.start) + parseFloat(entry.$.dur),
 	}));
 }
-
-const videoId = process.argv[2] || "SccSCuHhOw0";
-
-getYoutubeTranscript(videoId, "en")
-	.then((transcript) => {
-		console.log("Transcript:");
-		transcript.forEach(({ caption, startTime, endTime }) => {
-			console.log(
-				`[${startTime.toFixed(2)} - ${endTime.toFixed(2)}] ${caption}`
-			);
-		});
-	})
-	.catch(console.error);

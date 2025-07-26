@@ -1,45 +1,39 @@
-// // server.js (Express backend)
-// import express from "express";
-// import cors from "cors";
-// import { YoutubeTranscript } from "youtube-transcript";
+// server.js
+import express from "express";
+import cors from "cors";
+import getYoutubeTranscript from "./getTranscript.js"; // assuming it’s exported
+import fs from "fs/promises"; // Add this import
 
-// const app = express();
-// app.use(cors());
 
-// app.get("/api/transcript/:videoId/:pausedTime", async (req, res) => {
-// 	const { videoId, pausedTime } = req.params;
+const app = express();
+app.use(cors()); // 👈 ALLOW requests from content script
+app.use(express.json());
 
-// 	try {
-// 		const transcript = await YoutubeTranscript.fetchTranscript(videoId);
-// 		console.log(" Raw Transcript:");
-// 		console.table(
-// 			transcript.map(({ start, duration, text }) => ({
-// 				start,
-// 				duration,
-// 				text,
-// 			}))
-// 		);
+app.post("/api/transcript", async (req, res) => {
+	const { videoId } = req.body;
+	if (!videoId) return res.status(400).json({ error: "No videoId provided" });
 
-// 		const filtered = transcript.filter(
-// 			(entry) => entry.start <= parseFloat(pausedTime)
-// 		);
+	try {
+		const transcript = await getYoutubeTranscript(videoId, "en");
 
-// 		console.log(`Transcript for video ${videoId} up to ${pausedTime}s:`);
-// 		console.table(
-// 			filtered.map(({ start, duration, text }) => ({ start, duration, text }))
-// 		);
-// 		res.json({
-// 			message: "Transcript fetched successfully",
-// 			transcript: filtered,
-// 		});
-// 	} catch (err) {
-// 		console.error(" Error fetching transcript:", err);
-// 		res
-// 			.status(500)
-// 			.json({ error: "Transcript fetch failed", details: err.toString() });
-// 	}
-// });
+		const formatted = transcript
+			.map(
+				({ caption, startTime, endTime }) =>
+					`[${startTime.toFixed(2)} - ${endTime.toFixed(2)}] ${caption}`
+			)
+			.join("\n");
 
-// app.listen(3000, () =>
-// 	console.log("Server running at http://localhost:3000")
-// );
+		const fileName = `transcript_${videoId}.txt`;
+		await writeFile(fileName, formatted);
+
+		console.log(`Transcript for ${videoId} saved as ${fileName}`);
+		res.json({ message: "Transcript saved", file: fileName });
+	} catch (error) {
+		console.error("Transcript fetch error:", error);
+    res.status(500).json({ error: error.message || "Transcript fetch failed" });
+	}
+});
+
+app.listen(3000, () => {
+	console.log("Server is listening on port 3000");
+});

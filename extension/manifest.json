@@ -1,0 +1,23 @@
+{
+	"manifest_version": 3,
+	"name": "YouTube Learning Helper",
+	"version": "1.0",
+	"permissions": ["activeTab", "scripting", "storage"],
+	"host_permissions": ["https://*.youtube.com/*", "http://localhost:3000/*"],
+	"background": {
+		"service_worker": "background.js",
+		"type": "module"
+	},
+	"matches": ["*://www.youtube.com/watch*"],
+	"action": {
+		"default_popup": "popup.html"
+	},
+
+	"content_scripts": [
+		{
+			"matches": ["https://*.youtube.com/*"],
+			"js": ["content.js"],
+			"run_at": "document_idle"
+		}
+	]
+}
