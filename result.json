@@ -2,51 +2,51 @@
   "questions": [
     {
       "id": 1,
-      "question": "What food and drink did Jesse and Wendy claim to have consumed during their three-day party?",
+      "question": "According to the lyrics, what does the singer believe is preventing the other person from expressing their feelings?",
       "difficulty": "easy",
       "options": [
-        "A) Takeout from a corner restaurant and water",
-        "B) Funyuns, Hot Pockets, and root beer",
-        "C) Crystal meth and takeout from Tuco's",
-        "D) Funyuns and Hot Pockets from a vending machine"
+        "A. A lack of interest",
+        "B. Shyness",
+        "C. Anger",
+        "D. A previous commitment"
       ],
-      "answer": "D) Funyuns and Hot Pockets from a vending machine"
+      "answer": "B. Shyness"
     },
     {
       "id": 2,
-      "question": "What item did the interrogators find that Jesse immediately denied was his?",
+      "question": "The singer states, \"A full commitment's what I'm thinking of.\" Which of the following promises from the chorus best exemplifies this idea of commitment?",
       "difficulty": "medium",
       "options": [
-        "A) A cell phone",
-        "B) A bag of crystal meth",
-        "C) Over $67,000 in cash",
-        "D) A gun used to shoot Tuco"
+        "A. Never gonna make you cry",
+        "B. Never gonna say goodbye",
+        "C. Never gonna run around and desert you",
+        "D. Gotta make you understand"
       ],
-      "answer": "C) Over $67,000 in cash"
+      "answer": "C. Never gonna run around and desert you"
     },
     {
       "id": 3,
-      "question": "What is the primary reason Jesse gives for not noticing his car was missing?",
-      "difficulty": "medium",
+      "question": "What is the implied nature of the \"game\" mentioned in the line, \"We know the game and we're gonna play it\"?",
+      "difficulty": "hard",
       "options": [
-        "A) He was too high on crystal meth to be aware.",
-        "B) He never left the room until the police broke down the door.",
-        "C) He had already sold the car to Tuco.",
-        "D) He assumed Wendy had borrowed it to get food."
+        "A. A contest to see who will confess their feelings first.",
+        "B. A playful rivalry between two friends.",
+        "C. The unspoken, mutual progression towards a romantic relationship.",
+        "D. A deceitful plan to trick the other person."
       ],
-      "answer": "B) He never left the room until the police broke down the door."
+      "answer": "C. The unspoken, mutual progression towards a romantic relationship."
     },
     {
       "id": 4,
-      "question": "What is the final result of Wendy's interrogation within this transcript?",
-      "difficulty": "hard",
+      "question": "The singer contrasts his reliability with that of others by stating:",
+      "difficulty": "medium",
       "options": [
-        "A) She admits that Jesse left the room for a short period.",
-        "B) She gets distracted by recognizing an officer and refuses to say more.",
-        "C) She fully corroborates Jesse's alibi that he never left the room.",
-        "D) She trades information about Tuco for a root beer."
+        "A. \"We've known each other for so long\"",
+        "B. \"You wouldn't get this from any other guy\"",
+        "C. \"Don't tell me you're too blind to see\"",
+        "D. \"You know the rules and so do I\""
       ],
-      "answer": "C) She fully corroborates Jesse's alibi that he never left the room."
+      "answer": "B. \"You wouldn't get this from any other guy\""
     }
   ]
 }
