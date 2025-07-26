@@ -1,6 +1,6 @@
 {
 	"manifest_version": 3,
-	"name": "YouTube Learning Helper",
+	"name": "YouTube Learning Helper - Render",
 	"version": "1.0",
 	"permissions": ["activeTab", "scripting", "storage"],
 	"host_permissions": ["https://*.youtube.com/*", "http://localhost:3000/*"],

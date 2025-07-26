@@ -117,6 +117,8 @@ app.get("/api/questions", async (req, res) => {
 		res.status(500).json({ error: "Failed to load questions" });
 	}
 });
-app.listen(3000, () => {
-	console.log("Server is listening on port 3000");
+
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+	console.log(`Server listening on port ${PORT}`);
 });

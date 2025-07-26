@@ -1,5 +1,5 @@
 console.log(" content.js loaded");
-
+const SERVER_URL = "https://sand-recet-hackathon-final.onrender.com";
 let lastVideoId = null;
 let pauseTimer = null;
 let lastPlayTimestamp = 0;
@@ -15,7 +15,7 @@ function getCurrentVideoId() {
 function sendVideoIdToServer(videoId) {
 	console.log("Sending videoId to server:", videoId);
 
-	fetch("http://localhost:3000/api/transcript", {
+	fetch(`${SERVER_URL}/api/transcript`, {
 		method: "POST",
 		headers: { "Content-Type": "application/json" },
 		body: JSON.stringify({ videoId }),
@@ -40,7 +40,7 @@ function sendPauseEventToServer(videoId, intervalMinutes, playbackPosition) {
 		playbackPosition,
 	});
 
-	fetch("http://localhost:3000/api/pause-event", {
+	fetch(`${SERVER_URL}/api/pause-event`, {
 		method: "POST",
 		headers: { "Content-Type": "application/json" },
 		body: JSON.stringify({
@@ -307,7 +307,7 @@ function showFloatingPanel() {
 	};
 
 	// 🔽 Fetch questions from your Express backend
-	fetch("http://localhost:3000/api/questions")
+	fetch(`${SERVER_URL}/api/questions`)
 		.then((res) => res.json())
 		.then((data) => {
 			const container = document.getElementById("yt-qa-questions");
