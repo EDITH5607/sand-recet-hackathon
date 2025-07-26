@@ -226,3 +226,75 @@ chrome.runtime.onMessage.addListener((message) => {
 		}
 	}
 });
+
+
+function showPauseNotification(minutes) {
+	// Notification Banner
+	const notification = document.createElement("div");
+	notification.style = `
+		position: fixed;
+		top: 20px;
+		right: 20px;
+		background: rgba(0,0,0,0.8);
+		color: white;
+		padding: 15px;
+		border-radius: 5px;
+		z-index: 10000;
+		font-family: Arial, sans-serif;
+		box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+	`;
+	notification.innerHTML = `
+		<div style="font-size: 16px; margin-bottom: 8px;">⏸️ Auto-Paused</div>
+		<div>Video paused after ${minutes} minutes</div>
+	`;
+	document.body.appendChild(notification);
+
+	setTimeout(() => {
+		notification.style.transition = "opacity 0.5s";
+		notification.style.opacity = "0";
+		setTimeout(() => notification.remove(), 500);
+	}, 3000);
+
+	// ⬇️ Show floating question panel (or popup)
+	showFloatingPanel();
+}
+
+
+function showFloatingPanel() {
+	if (document.getElementById("yt-qa-panel")) return;
+
+	const panel = document.createElement("div");
+	panel.id = "yt-qa-panel";
+	panel.style = `
+		position: fixed;
+		bottom: 30px;
+		right: 30px;
+		width: 400px;
+		max-height: 60vh;
+		background: white;
+		border: 2px solid #888;
+		border-radius: 10px;
+		box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+		padding: 15px;
+		z-index: 10001;
+		overflow-y: auto;
+		font-family: Arial, sans-serif;
+	`;
+
+	panel.innerHTML = `
+		<div style="display: flex; justify-content: space-between; align-items: center;">
+			<strong>🧠 Learning Checkpoint</strong>
+			<button id="yt-qa-close" style="border:none;background:none;font-size:16px;cursor:pointer;">✖️</button>
+		</div>
+		<div id="yt-qa-questions" style="margin-top:10px;">
+			<p>⏳ Loading questions...</p>
+		</div>
+	`;
+
+	document.body.appendChild(panel);
+
+	// Close button
+	document.getElementById("yt-qa-close").onclick = () => {
+		panel.remove();
+	};
+}
