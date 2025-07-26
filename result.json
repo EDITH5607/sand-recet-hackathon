@@ -2,55 +2,55 @@
   "questions": [
     {
       "id": 1,
-      "question": "According to the first verse, what kind of relationship is the singer seeking?",
+      "question": "What is the primary problem the speaker created the Chrome extension to solve?",
       "difficulty": "easy",
       "options": [
-        "A casual friendship",
-        "A secret romance",
-        "A full commitment",
-        "A short-term fling"
+        "A) To automatically generate comments on Reddit posts.",
+        "B) To create a new, faster user interface for Reddit.",
+        "C) To save time by efficiently finding personally interesting posts and comments within Reddit communities.",
+        "D) To block advertisements and sponsored posts on social media platforms."
       ],
-      "answer": "A full commitment",
-      "explanation": "The transcript explicitly states at [27.04 - 31.04], 'A full commitment's what I'm thinking of'."
+      "answer": "C) To save time by efficiently finding personally interesting posts and comments within Reddit communities.",
+      "explanation": "The speaker explicitly states their schedule is very tight and they lack the time to sift through all the posts to find ones that genuinely interest them (19.56-38.44). The extension is designed to solve this specific problem."
     },
     {
       "id": 2,
-      "question": "Based on the lyrics, what does the singer believe is preventing the other person from expressing their feelings?",
+      "question": "How does the extension's search functionality differ from Reddit's native search?",
       "difficulty": "medium",
       "options": [
-        "A lack of interest",
-        "Anger and resentment",
-        "A busy schedule",
-        "Shyness and past heartache"
+        "A) It only searches within the last 24 hours of posts.",
+        "B) It uses AI to understand the semantic meaning of a prompt, rather than just matching keywords.",
+        "C) It is limited to searching only post titles and ignores the content of the posts.",
+        "D) It relies on a pre-approved list of topics and does not allow for custom queries."
       ],
-      "answer": "Shyness and past heartache",
-      "explanation": "The lyrics at [64.88 - 69.04] state, 'Your heart's been aching but you're too shy to say it,' indicating both past pain ('aching') and current hesitation ('shy')."
+      "answer": "B) It uses AI to understand the semantic meaning of a prompt, rather than just matching keywords.",
+      "explanation": "The transcript explains that Reddit's default search works with keywords, while the extension's search works with prompts, similar to an LLM. It requires a form of 'brainstorming' to find conceptually related posts, not just keyword matches (168.04 - 221.16)."
     },
     {
       "id": 3,
-      "question": "What does the line 'We know the game and we're gonna play it' imply in the context of the song?",
+      "question": "According to the transcript, what is a key technical challenge when injecting a custom UI into a webpage via a content script, and what is the recommended solution?",
       "difficulty": "hard",
       "options": [
-        "That the relationship is based on deception.",
-        "That both individuals are tired of playing games and want to be direct.",
-        "That they both understand the unspoken rules of courtship and are ready to engage.",
-        "That the singer is challenging the other person to a competition."
+        "A) Challenge: Slow loading times. Solution: Using VanillaJS instead of a framework.",
+        "B) Challenge: CSS style conflicts with the host page. Solution: Rendering the UI inside a Shadow DOM to isolate it.",
+        "C) Challenge: Inability to store user data. Solution: Using cookies instead of Chrome extension storage.",
+        "D) Challenge: Sending messages to the background script. Solution: Avoiding messaging by putting all logic in the content script."
       ],
-      "answer": "That they both understand the unspoken rules of courtship and are ready to engage.",
-      "explanation": "Preceded by 'Inside we both know what's been going on,' the line suggests a mutual, unspoken understanding of their feelings. 'The game' refers to the game of love or courtship, which they are now mutually ready to 'play' or participate in openly."
+      "answer": "B) Challenge: CSS style conflicts with the host page. Solution: Rendering the UI inside a Shadow DOM to isolate it.",
+      "explanation": "The speaker details that directly rendering a UI in the main DOM can cause CSS conflicts between the extension and the webpage. The solution presented as a best practice is to create and render the UI within a Shadow DOM to keep it isolated (5486.44 - 5540.56)."
     },
     {
       "id": 4,
-      "question": "Which of the following is NOT a promise made in the song's chorus?",
+      "question": "Which framework is used to build the Chrome extension, and what is one of its main advantages mentioned by the speaker?",
       "difficulty": "medium",
       "options": [
-        "Never gonna make you cry",
-        "Never gonna run around and desert you",
-        "Never gonna let you down",
-        "Never gonna make you rich"
+        "A) Plasmo, because it is the only framework that supports AI integration.",
+        "B) React Native, because it allows for cross-platform mobile development.",
+        "C) Vanilla JS, because it avoids the need for a build process.",
+        "D) WXT, because it enables the use of modern frontend frameworks like React and provides features like hot reloading."
       ],
-      "answer": "Never gonna make you rich",
-      "explanation": "The chorus, repeated multiple times, includes promises not to 'give you up,' 'let you down,' 'run around and desert you,' 'make you cry,' 'say goodbye,' or 'tell a lie and hurt you.' There is no mention of financial promises."
+      "answer": "D) WXT, because it enables the use of modern frontend frameworks like React and provides features like hot reloading.",
+      "explanation": "The speaker introduces the framework as WXT (714.52) and highlights its ability to use frameworks like React. They also praise its hot reload support, which avoids the manual refresh process required with Vanilla JS development (957.36 - 974.36)."
     }
   ]
 }

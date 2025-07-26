@@ -8,7 +8,6 @@ app.use(cors());
 app.use(express.json());
 /////////
 async function logPauseEvent({ videoId, pauseTime, interval, position }) {
-	
 	const formattedPosition = (Math.round(position * 100) / 100).toFixed(2);
 	const logEntry = {
 		timestamp: new Date().toISOString(),
