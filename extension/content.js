@@ -9,7 +9,7 @@ let currentVideo = null;
 function getCurrentVideoId() {
 	const urlParams = new URLSearchParams(window.location.search);
 	return urlParams.get("v");
-}
+} 
 
 // Send video ID to your server
 function sendVideoIdToServer(videoId) {

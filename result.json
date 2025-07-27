@@ -2,55 +2,55 @@
   "questions": [
     {
       "id": 1,
-      "question": "According to the transcript, what is something that both the singer and the listener know?",
+      "question": "What is the primary subject of this video tutorial?",
       "difficulty": "easy",
       "options": [
-        "A) A secret plan",
-        "B) The rules",
-        "C) The singer's feelings",
-        "D) What's been going on"
+        "A 20-minute guide to blockchain theory",
+        "An introduction to the Solidity programming language",
+        "A tutorial on how to save and bookmark videos",
+        "A comparison of different blockchain languages"
       ],
-      "answer": "B) The rules",
-      "explanation": "The transcript explicitly contains the lyric, 'You know the rules and so do I', indicating this is a shared understanding between them."
+      "answer": "An introduction to the Solidity programming language",
+      "explanation": "The speaker explicitly states in the first few seconds, 'today i'm going to teach you the solidity programming language'."
     },
     {
       "id": 2,
-      "question": "What reason does the singer give for the other person not verbalizing their feelings?",
+      "question": "Who does the speaker suggest will benefit from this video?",
       "difficulty": "medium",
       "options": [
-        "A) They are too blind to see",
-        "B) They are too shy to say it",
-        "C) They don't know what's been going on",
-        "D) They are waiting for the singer to act first"
+        "Only expert developers looking for advanced techniques",
+        "Only absolute beginners with no prior coding experience",
+        "Both beginners and those with existing Solidity knowledge",
+        "Only people interested in the history of blockchain"
       ],
-      "answer": "B) They are too shy to say it",
-      "explanation": "The line 'but you're too shy to say it' is repeated in the transcript, directly stating the singer's belief about why the other person is holding back."
+      "answer": "Both beginners and those with existing Solidity knowledge",
+      "explanation": "The speaker tailors the introduction for new learners to 'get up to speed really quickly' and also states, 'even if you know solidity already i guarantee you're going to learn something'."
     },
     {
       "id": 3,
-      "question": "Based on the recurring phrases in the transcript, what is the central theme of the singer's message?",
+      "question": "What is the speaker's main promise regarding the video's outcome?",
       "difficulty": "medium",
       "options": [
-        "A) A confession of past wrongdoings",
-        "B) A description of a new game they will play",
-        "C) A plea for the listener to be less shy",
-        "D) A promise of unwavering commitment and fidelity"
+        "The viewer will be able to build a complete application immediately.",
+        "The viewer will achieve rapid proficiency and become a 'blockchain master'.",
+        "The viewer will understand the complete history of blockchain.",
+        "The viewer will learn multiple programming languages."
       ],
-      "answer": "D) A promise of unwavering commitment and fidelity",
-      "explanation": "The repetition of phrases like 'and desert you' and 'and hurt you' are fragments of a larger promise. These fragments emphasize the negative actions the singer vows *not* to take, highlighting a theme of strong commitment."
+      "answer": "The viewer will achieve rapid proficiency and become a 'blockchain master'.",
+      "explanation": "The speaker claims the video's purpose is to help the viewer 'become a blockchain master in no time' by getting them 'up to speed really quickly'."
     },
     {
       "id": 4,
-      "question": "The transcript repeatedly juxtaposes the singer's awareness of the listener's feelings ('Your heart's been aching') with the listener's inaction. What does this suggest about the relationship's dynamic?",
+      "question": "What is the video's stated teaching strategy for the Solidity language?",
       "difficulty": "hard",
       "options": [
-        "A) The singer is frustrated by the listener's lack of emotional depth.",
-        "B) The singer feels they have a deeper understanding of the situation and is trying to encourage the listener to act on a mutual feeling.",
-        "C) The relationship is one-sided, with only the singer having strong feelings.",
-        "D) The listener is intentionally playing 'hard to get' to test the singer's commitment."
+        "A slow, methodical walkthrough of every feature.",
+        "Focusing on the most essential and frequently used concepts for quick learning.",
+        "A theoretical discussion without practical programming examples.",
+        "Comparing Solidity's syntax with that of other languages."
       ],
-      "answer": "B) The singer feels they have a deeper understanding of the situation and is trying to encourage the listener to act on a mutual feeling.",
-      "explanation": "The singer claims to know the 'rules' and what the listener is feeling ('Your heart's been aching but you're too shy to say it'). This implies the singer believes the feelings are mutual but is taking the lead to bridge the communication gap caused by the listener's shyness, rather than being frustrated or seeing the relationship as one-sided."
+      "answer": "Focusing on the most essential and frequently used concepts for quick learning.",
+      "explanation": "The speaker describes the content as a 'fast-paced introduction to the really important parts of the solidity programming language you're going to use over and over again,' which points to a strategy of focusing on core, high-utility concepts for efficiency."
     }
   ]
 }
